@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+
+<body>
+    <center>
+        <div id="introducao">
+            <h2>Introdução</h2>
+            <p>Vamos, neste curso, aprender os conceitos b·sicos da linguagem de programaÁ„o C a qual tem se tornado cada dia mais popular, devido ‡ sua versatilidade e ao seu poder. Uma das grandes vantagens do C È que ele possui tanto caracterÌsticas de "alto nÌvel" quanto de "baixo nÌvel".</p>
+            <p>Apesar de ser bom, n„o È prÈ-requisito do curso um conhecimento anterior de linguagens de programaÁ„o. … importante uma familiaridade com computadores. O que È importante È que vocÍ tenha vontade de aprender, dedicaÁ„o ao curso e, caso esteja em uma das turmas do curso, acompanhe atentamente as discussıes que ocorrem na lista de discussıes do curso. O C nasceu na dÈcada de 70. Seu inventor, Dennis Ritchie, implementou-o pela primeira vez usando um DEC PDP-11 rodando o sistema operacional UNIX. O C È derivado de uma outra linguagem: o B, criado por Ken Thompson. O B, por sua vez, veio da linguagem BCPL, inventada por Martin Richards.</p>
+            <p>O C È uma linguagem de programaÁ„o genÈrica que È utilizada para a criaÁ„o de programas diversos como processadores de texto, planilhas eletrÙnicas, sistemas operacionais, programas de comunicaÁ„o, programas para a automaÁ„o industrial, gerenciadores de bancos de dados, programas de projeto assistido por computador, programas para a soluÁ„o de problemas da Engenharia, FÌsica, QuÌmica e outras CiÍncias, etc ... … bem prov·vel que o Navegador que vocÍ est· usando para ler este texto tenha sido escrito em C ou C++. Estudaremos a estrutura do ANSI C, o C padronizado pela ANSI. Veremos ainda algumas funÁıes comuns em compiladores para alguns sistemas operacionais. Quando n„o houver equivalentes para as funÁıes em outros sistemas, apresentaremos formas alternativas de uso dos comandos.</p>
+            <p>Sugerimos que o aluno realmente use o m·ximo possÌvel dos exemplos, problemas e exercÌcios aqui apresentados, gerando os programas execut·veis com o seu compilador. Quando utilizamos o compilador aprendemos a lidar com mensagens de aviso, mensagens de erro, bugs, etc. Apenas ler os exemplos n„o basta. O conhecimento de uma linguagem de programaÁ„o transcende o conhecimento de estruturas e funÁıes. O C exige, alÈm do domÌnio da linguagem em si, uma familiaridade com o compilador e experiÍncia em achar "bugs" nos programas. … importante ent„o que o leitor digite, compile e execute os exemplos apresentados. </p>
+            <p>Estrutura básica de um programa em C:</p>
+            <code>#include &lt;stdio.h&gt;
+            <br> int main(){}
+            </code>
+        </div>
+
+        <div id="variaveis">
+            <h2>Variáveis</h2>
+            <p>Ce faz assim: <em>TipoDaVariável NomeDaVariável;</em></p>
+            <p>Exemplo:</p>
+            <code>int numeroInteiro;</code>
+        </div>
+
+        <div id="expressoes">
+            <h2>Expressões matemáticas</h2>
+            <p>É igual no papel: <em>QuemRecebeOValor = 1 + 1; </em></p>
+            <code>numeroInteiro = 1 + 1;</code>
+        </div>
+        <div id="condicao">
+            <h2>Estruturas condicionais</h2>
+            <p>if(<em>condição</em>){<em>OQueSeráFeitoSeACondiçãoVerdadeira</em>}</p>
+            <code>if(numeroInteiro==2){printf("Um mais um é dois");}</code>
+        </div>
+        <div id="repeticao">
+            <h2>Estruturas de repetição</h2>
+            <p><em>Leia a documentação!</em></p>
+            <code>for(i=0;i&lt;++i){printf("What I'm doing");}</code>
+        </div>
+        <div id="execucao">
+            <h2>Execução</h2>
+            <p>digite o seguinte no terminal para compilar e rodar o programa:</p>
+            <code>gcc NomeDoArquivo.c; ./a.out</code>
+        </div>
+    </center>
+</body>
+
+</html>
