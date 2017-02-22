@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>              
+<head>
+	<title>Formulario!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+<body>
+    <h1>Formulário:</h1>
+    <br>
+    <div id="container">
+        <form>
+            <fieldset id="DadosPessoais">   
+                <legend>Dados Pessoais</legend>                    
+                Código: <input size="10">
+                <br>
+                Nome: <input size="30">
+                <br>
+                Senha: <input size="5" type="password">
+                <br>
+                Sexo: <input type="radio" name="sexo" value="masculino">Masculino
+                      <input type="radio" name="sexo" value="feminino"> Feminino
+               <br>
+               Idade: <input size="3">
+               <br>
+               Cartão de Crédito: 
+               <br>
+               <select name="Cartao" multiple="multiple">
+                   <option>MasterCard</option>
+                   <option>Visa</option>
+                   <option>American Express</option>
+               </select>
+            </fieldset>
+
+            <fieldset id="DadosProfissionais">   
+                <legend>Dados Profissionais</legend>                    
+                Cargo: <select name="Cargo">
+                           <option>Analista Júnior</option>
+                           <option>Analista Pleno</option>
+                           <option>American Sênior</option>
+                       </select>
+                <br>
+                Dados Pessoais: <br>
+                <input type="checkbox"> Fumante <br>
+                <input type="checkbox"> Pratica Exercícios Físicos <br>
+                <input type="checkbox"> Consome Bebida Alcoólica<br>
+
+                Experiências Profissionais:<br>
+                <textarea rows="3" cols="50">
+                    Data Início/Data Fim/Empresa/Cargo
+                </textarea>
+            </fieldset>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Inserir">
+        </form>
+    </div>
+
+
+</body>
+</html>
