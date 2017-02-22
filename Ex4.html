@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Linguagem C</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <h1>Aprendendo a Linguagem C</h1>
+        <h2>Introdução:</h2>
+        <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly).<p/>
+        <p>C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
+        <a href="https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">Para mais informações clique aqui.</a>
+    </body>
+    
+    <body>
+        <h2>Variáveis e expressões matemáticas:</h2>
+        <p>A linguagem C possui tipos determinados de variáveis. As principais podem ser inteiras (int), reais (float), caracteres (char).</p>
+        <code>#include &lt;stdio.h&gt;<br/>int main(){<br/> <br/>int nome_da_variavel1;<br/>float nome_da_variavel2;<br/>char nome_da_variavel3;<br/>}</code>
+    </body>
+
+    <body>
+        <h2>Estruturas condicionais:</h2>
+        <p>Chamamos de estrutura condicional as instruções para testar se uma condição é verdadeira ou não.</p>
+        <h3>IF</h3>
+        <p>Ela executa uma série de instruções caso uma condição se realize.</p>
+        <code>if(condição realizda){ <br/>lista de instruções <br/>} </code>
+        <h3>IF...ELSE</h3>
+        <p>só testa uma condição ou, na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição... A expressão if ... else executa outra série de instruções, em caso do não cumprimento da condição.</p>
+        <code>if (condição realizada) { <br/>lista de instruções<br/>}<br/>else {<br/> outra série de instruções<br/>}</code>
+        <h3>Switch</h3>
+        <p>A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. </p>
+        <code>switch (variável) { <br/>casa Valor1 : <br/> Lista d instruções; <br/> break; <br/>casa Valor2 : <br/> Lista d instruções; <br/> break; <br/>default:  <br/> Lista d instruções; <br/>}</code>
+    </body>
+
+    <body>
+        <h2>Estruturas de repetição:</h2>
+        <p>Os loops são estruturas que executam várias vezes a mesma série de instruções até que uma condição não seja mais realizada.</p>
+        <h3>FOR</h3>
+        <code>for (contador; condição; modificação do contador) { <br/> lista de instruções;<br/>}</code>
+        <h3>WHILE</h3>
+        <code>while (condição realizada) {<br/>lista de instruções;<br/>}</code>
+    </body>
+
+    <body>
+        <h2>Como executar um programa em C:</h2>
+        <p>Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um único arquivo, você pode simplesmente executar este comando no terminal:</p>
+        <code>$ gcc prog.c</code>
+        <p>Para executar basta realizar o seguinte comando:</p>
+        <code>./a.out</code>
+    </body>
+</html>
