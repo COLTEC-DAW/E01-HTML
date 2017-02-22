@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro - Coltrekking</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="icone_cadastro.png" />
+	</head>
+
+	<body>
+		<form>
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				Código: <input type="number" name="codigo"><br>
+
+				Nome: <input type="text" name="nome"><br>
+
+				Senha: <input type="password" name="pwd"><br>
+
+				Sexo:
+					<input type="radio" name="sexo" value="male">Masculino</input>
+					<input type="radio" name="sexo" value="female">Feminino</input><br>
+
+				Idade: <input type="number" name="idade"><br>
+
+				Cartão Crédito:<br>
+					<select multiple name="credito">
+						<option value="mastercard">Mastercard</option>
+						<option value="visa">Visa</option>
+						<option value="american">American Express</option>
+					</select>
+			</fieldset>
+		</form>
+
+		<form>
+			<fieldset>
+				<legend>Dados Profissionais</legend>
+				Cargo:
+					<select name="cargo">
+						<option value="junior">Analista Júnior</option>
+						<option value="pleno">Analista Pleno</option>
+						<option value="senior">Analista Sênior</option>
+					</select><br>
+
+				Dados Pessoais:<br>
+					<input type="checkbox" name="dados" value="fumante">Fumante</input><br>
+					<input type="checkbox" name="dados" value="exercicios">Pratica Exercícios Físicos</input><br>
+					<input type="checkbox" name="dados" value="bebida">Consome bebida alcoólica</input><br>
+
+				Experiências Profissionais:<br>
+					<textarea rows="3" cols="40">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+			</fieldset>
+			
+			<!--Botoes-->
+			<input type="button" name="limpar" value="Limpar">
+			<input type="button" name="inserir" value="Inserir">
+		</form>
+
+	</body>
+</html>
