@@ -1,1 +1,39 @@
 <DOCTYPE html>
+    <head>
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                Código: <input type="integer" name="code" value="001"></input><br>
+                Nome: <input type="text" name="nome"><br>
+                Senha: <input type="password" name="senha"><br>
+                Sexo: <input type="radio" name="sexo">Masculino</input>
+                <input type="radio" name="sexo">Feminino</input><br>
+                Idade: <input type="integer" name="idade"><br>
+                Cartão Crédito:
+                    <select>
+                        <option value="Mastercard">MasterCard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="American Express">American Express</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                Cargo:
+                    <select>
+                        <option value="Analista Júnior">Analista Júnior</option>
+                        <option value="Analista Pleno">Analista Pleno</option>
+                        <option value="Analista Sênior">Analista Sênior</option>
+                    </select><br>
+                Dados Pessoais:<br><input type="checkbox" name="dp" value="Fumante">Fumante</input><br>
+                <input type="checkbox" name="dp" value="Exercicios">Pratica Exercícios Físicos</input><br>
+                <input type="checkbox" name="dp" value="alccol">Consome bebida alcoólica</input><br>
+                Experiências Profissionais:<br>
+                <textarea rows="10" cols="30">Data inicio/Data fim/Empresa/Cargo</textarea>
+            </fieldset>
+            <input type="button" name="Limpar" value="Limpar">
+            <input type="button" name="Inserir" value="Inserir">
+        </form>
+    </body>
