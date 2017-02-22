@@ -6,9 +6,44 @@
         <body>
             <h1>Manual de C para calouros de Info Coltec</h1>
 
+            <h2>Introdução</h2>
+            <p> C é uma linguagem de programação. Normalmente é a primeira a ser aprendida por novatos, devido à sua simplicidade e seu poder, podendo funcionar como porta de entrada tanto para linguagens mais próximas da linguagem de máquina (Assembly) ou para linguagens de nível mais alto, incluindo Orientação a Objeto (Java, C++)</p>
+
             <h2>Básico do básico</h2>
-            <p>Um programa em C segue a seguinte ordem:<br>-Chame as biblotecas que vai usar (EM TODOS OS NOSSOS EXEMPLOS USAREMOS A BIBLIOTECA BÁSICA "stdio.h")<br>-Escreva zero ou mais funções personalizadas<br>-Escreva a função int main(), onde o código vai estar. É possível usar void main, mas nós consideramos isso feio<br>-Lembre-se de terminar a int main() com return 0. Podemos retornar outras coisas, mas fique contente com o 0<br>Comentários são indicados com // Elas não afetam o programa e servem para explicá-lo</p>
-            <code>#include &lt stdio.h &gt //Aqui chamamos as bibliotecas<br><br>//Insira suas funções personalizadas aqui<br><br>int main(){<br>//Insira seu código aqui<br>return 0;<br>}</code>
-            
+            <p>Um programa em C segue a seguinte ordem:<br>-Chame as biblotecas que vai usar (EM TODOS OS NOSSOS EXEMPLOS USAREMOS A BIBLIOTECA BÁSICA "stdio.h")<br>-Escreva zero ou mais funções personalizadas<br>-Escreva a função int main(), onde o código vai estar. É possível usar void main, mas nós consideramos isso feio<br>-Lembre-se de terminar a int main() com return 0. Podemos retornar outras coisas, mas fique contente com o 0<br>-Comentários são indicados com // Eles não afetam o programa e servem para explicá-lo.<br>-O símbolo ; é usado ao fim de todas as linhas com comandos (a vasta maioria)<br>-As chaves ({ e }) servem para isolar partes de código, como loops, branchs e funções. Lembre-se de identar com (tab) para deixar o código visualmente organizado.</p>
+            <code>#include &lt stdio.h &gt //Aqui chamamos as bibliotecas<br><br>//Insira suas funções personalizadas aqui<br><br>int main(){<br>&nbsp&nbsp&nbsp&nbsp //Insira seu código aqui<br>&nbsp&nbsp&nbsp&nbsp return 0;<br>}</code>
+
+            <h2>Entrada e saída</h2>
+            <p>Use os comandos printf("saída") e scanf("%tipoentrada", &ampnomeentrada) para a entrada e saída de informações, especificamente.</p>
+            <code>//Esse código imprime Hello World na tela do terminal<br>#include &lt stdio.h &gt<br><br>int main (){<br>&nbsp&nbsp&nbsp&nbsp printf("Hello World\n"); //O código \n indica um parágrafo<br>&nbsp&nbsp&nbsp&nbsp return 0;<br>}</code>
+            <br><br>
+            <code>//Esse código imprime o valor digitado na tela do terminal<br>#include &lt stdio.h &gt<br><br>int main (){<br>&nbsp&nbsp&nbsp&nbsp int entrada;<br>&nbsp&nbsp&nbsp&nbsp scanf("%d\n", &entrada); //d é o código para inteiros na base 10<br>&nbsp&nbsp&nbsp&nbsp printf("Você inseriu %d\n", entrada);<br>&nbsp&nbsp&nbsp&nbsp return 0;<br>}</code>
+
+            <h2>Variáveis e expressões matemáticas</h2>
+            <p>Variáveis são espaços na memória do computador onde valores podem ser guardados. Variáveis tem nomes e podem representar vários tipos de informação. Os mais comuns são:<br>&nbsp&nbsp&nbsp&nbsp int: Números inteiros<br>&nbsp&nbsp&nbsp&nbsp float: Números reais<br>&nbsp&nbsp&nbsp&nbsp char: Caracteres<br><br>Expressões matemáticas básicas usam parênteses e os símbolos de + - * e / para as operações básicas. % é usado para o resto de divisões. Há funções especiais para operações mais complicadas</p>
+            <code>int variavel1, variavel2, resultado;<br>variavel1 = 2;<br>variavel2 = 3;<br><br>resultado = (variavel1+variavel2)*variavel1;<br>printf("%d\n", resultado); //O valor mostrado será 10<br><br>resultado = variavel1+variavel2*variavel1;<br>printf("%d\n", resultado); //O valor mostrado será 8<br><br>resultado = (variavel2+5)/variavel1;<br>printf("%d\n", resultado); //O valor mostrado será 4<br><br>resultado = (variavel1+variavel2)%variavel1;<br>printf("%d\n", resultado); //O valor mostrado será 1</code>
+
+            <h2>Estruturas condicionais</h2>
+            <p>Estruturas condicionais permitem que o programa "faça escolhas", executando um ou outro trecho de código baseado em alguma condição. Observe os exemplos.</p>
+            <code>//A função numDivisores(a) retorna o número de divisores de um inteiro<br>// X é um inteiro positivo inserido pelo usuário<br>
+                <br>if (numDivisores(X) == 2){<br>&nbsp&nbsp&nbsp&nbspprintf("%d é primo\n", X);<br>}<br><br>
+                <br>if (numDivisores(X) == 2){<br>&nbsp&nbsp&nbsp&nbspprintf("%d é primo\n", X);<br>}<br>else{<br>&nbsp&nbsp&nbsp&nbspprintf("%d não é primo\n", X);<br>}<br><br>
+                <br>if (numDivisores(X) == 2){<br>&nbsp&nbsp&nbsp&nbspprintf("%d é primo\n", X);<br>}<br>else{<br>&nbsp&nbsp&nbsp&nbspprintf("%d não é primo", X);<br>&nbsp&nbsp&nbsp&nbspif (numDivisores(X)%2 == 0){<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintf("O número de divisores é par\n");<br>&nbsp&nbsp&nbsp&nbsp}<br>}<br>
+                <br>if (numDivisores(X) == 2){<br>&nbsp&nbsp&nbsp&nbspprintf("%d é primo\n", X);<br>}<br>else if (numDivisores(X)%2 == 0){<br>&nbsp&nbsp&nbsp&nbspprintf("O número de divisores é par\n", X);<br>}<br><br>
+                <br>//Tente encontrar a diferença entre os últimos dois exemplos
+                <br><br>
+                <br>switch (numDivisores(X)){<br>&nbsp&nbsp&nbsp&nbspcase 1: printf("O número tem um divisor\n");<br>&nbsp&nbsp&nbsp&nbspbreak;<br>&nbsp&nbsp&nbsp&nbspcase 1: printf("O número tem um divisor\n");<br>&nbsp&nbsp&nbsp&nbspbreak;<br>&nbsp&nbsp&nbsp&nbspcase 2: printf("O número tem dois divisores\n");<br>&nbsp&nbsp&nbsp&nbspbreak;<br>&nbsp&nbsp&nbsp&nbspdefault: printf("O número tem mais de dois divisores\n");<br>&nbsp&nbsp&nbsp&nbspbreak;<br>}
+            </code>
+            <h2>Estruturas de repetição</h2>
+            <p>Estruturas de repetição permitem que o mesmo trecho de código seja excutado várias vezes. Execute os exmplos e tente entender as diferenças.
+            <code>//i é uma variável inteira<br>
+                <br>i=0;<br>while (i < 10){<br>&nbsp&nbsp&nbsp&nbspprintf("%d\n", i);<br>&nbsp&nbsp&nbsp&nbspi++; // i = i+1<br>}<br><br><br>
+                <br>i=0;<br>do {<br>&nbsp&nbsp&nbsp&nbspprintf("%d\n", i);<br>&nbsp&nbsp&nbsp&nbspi++;<br>} while (i < 10);<br><br><br>
+                <br>for (i=0; i < 10; i++){ //O for é mais complicado. A primeira parte é um comando executado antes de loop, a segunda uma condição que faz o loop rodar enquanto for verdadeira, a terceira uma ação repetida ao fim de cada loop<br>&nbsp&nbsp&nbsp&nbspprintf("%d\n", i);<br>}<br>
+            </code>
+            <h2>Como executar seu programa:</h2>
+            <p>Executar é simples! Encontre o terminal do seu sistema UNIX e digite os seguintes comandos:</p>
+            <code>$ gcc nomeprograma.c<br>$ ./a.out</code>
+            <h2>DIVIRTA-SE</h2>
         </body>
     </html>
