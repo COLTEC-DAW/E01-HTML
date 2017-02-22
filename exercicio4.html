@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C - Introdução à Programação</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="icone_prova.png" />
+	</head>
+
+	<body>
+		<h1>Linguagem C</h1>
+		</br>
+
+		<div id="introducao">
+			<h2>Introdução</h2>	
+
+			<p>
+				A linguagem C foi criada por Dennis Ritchie nos laboratórios da Bell Telephone em 1972.
+			</p>
+			<p>
+				C foi criada com um propósito: ser usada no desenvolvimento de uma nova versão do sistema operacional Unix. A primeira versão do Unix utilizava Assembly. Então podemos dizer que desde o principio C foi uma linguagem criada por programadores para programadores.
+			</p>
+			<p>
+				A linguagem C é considerada de propósito geral, ou seja é uma linguagem capaz de ser usada para praticamente qualquer tipo de projeto.
+			</p>
+			<hr>
+		</div>
+
+		<div id="variaveis_mat">
+			<h2>Variáveis e Expressões Matemáticas</h2>
+
+			<h3>Variáveis</h3>
+			<p>
+				Uma variável é uma possição de memória que pode ser identificada através de um nome.
+			</p>
+			<p>
+				Podem ter seu conteúdo alterado por um comando de atribuição. Após a atribuição mudam de valor.
+			</p>
+			<code>
+				int numerador; //declara a variavel numerador
+				<br>
+				numerador = 3; //atribuiu um valor a variavel
+			</code>
+
+			<h3>Expressões Matemáticas</h3>
+			<p>
+				É possível realizar operações matemáticas em C, da seguinte forma:
+			</p>
+			<ul>
+				<li>
+					Adição: utiliza-se o operador <strong>+</strong>
+					<br>
+					<code>numerador = 1 + 2; //adicao</code>
+				</li>
+				<li>
+					Subtração: utiliza-se o operador <strong>-</strong>
+					<br>
+					<code>numerador = 2 - 1; //subtracao</code>
+				</li>
+				<li>
+					Multiplicação: utiliza-se o operador <strong>*</strong>
+					<br>
+					<code>numerador = 3 * 2; //multiplicacao</code>
+				</li>
+				<li>
+					Divisão: utiliza-se o operador <strong>/</strong>
+					<br>
+					<code>numerador = 2 / 4; //divisao</code>
+				</li>
+			</ul>
+			<hr>
+		</div>
+
+		<div id="estruturas_condicionais">
+			<h2>Estruturas Condicionais</h2>
+
+			<p>Na linguagem C, temos 4 tipos de estruturas condicionais:</p>
+			<ul>
+				<li>
+					if
+					<br>
+					<code>if (condicao){ bloco de operacoes }</code>
+				</li>
+				<li>
+					else
+					<br>
+					<code>
+						if (condicao){ bloco de operacoes }<br>
+						else { bloco de operacoes }
+					</code>
+				</li>
+				<li>
+					else if
+					<br>
+					<code>
+						if (condicao){ bloco de operacoes }<br>
+						else if (condicao){ bloco de operacoes }<br>
+						else { bloco de operacoes }
+					</code>
+				</li>
+				<li>
+					switch
+					<br>
+					<code>
+						switch (expressao integral) {<br>
+						case valor1: bloco de operacoes<br>
+						break;<br>
+						case valorn: bloco de operacoes<br>
+						break;<br>
+						}
+					</code>
+				</li>
+			</ul>
+			<hr>
+		</div>
+
+		<div id="estruturas_repeticao">
+			<h2>Estruturas de Repetição</h2>
+
+			<p>Na linguagem C, temos 3 tipos de estruturas de repetição:</p>
+			<ul>
+				<li>
+					while
+					<br>
+					<code>while (condicao){ bloco de operacoes }</code>
+				</li>
+				<li>
+					do while
+					<br>
+					<code>
+						do {<br>
+						bloco de operacoes<br>
+						} while (condicao);
+					</code>
+				</li>
+				<li>
+					for
+					<br>
+					<code>
+						for(i = 0; i < 10; i++){ bloco de operacoes }
+					</code>
+				</li>
+			</ul>
+			<hr>
+		</div>
+
+		<div id="executar">
+			<h2>Executando um código em C</h2>
+
+			<p>
+				Para executar um programa em C, é preciso primeiro compilá-lo. Para isto, vá até a pasta onde se encontra o código e digite:
+			</p>
+			<code>gcc nome_do_programa.c</code>
+			<p>
+				Em seguida, basta digitar o seguinte:
+			</p>
+			<code>./a.out</code>
+		</div>
+	</body>
+</html>
