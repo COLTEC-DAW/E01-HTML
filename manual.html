@@ -29,13 +29,13 @@
         </div>
 
         <p>No C, podemos criar variáveis escrevendo primeiro o tipo da variável
-            (int, char, double) e setar um valor a ela com o "="</br></p>
+            (int, char, double) e setar um valor a ela com o "=", podendo ser desde um valor absoluto ou um resultado de uma expressão matemática.</br></p>
             
         <h4>Exemplo:</h4>
             
         <code>#include &lt;stdio.h&gt;</br>
         int main(){</br>
-        &emsp;&emsp;printf(˜Hello world˜);</br>
+        &emsp;&emsp;int a = 3 + 4;</br>
         return 0;</br>
         }
         </code>
@@ -44,13 +44,65 @@
 
     <div id="Estruturas condicionais">
 
+        <div style="text-align:center">
+            <h2>Estruturas condicionais</h2>
+        </div>
+
+        <p>Estruturas condicionais são estruturas que dividem nosso código em diversos caminhos dependendo das condições. Entre as funções temos:</br>
+        "if/else", que mudam o fluxo do código dependendo de uma condição;</br>
+        "switch", onde o resultado da condição pode levar para vários caminhos;</br>
+        e "break", que quebra a execução da função atual.</p>
+            
+        <h4>Exemplo:</h4>
+            
+        <code>#include &lt;stdio.h&gt;</br>
+        int main(){</br>
+        &emsp;&emsp;int a = 4;</br>
+        &emsp;&emsp;if(a<5){</br>
+        &emsp;&emsp;&emsp;&emsp;printf("Funfou!");</br>
+        &emsp;&emsp;}</br>
+        return 0;</br>
+        }
+        </code>
+
     </div>
 
     <div id="Estruturas de repetição'">
 
+        <div style="text-align:center">
+            <h2>Estruturas de repetição</h2>
+        </div>
+
+        <p>As estruturas de repetição permitem que uma parte do código seja repetida até certo ponto, definido pelo coder. Entre essas funções temos:</br>
+        "do/while", loop que a ação ocorre antes da checagem da condição;</br>
+        "while", loop que ocorre depois da checagem da condição;</br>
+        "for", loop que ocorre junto a um contador.</p>
+            
+        <h4>Exemplo:</h4>
+            
+        <code>#include &lt;stdio.h&gt;</br>
+        int main(){</br>
+        &emsp;&emsp;while(1){</br>
+        &emsp;&emsp;&emsp;&emsp;printf("Yey!\n");
+        &emsp;&emsp;}
+        return 0;</br>
+        }
+        </code>
+
     </div>
 
     <div id="Executar">
+
+        <div style="text-align:center">
+            <h2>Como executar um programa em C</h2>
+        </div>
+
+        <p>Para executar seu programa, você deve acessar o diretório onde o arquivo .c se encontra pelo Terminal (usando o comando "cd "NOME_DO_DIRETORIO""), digitar "gcc "NOME_DO_ARQUIVO.c"" e depois "./a.out".</br></p>
+                        
+        <code>cd Desktop</br>
+        gcc teste.c</br>
+        ./a.out
+        </code>
 
     </div>
 
