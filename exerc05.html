@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="width: 30%">
+                <legend>Dados Pessoais</legend>
+                Código: <input type="text" name="codigo" disabled="1" value="001"></input></br>
+                Nome: <input type="text" name="nome" size=50 ></input></br>
+                Senha: <input type="password" name="passwd" size=10></input></br>
+                Sexo:
+                <input type="radio" name="sexo" value="masc">Masculino</input>
+                <input type="radio" name="sexo" value="fem">Feminino</input></br>
+                Idade: <input type="number" name="idade" size=4></input></br>
+                Cartão de Crédito:</br>
+                <select name="cartao" size="2">
+                    <option>MasterCard</option>
+                    <option>Visa</option>
+                    <option>American Express</option>
+                </select>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset style="width: 30%">
+                <legend>Dados Profissionais</legend>
+                Cargo:
+                <select name="cargo">
+		            <option value="junior">Analista Júnior</option>
+		            <option value="pleno">Analista Pleno</option>
+		            <option value="senior">Analista Sênior</option>
+	            </select>
+                </br>
+                Dados Pessoais:</br>
+                <input type="checkbox" name="vehicle" value="fumante">Fumante</input></br>
+	            <input type="checkbox" name="vehicle" value="exercícios">Pratica exercícios físicos</input></br>
+	            <input type="checkbox" name="vehicle" value="alcool">Consome bebida alcoólica</input></br>
+                Experiências Profissionais:</br>
+                <textarea rows="6" cols="80"></textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>
