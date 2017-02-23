@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manual de Programação</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+
+	<body>
+		<div id="Cabeçalho">
+			<h1>Manual de Programação</h1>                
+		</div>
+
+		<div>
+			<h1>Introdução</h1>
+
+			<p>
+			  C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.  
+			</p>
+		</div>
+
+		<div>
+			<h1>Váriaveis e Expressões Matemáticas</h1>
+
+			<p>
+Uma variável identifica um espaço na memória do computador, reservado para armazenar valores de um determinado tipo.
+<br>
+< tipo_variável > < nome_variável > 
+<br><br>
+Ex: int num; char x; float y; 
+<br><br>
+A declaração também pode conter, opcionalmente, a inicialização da variável.
+<pre>
+< tipo_variável > < nome_variável > = < valor_variável > 
+Ex: int num = 10;
+char x = 'A';
+</pre> 
+			</p>
+		</div>
+
+		<div>
+			<h1>Estrutura Condicional</h1>
+
+			<p>
+				A estrutura condicional if é conhecida em todas as linguagens de programação. Sua estrutura muda pouco de uma linguagem para outra, e, desde que você tenha uma boa lógica, é fácil usa-lá.
+A estrutura condicional está no seu dia-a-dia. Antes de sair de casa, por exemplo, podemos olhar pela janela verificar como está o tempo: se o tempo estiver nublado e com nuvens carregadas, levarei o guarda-chuva.
+			</p>
+
+			<p>
+				É exatamente dessa mesma forma que funciona a estrutura condicional de uma linguagem de programação. Posso através dele verificar se um determinado valor é igual (==) ao valor de outra variável, se é maior (>), se é menor, maior igual (>=) ou menor igual (<=). A verificação que farei vai depender do valor que eu desejo que seja retornado.
+Antes de usar a estrutura condicional if é importante que você entenda os operadores relacionais e os operadores lógicos.
+			</p>
+
+			<pre>
+				<code>
+					main(){
+						int a, b;
+						printf("Informe 2 valores inteiros: ");
+						scanf("%d %d", &a, &b);
+						if(a>b)
+						printf("A variavel a eh maior que b\n");
+						system("pause");
+					}
+				</code>
+			</pre>
+
+		</div>
+
+		<div>
+			<h1>Estrutura de Repetição</h1>
+
+			<p>For: utilizado geralmente quando existe um termino definido, sempre vai tem um fim definido para esse laço implementado no inicio.</p><br>
+			<p>While: pode ter uma condição de termino definida já no inicio ou não.
+
+Necessariamente ele testa a condição e se caso for verdadeiro executa o bloco abaixo, caso seja falso ele vai para a próxima instrução fora do laço.</p>
+
+			<pre>
+				<p>For:</p>
+				<code>
+
+					#include&ltconio.h&gt
+					#include&ltstdio.h&gt
+
+					int main()
+					{
+						int i;
+						for (i=0; i<10; i++)
+						{
+						printf("%d\n", i);
+						}    
+					getch();
+					}
+
+				</code>
+
+				<p>While:</p>
+				<code>
+					#include&ltconio.h&gt
+					#include&ltstdio.h&gt
+
+					int main()
+					{
+						int i=0;
+						while(i < 10)
+						{
+						i = i+1;
+						printf ("%d\n", i);
+						}    
+					getch ();
+					}
+				</code>
+			</pre>
+		</div>
+
+		<div>
+			<h1>Como executar um programa em C</h1>
+			<pre>
+Em GNU/linux, usamos o compilador gcc para compilar arquivos em C. O gcc é um compilador que pode ser rodado a partir de um terminal para compilar um arquivo. Para usá-lo, abra um terminal, e de o comando:
+
+$ gcc &ltnome do arquivo&gt
+Feito isso, se não houver nenhum erro de compilação, um arquivo a.out executável será gerado. O gcc também aceita opções diversas bastante úteis, entre elas: -Wall, -pedantic, -ansi, -O2, e -o . As opções -Wall, -ansi, -pendatic e -O2 servem para te avisar de erros em potencial no seu programa, como tentar usar uma atribuição em vez de comparação (if(x = y) em vez de if(x == y)), e muitos outros erros comuns. Já a opção -o serve para escolher o nome do arquivo de saída, que sucede a opcao. Um exemplo básico:
+
+$ gcc meuarquivo.c -Wall -pedantic -ansi -O2 -o meu
+Isso gera o arquivo executável meu que pode ser executado com:
+
+$ ./meu
+Importante: Nunca coloque o mesmo nome do seu arquivo no arquivo de saída! Isso irá sobrescrever seu arquivo original com um executável nao editável e você perderá seu programa.
+			</pre>
+		</div>
+	</body>
+</html>
