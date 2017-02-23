@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <center>
+        <div style="max-width: 50%;">
+            <form action="">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    Código:
+                    <input type="text" placeholder="001" name="codigo" id="" disabled>
+                    <br> Nome:
+                    <input type="password" name="nome" id="">
+                    <br> Senha:
+                    <input type="password" name="passwd" id="">
+                    <br> Sexo:
+                    <input type="radio" name="genero" id="" value="male">Masculino
+                    <input type="radio" name="genero" id="" value="female">Feminino
+                    <br> Idade:
+                    <input type="number" name="idade" id="">
+                    <br> Cartão de crédito:
+                    <select name="cartao" multiple="multiple">
+                        <option value="master">MasterCard</option>
+                        <option value="visa">Visa</option>
+                        <option value="american">American Express</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+                    Cargo:
+                    <select name="cargo">
+                        <option value="junior">Analista Júnior</option>
+                        <option value="pleno">Analista Pleno</option>
+                        <option value="senior">Analista Sênior</option>
+                    </select>
+                    <br> Dados pessoais:
+                    <br>
+                    <input type="checkbox" name="fuma" id="">Fumante
+                    <br>
+                    <input type="checkbox" name="exer" id="">!Sedentário
+                    <br>
+                    <input type="checkbox" name="bebe" id="">Bebe
+                    <br> Experiências Profissionais:
+                    <br>
+                    <textarea name="exp" id="" cols="30" placeholder="Data Inicio/Data Fim/Empresa/Cargo" rows="10"></textarea>
+                </fieldset>
+            </form>
+            <button>Limpar</button>
+            <button>Inserir</button>
+        </div>
+    </center>
+</body>
+
+</html>
