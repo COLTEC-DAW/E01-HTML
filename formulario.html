@@ -1,0 +1,64 @@
+<html>
+<head>
+<title> Formulário de cadastro </title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+    
+
+<h1> Formulário de cadastro </h1>
+<form>
+<fieldset>
+	<legend>Dados pessoais</legend>
+	Codigo <input type="text" size="30"><br>
+	Nome <input type="text" size="30"><br>
+    Senha: <input type="password" name="pwd"><br>
+	Sexo: <input type="radio" name="sex" value="male">Masculino</input>
+	<input type="radio" name="sex" value="female">Feminino</input><br>
+    Idade <input type="text" size="30"><br>
+    <form>
+	Cartão de crédito:
+	<select name="cartao">
+		<option value="master">Mastercard</option>
+		<option value="visa">Visa</option>
+		<option value="american">American Express</option>
+	</select>
+    </form>
+</fieldset>
+
+<fieldset>
+	<legend>Dados profissionais</legend>
+	<form>
+	Cargo
+	<select name="cargo">
+		<option value="junin">Analista junior</option>
+		<option value="pleno">Analista Pleno</option>
+		<option value="senio">Analista Senior</option>
+	</select>
+    </form>
+    Dados pessoais
+        <br><input type="checkbox" name="dados" value="fuma">Fumante</input><br>
+	    <input type="checkbox" name="dados" value="fisico">Pratica exercicio Fisico</input><br>
+	    <input type="checkbox" name="dados" value="bebe">Consome bebida alcoolica</input><br>
+    
+
+        <form>
+            Experiencias profissionais
+        <br><textarea rows="10" cols="30">
+          Data inicio/Data fim/Empresa/Cargo
+        </textarea></br>
+        <br><input type="submit" value="Limpar">
+        <input type="submit" value="Inserir">
+        </form>
+  
+   
+</fieldset>
+</form>
+</body>
+
+
+
+
+
+</html>
