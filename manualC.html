@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Manual de sobrevivência escolar do NED
+        </title>
+    </head>
+    <body>
+        <div style="text-align:center">
+            <h1>
+                Manual de sobrevivência na info
+            </h1>
+        </div>
+        <div style="float:left; width:49%;display:block">
+            <div style="text-align:center">
+                <h2>
+                    Introdução
+                </h2>
+            </div>
+        <p>
+            C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly).
+            C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.
+        </p>
+            <code>
+             #include &lt;stdio.h&gt; </br>
+                                </br>
+                int main(){</br>
+                   printf("Hello World\n");</br>
+                   return 0;</br>
+                }</br>
+            </code>
+        </div>
+
+        <div style="float:right;width:49%;display:block">
+            <div style="text-align:center">
+                <h2>
+                    Variáveis e expressões matemáticas
+                </h2>
+            </div>
+            <p>
+                Em C, as variáveis são declaradas antes de serem utilizadas, seguindo sempre o seguinte padrão:
+            </p>
+                <code>
+                    //... </br>
+                    int a; </br>
+                    float inteiro; </br>
+                    char caractere; </br>
+                    //...
+                </code>
+            <p>
+                Com essas variáveis, é possível criar expressões matemáticas para que seu programa resolva, como por exemplo:
+            </p>
+                <code>
+                    //... </br>
+                    int a = 5; </br>
+                    int b = 4; </br>
+                    int c = a+b; </br>
+                    printf("%i", c);</br>
+                    //...
+                </code>
+            <p>
+                Nesse exemplo, o resultado mostrado na tela será "9".
+            </p>
+        </div>
+        <div style="float:left; width:49%;display:block">
+            <div style="text-align:center">
+                <h2>
+                    Estruturas condicionais
+                </h2>
+            </div>
+            <p>
+                As estruturas condicionais servem para fazer seu programa tomar decisões.
+                Por exemplo, se uma coisa acontecer, faça isso, caso contrário, faça aquilo.
+            </p>
+            <p>
+                Em C, temos as estruturas <b>if</b>, <b>else if</b>, <b>else</b> e <b>switch case</b>.
+                A sintaxe das estruturas condicionais é bem simples:                
+            </p>
+            <p>
+                <code>
+                    if(condição){ </br>
+                        //código </br>
+                    } </br>
+                    else if(condição){</br>
+                        //código</br>
+                    }</br>
+                    else{</br>
+                        //código</br>
+                    }</br>
+                    </br>
+                    </br>
+                    switch(variavel){</br>
+                        case 1: //código</br>
+                            break;</br>
+                        case 2: //código</br>
+                            break;</br>
+                        default: código</br>
+                            break;</br>
+                    }</br>
+                </code>
+            </p>    
+        </div>
+        <div style="float:right; width:49%;display:block">
+            <div style="text-align:center">
+                <h2>
+                    Estruturas de repetição
+                </h2>
+            </div>
+            <p>
+                As estruturas de repetição lembram um pouco as estruturas condicionais. 
+                Elas funcionam basicamente assim: enquanto uma condição for verdadeira, repita. </br>
+                Na linguagem C, temos três estruturas de repetição: <b> for, while e do while</b>.
+                A sintaxe dessas estruturas é: </br>                
+            </p>
+            <p>
+                <code>
+                    for(estado inicial; condição para repetir; o que acontece a cada repetiçao){ </br>
+                        //código </br>
+                    } </br>
+                    while(condição){ </br>
+                        //código a se repetir</br>
+                    }</br>
+                    do{</br>
+                        //código a se repetir</br>
+                    }while(condição);</br>
+                </code>
+            </p>
+            <p>
+                A diferença entre o <b>while</b> e o <b>do while</b> é que o primeiro vai checar se a condição é verdadeira antes de iterar pela primeira vez, enquanto que o segundo vai necessariamente iterar uma vez antes de checar.</br>
+            </p>
+        </div>
+        <div style="float:left; width:49%;display:block">
+            <div style="text-align:center">
+                <p>
+                    <h2>
+                        Como executar um programa em C    
+                    </h2>
+                </p>
+                <p>
+                    Primeiramente, você deve <b>compilar</b> seu programa, utilizando uma linha de código no terminal:</br>
+                    <code>gcc nomedoprograma.c</code> </br>
+                    Isso vai gerar um arquivo executável, no caso com nome <b>a.out</b>. Para executar o programa, você deve digitar <b>./a.out</b> na pasta onde se encontra seu programa. Pronto!
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
