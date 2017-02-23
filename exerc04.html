@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manual de C</title>
+    </head>
+    <body>
+        <h1>Manual de C</h1>
+
+        <div id = "Introdução" style="width: 100%; display: block; overflow: auto">
+            <h3>Introdução</h3>
+            <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972,
+            por Dennis Ritchie, no AT&T Bell Labs, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly).
+            C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C.
+            C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
+        </div>
+
+        <div id = "Variáveis e Expressões" style="width: 100%; display: block; overflow: auto">
+            <h3>Variáveis e Expressões Matemáticas</h3>
+            <p>Dentro da linguagem C, nos temos alguns tipo de variáveis que podem ser criadas. Elas podem ser dos seguintes tipos:</p>
+            
+            <div id = "Tipos Esquerdo" style="float:left; width: 20%">
+                <ul>
+                    <li>int (Números inteiros)</li>
+                    <li>float (Números com decimais)</li>
+                </ul>
+            </div>
+            
+            <div id = "Tipos Direito" style="float:right; width: 80%">
+                <ul>
+                    <li>double (Decimais com uma precisão maior)</li>
+                    <li>char (Caracteres)</li>
+                </ul>
+            </div>
+
+            Essas variáveis são criadas no seguinte estilo:</br>
+            <code>&ensp; &ensp; "tipo" "nome_da_variável";</code>
+            <p>Somente são aceitos nomes iniciados por letras ou _ (underline).Exemplos:</p>
+            
+            <table border = "2px">
+                <tr>
+                    <td><strong>Válidos:</strong></td>
+                    <td><strong>Inválidos:</strong></td>
+                </tr>
+                <tr>
+                    <td><code>int variavel = 5;</code></td>
+                    <td><code>int 4numero = 0;</code></td>                    
+                </tr>
+                <tr>
+                    <td><code>char _var = ' ';</code></td>                    
+                    <td><code>char 3 = 'a';</code></td>
+                </tr>
+                <tr>
+                    <td><code>int __idade__ = 19;</code></td>
+                    <td><code>int 2_digitos = 45;</code></td>                    
+                </tr>
+            </table>
+
+            <p>Além disso, é possivel realizar expressões matemáticas no C também. Os operadores matemáticos existentes são: "+", "-", "/" e "*"</br>
+            Todos esses simbolos são bem conhecidos, principalmente por quem usa calculadora no computador, então não é necessária a explanação deles.</br>
+            É possivel atribuir valores à variáveis através desses operadores assim como nos exemplos abaixo:</p>
+            <ul>
+                <li><code>int numero = 4 + 5;</code></li>
+                <li><code>float decimal = 2.0/3.5;</code></li>
+            </ul>
+        </div>
+        
+        <div id = "Estruras Condicionais" style="width: 100%; display: block; overflow: auto">
+            <h3>Estruras Condicionais</h3>
+            <p>Chamamos de estrutura condicional as instruções para testar se uma condição é verdadeira ou não. Para entendê-las melhor, precisamos do conceito de bloco.</br>
+            Quando você quiser agrupar várias instruções, você pode criar o que chamamos de bloco, isto é, um conjunto de instruções (seguidas, respectivamente, por pontos
+            e vírgulas) entre chaves {e}.</p>
+            
+            <div id = "if" style="float: left; width: 33%">
+                <h4>Instrução "if"</h4>
+                <p>A instrução "if" é a estrutura de teste mais básica, ela é encontrada em todas as linguagens (com sintaxes diferentes...). Ela executa
+                uma série de instruções caso uma condição se realize.</p>
+                <i><strong>Sintaxe:</strong></i></br>
+                <code>
+                &ensp; if (condição realizada) {</br>
+                &ensp; &ensp; lista de instruções;</br>
+                &ensp; }
+                </code>
+            </div>
+            <div id = "if/else" style="float: left; width: 33%">
+                <h4>Instrução if ... else</h4>
+                <p>A instrução if em sua forma básica só testa uma condição ou, na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso
+                do não cumprimento da condição...</br>
+                A expressão if ... else executa outra série de instruções, em caso do não cumprimento da condição.</p>
+                <i><strong>Sintaxe:</strong></i></br>
+                <code>
+                &ensp; if (condição realizada) {</br>
+                &ensp; &ensp; lista de instruções;</br>
+                &ensp; }</br>
+                &ensp; else {</br>
+                &ensp; &ensp; outra série de instruções;</br>
+                &ensp; }
+                </code>
+            </div>
+            <div id = "switch" style="float: left; width: 34%">
+                <h4>Instrução switch</h4>
+
+                <p>A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o
+                teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com ifs aninhados.</p>
+                <i><strong>Sintaxe:</strong></i></br>
+                <code>
+                &ensp; switch(variável){</br>
+                &ensp; &ensp; case 1:</br>
+                &ensp; &ensp; &ensp; instruções executadas para a variável = 1;</br>
+                &ensp; &ensp; break;</br>
+                &ensp; &ensp; casa 2:</br>
+                &ensp; &ensp; &ensp; instruções executadas para a variável = 2;</br>
+                &ensp; &ensp; break;</br>
+                &ensp; &ensp; casa 3:</br>
+                &ensp; &ensp; &ensp; instruções executadas para a variável = 3;</br>
+                &ensp; &ensp; break;</br>
+                &ensp; &ensp; default:</br>
+                &ensp; &ensp; &ensp; instruções executadas para qualquer outro valor de variável;</br>
+                &ensp; }
+                </code>
+            </div>
+        </div>
+
+        <div id = "Estruturas de Repetição" style="width: 100%; display: block; overflow: auto">
+            <h3>Estruras de Repetição</h3>
+            <p>Comumente chamadas de loops, são estruturas que executam várias vezes a mesma série de instruções até que uma condição não seja mais realizada...
+            Às vezes, chamamos estas estruturas de instruções repetitivas ou iterações.</br>
+            A forma mais comum de fazer um loop é criar um contador (uma variável que se incrementa, ou seja,
+            que aumenta de 1 a cada volta do loop) e parar o loop quando o contador excede um determinado valor.</p>
+            
+            <div id = "for" style="float: left; width: 50%">
+                <h4>Instrução "for"</h4>
+                <p>A instrução while representa outro meio de executar várias vezes a mesma série de instruções. A sintaxe porém é diferente do for, não possuindo
+                a especificar da variável contadora e a incrementação dentro dos parenteses. A única coisa dentro dos parenteses é a condição.</p>
+                <i><strong>Sintaxe:</strong></i></br>
+                <code>
+                &ensp; for (contador; condição; modificação do contador) {</br>
+                &ensp; &ensp; lista de instruções;</br>
+                &ensp; }</br>
+                </code>
+            </div>
+
+            <div id = "if/else" style="float: left; width: 50%">
+                <h4>Instrução while</h4>
+                <p>Executa várias vezes a mesma série de instruções: é um loop! e em sua sintaxe, basta especificar o nome da variável que serve de contador, a condição sobre a variável pela qual o loop
+                para (basicamente um limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador. </p>
+                <i><strong>Sintaxe:</strong></i></br>
+                <code>
+                &ensp; while (condição realizada) { </br>
+                &ensp; &ensp;lista de instruções; </br>
+                &ensp; } </br>
+                </code>
+            </div>
+        </div>
+
+        <div id = "Execução" style="width: 100%; display: block; overflow: auto">
+            <h3>Executando o programa</h3>
+            <p>Após criar o programa, salve-o com a extensão .c. Exemplo: "nomedoprograma".c</br>
+            Abra o terminal, entre na pasta em que o programa foi salvo e digite o comando a seguir:</br>
+            <code>gcc "nomedoprograma".c -o "nomedoprograma".bin</code></p>
+            <p>Para executar basta digitar: <code>./"nomedoprograma".c</code></p>
+        </div>
+    </body>
+</html>
