@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                Código: <input type="number" name="codigo" value="cdg"> <br>
+                Nome: <input type="text" name="nome" size="30"> <br>
+                Senha <input type="text" name="senha" size="10"><br>
+                Sexo:<input type="radio" name="sex" value="male">Masculino</input>
+	            <input type="radio" name="sex" value="female">Feminino</input><br>
+                Idade: <input type="text" name = "idade"><br>
+                Cartão de Crédito: <br>
+                <select name="sometext" size="3">
+                    <option>Mastercard</option>
+                    <option>Visa</option>
+                    <option>American Express</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Informações Profissionais</legend>
+                
+                    Cargo:
+                    <select name="cargo">
+                        <option value="junior">Analista Júnior</option>
+                        <option value="pleno">Analista Pleno</option>
+                        <option value="senior">Analista Sênior</option>
+                    </select> <br>
+                    Dados pessoais:<br>
+                    <input type="checkbox" name="dado" value="fuma">Fumante <br>
+                    <input type="checkbox" name="dado" value="exerc">Pratica Exercícios físicos <br>
+                    <input type="checkbox" name="dado" value="bebe">Consome Bebida Alcoólica <br>
+                    Experiências Profissionais: <br>
+                    <textarea rows="5" cols="100">Data Inicio/Data Fim/Empresa/Cargo</textarea> <br>
+            </fieldset>
+            <input type="reset">
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
