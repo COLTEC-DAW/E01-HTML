@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulário</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+
+	<body>
+		<h1>Formulário</h1>
+		
+		<form>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+
+				Código: <input type="text" size="30"><br>
+				Senha : <input type="text" size="30"><br>
+				Sexo: <input type="checkbox" name="Masculino">Masculino <input type="checkbox">Feminino<br>
+				Idade: <input type="text" size="2"><br>
+				Cartão de Crédito: <select name="Cartão">
+					<option value="MasterCard">MasterCard</option>
+					<option value="Visa">Visa</option>
+					<option value="American Express">American Express</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Dados Profissionais</legend>
+
+				Cargo: <select name="cargo">
+					<option value="Analista Júnior">Analista Júnior</option>
+					<option value="Analista Pleno">Analista Pleno</option>
+					<option value="Analista Sênior">Analista Sênior</option>
+				</select>
+				<p>Dados Pessoais:</p>
+				<input type="checkbox" name="Fumante">Fumante<br>
+				<input type="checkbox" name="Execs">Pratica Exercícios Físicos<br>
+				<input type="checkbox" name="Bebida">Consome Bebida Alcoólica
+
+				<p>Experiências Profissionais</p>
+				
+				<textarea name="XP" id="XPText" cols="50" rows="10"></textarea>
+
+			</fieldset>
+		</form>
+	</body>
+</html>
