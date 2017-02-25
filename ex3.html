@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+         <title>Manual de Prog</title>
+    </head>
+    <body> 
+        <h1>Manual feito por livre e espontânea pressão</h1>
+        <h2> Introdução </h2>
+        <p> Exemplo de um Programa
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+void main()
+{ 
+   int a;                // declara a variável "a";
+   a = 3 + 2;        // soma 3 com 2 ;
+}
+   </td></code> </pre>
+</tr>
+</table>
+</p>
+<p>
+Um programa em C é composto por um conjunto de Funções. </p> 
+<p> A função pela qual o programa começa a ser executado chama-se main.
+Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</p>
+<p> Um programa em C deve ser Identado para que possa ser lido com mais facilidade.
+Identificadores. </p> 
+
+<p> São os nomes que podem ser dados para variáveis e funções. </p>
+
+<p>Para a escolha destes nomes é necessário seguir alguams regras:
+
+Um identificador deve iniciar por uma letra ou por um "_" (underscore);</p>
+<p> A partir do segundo caracter pode conter letras, números e underscore;
+Deve-se usar nomes significativos dentro do contexto do programa;
+C é uma linguagem case-sensitive, ou seja, faz diferença entre nomes com letras maiúsculas e nomes com letras minúsculas.  Peso   e  peso são diferentes; </p>
+<p> Costuma-se usar maiúsculas e minúsculas para separar palavras: </p> "PesoDoCarro";
+<p>Deve ser diferente dos comandos da linguagem; </p>
+<p>Deve ter no máximo 31 caracteres (no caso do TurboC);</p>
+<p>Pode conter números a partir do segundo caracter;</p>
+<p> Exemplos: </p>
+<p> Idade, Contador, PesoDoCarro, </p>
+<p> Usuario_1, CorDaPagina, RaioDoCirculo </p>
+
+<h2> Variáveis e expressões matemáticas </h2> 
+
+<p>Uma variável é uma possição de memória que pode ser identificada através de um nome.</p>
+
+<p>Podem ter seu conteúdo alterado por um comando de atribuição.</p>
+
+<p>Após a atribuição mudam de valor.</p>
+
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    int a,b, SomaGeral;
+    a = 3;                   // a recebe o valor 3
+    b = a * 2;            // b recebe o dobro do valor de a 
+    c = a + b + 2;   // c recebe 11
+   </td></code> </pre>
+</tr>
+</table>
+<h3>Tipos de Variáveis</h3>
+
+<p> Todas as variáveis em C tem um tipo; </p>
+<p> Cada tipo define os valores que a variável pode armazenar;</p>
+<p>Cada tipo ocupa uma certa quantidade de memória. </p>
+<p>odas as variáveis tem que ser declaradas antes de serem usadas;</p>
+
+<table border = "1">
+    <tr>
+        <td><b>Tipo&nbsp&nbsp&nbsp</b></td>
+        <td><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspValores Válidos&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td>char&nbsp&nbsp&nbsp&nbsp</td>
+        <td>letras e símbolos:   'a',  'b', 'H', '^', '*','1','0'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td>int   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+        <td>de -32767 até 32767 (apenas números inteiros)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td>float&nbsp&nbsp&nbsp&nbsp</td>
+        <td>de -3.4 x 10<sup>38</sup> até +3.4 x 10<sup>+38</sup>com até 6 dígitos de precisão&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td>double	</td>
+        <td>de -1.7 x 10<sup>308</sup> até +1.7 x 10<sup>+308</sup> com até 10 dígitos de precisão</td>
+    </tr>
+</table>
+<h3>Expresões Matemáticas </h3>
+<table border ="1">
+        <tr>
+            <td>-&nbsp&nbsp&nbsp&nbsp</td>
+            <td>sinal de menos (unário)&nbsp&nbsp&nbsp</td>
+            <td>Maior precedência (avaliado antes)&nbsp&nbsp</td>
+        </tr>
+</table>
+<table border ="1">
+        <tr>
+            <td>* , /</td>
+            <td>multiplicação e divisão&nbsp&nbsp&nbsp&nbsp</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        </tr>
+</table>
+<table border ="1">
+        <tr>
+            <td>%&nbsp&nbsp&nbsp</td>
+            <td>módulo (reto da divisão)&nbsp</td>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        </tr>
+</table>
+<table border ="1">
+        <tr>
+            <td>+ , -</td>
+            <td>soma e subtração&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td>Menor precedência (avaliado depois)</td>
+        </tr>
+</table>
+
+<h2>Estruturas Condicionais</h2>
+<p>Chamamos de estrutura condicional as instruções para testar se uma condição é verdadeira ou não. Estas estruturas condicionais podem ser associados com as estruturas que se repetem, após o cumprimento da condição, chamamos essas estruturas d estruturas de loop. </p>
+<h3> A instrução "if"   </h3>
+<p> A instrução "if" é a estrutura de teste mais básica, ela é encontrada em todas as linguagens (com sintaxes diferentes...). Ela executa uma série de instruções caso uma condição se realize. </p>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    if (condição realizada) {
+   lista de instruções;
+
+}
+   </td></code> </pre>
+</tr>
+</table>
+<h3>A instrução if ... else</h3>
+<p> A instruçãoif em sua forma básica só testa uma condição ou, na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição... 
+</p>
+ <p>A expressão if ... else executa outra série de instruções, em caso do não cumprimento da condição</p>
+
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    if (condição realizada) {
+   lista de instruções
+}
+else {
+  outra série de instruções
+}
+   </td></code> </pre>
+</tr>
+</table>
+
+<h3>A instrução switch</h3>
+<p>A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vá rios valores de uma variável, pois esta operação teria sido complicada (mas possível) com ifs</ ital> aninhados. Sua sintaxe é a seguinte: </p>
+
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    switch (variável) { 
+
+casa Valor1 :
+ Lista d instruções;
+
+ break;
+
+casa Valor2 :
+ Lista d instruções;
+
+ break;
+
+casa Valores... :
+ Lista d instruções;
+
+ break;
+
+default: 
+
+ Lista de instruções;
+
+}
+   </td></code> </pre>
+</tr>
+</table>
+
+<h2>Estruturas de Repetição </h2>
+<h3>O loop for</h3>
+<p>A instruçãofor executa várias vezes a mesma série de instruções: é um loop!</p>
+<p>Em sua sintaxe, basta especificar o nome da variável que serve de contador (e, eventualmente, o seu valor inicial, a condição sobre a variável pela qual o loop para (basicamente uma condição que testa se o valor do contador excede um limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador. </p>
+
+<h4>Sintaxe</h4>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    for (contador; condição; modificação do contador) {
+ lista de instruções;
+}
+   </td></code> </pre>
+</tr>
+</table>
+<h4>Exemplo</h4>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    for (i=1; i<6; i++) {
+ printf("%d", i);
+}
+   </td></code> </pre>
+</tr>
+</table>
+
+<h3> A instrução while </h3>
+<p>A instrução while representa outro meio de executar várias vezes a mesma série de instruções. </p>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    while (condição realizada) {
+   lista de instruções;
+
+}
+   </td></code> </pre>
+</tr>
+</table>
+
+<h3> A instrução do-while </h3>
+<p>A diferença entre o comando while e o do…while é justamente o local onde a condição que controla o laço é testada.</p>
+
+<p>No comando while a condição é testada antes do bloco de instruções, e caso a condição seja falsa a repetição não será executada.</p>
+
+<p>No do…while o bloco de comandos é executado pelo menos uma vez de forma obrigatória, independente do resultado da expressão lógica</p>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+  #include<stdio.h>
+int main(void)
+{
+  float nota1=0,nota2=0,media=0;
+  int resp;
+ 
+  do
+  {
+    printf("Digite a primeira nota: ");
+    scanf("%f",&nota1);
+    printf("Digite a segunda nota: ");
+    scanf("%f",&nota2);
+ 
+    media = (nota1 + nota2)/2;
+    printf("Media do aluno = %f\n",media);
+ 
+    printf("Digite 1 para continuar ou 2 para sair\n");
+    scanf("%d", &resp);
+ 
+  }while (resp==1);
+ 
+  return 0;
+}
+   </td></code> </pre>
+</tr>
+</table>
+
+<h2> Como executar um programa em C</h2>
+<p>Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um único arquivo, você pode simplesmente executar este comando no terminal: </p>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    $ gcc prog.c -o prog
+   </td></code> </pre>
+</tr>
+</table>
+<p> onde prog.c é o nome do arquivo que contém o código. Os outros dois parâmetros, -o prog, indicam o arquivo de saída do compilador — o arquivo executável que conterá o programa. Você não verá nenhuma mensagem na tela se a compilação ocorrer sem problemas; o compilador só diz alguma coisa quando ocorrem erros.</p>
+<p> Você precisa especificar o nome do arquivo executável de saída pois o padrão, por razões históricas, é usar o arquivo a.out. Em geral, usamos o mesmo nome do arquivo de código, tirando a extensão .c. Veja que, ao contrário do Windows, o Linux não precisa da extensão .exe para reconhecer um arquivo executável; ele utiliza os atributos de permissão do arquivo para saber se ele é executável, dos quais o gcc já cuida automaticamente.</p>
+<p>Para executar o programa, a maneira mais “universal” é digitar o seguinte comando no terminal: </p>
+<table border = "1">
+    <tr>
+   <td> <pre> <code> 
+    $ ./prog
+   </td></code> </pre>
+</tr>
+</table>
+<p>no qual os caracteres ./ indicam que o programa está no diretório (pasta) atual. É possível também configurar o shell para que não seja necessário fazer essa indicação, imitando o comportamento do Windows (os computadores da Pró-Aluno do IF estão configurados assim). Dessa maneira, você precisaria digitar apenas prog para executar o programa. </p>

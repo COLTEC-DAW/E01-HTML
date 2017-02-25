@@ -1,0 +1,48 @@
+
+		<form>
+<fieldset>
+	<legend>Personal information:</legend>
+    <p>Código:<input type="number" name="codigo" value="001" auto-increment="on" disabled="disabled"><br> </p> 
+	<p>Name: <input type="text" size="30"><br> </p>
+    Password: <input type="password" name="pwd">
+    <p>Sexo: <input type="radio" name="sex" value="male">Masculino</input>
+	<input type="radio" name="sex" value="female">Feminino</input>
+    </p>
+    <p>Idade: <input type="text" size="10"></p>
+    Cartão de Crédito:
+	<select name="card">
+		<option value="master">Mastercard</option>
+		<option value="visa">Visa</option>
+		<option value="american">American Express</option>
+		
+	</select>
+
+</fieldset>
+
+    <fieldset> 
+        <legend>Dados Profissionais </legend>
+        <p>Cargo:
+        <select name="cargo">
+		<option value="junior">Analista Junior</option>
+		<option value="pleno">Analista Pleno</option>
+		<option value="senior">Analista Sênior</option>
+		
+	</select></p>
+   <p> Dados Pessoais:
+     <p><input type="checkbox" name="webmaster" value="fuma">Fumante</input></p>
+	<p><input type="checkbox" name="webmaster" value="exercita">Pratica exercícios físicos</input></p>
+    <p><input type="checkbox" name="webmaster" value="bebe">Consome bebidas alcólicas</input></p>
+   </p>
+   <p> Experiências Profissionais: 
+       <textarea rows="10" cols="30">
+	Data Início/Data Fim/Empresa/Cargo.
+</textarea>
+   </p>
+    </fieldset>   
+    <div class="button">
+        <button type="reset">Limpar</button>
+    </div>
+    <div class="button">
+        <button type="submit">Inserir</button>
+    </div> 
+</form>
