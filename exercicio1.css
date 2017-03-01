@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #FFEAC0;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-top: 5%;
+}
+
+#logo{
+	text-align: center;
+	font-family: Impact;
+	color: #560CE8;
+	margin-bottom: 5%;
+	padding: 2%;
+}
+
+.subtitle{
+	text-align: right;
+	font-family: Impact;
+	color: #0C69E8;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	font-style: italic;
+	word-spacing: 9px;
+}
+
+p{
+	text-align: justify;
+	font-family: Arial;
+	color: #000CFF;
+	line-height: 170%;
+}
+
+a:link{
+	font-size: 170%;
+	color: #f00;
+}
+
+a:visited{
+	text-decoration: none;
+	font-size: 120%;
+}
+a:hover{
+	color: #f00;
+	font-size: 120%;
+}
+a:active{
+	text-decoration: none;
+	font-size: 120%;
+}
