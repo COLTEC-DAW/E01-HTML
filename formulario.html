@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+        <fieldset style="width:450px">
+            <legend>Dados Pessoais</legend>
+            Codigo: <input id="textfield" name="textfield" type="text" placeholder="001" size="10px" style="background-color: #d7dde2;"/><br>
+            Nome: <input type="text" size="50"><br>
+            Senha: <input type="text" size="10"><br>
+            Sexo:<input type="radio" name="gender" value="male" checked> Masculino
+            <input type="radio" name="gender" value="female"> Feminino <br>
+            Idade: <input type="text" size="5"><br>
+            Cartão de credito: <br>
+            <select size="3">
+                <option value="MasterCard" selected>MasterCard</option>
+                <option value="Visa">Visa</option>
+                <option value="American Express">American Expres</option>
+            </select>
+        </fieldset>
+
+        <fieldset style="width:450px">
+            <legend>Dados Profissionais</legend>
+            <select>
+                <option value="" checked>Analista Pleno </option>
+                <option value="">Analista Júnior</option>
+                <option value="">Analista Sênior</option>
+            </select>
+            <br>
+            Dados Pessoais: <br>
+            <input type="checkbox" name="" value=""> Fumante<br>
+            <input type="checkbox" name="" value="" checked> Pratica Exercicios Físicos<br>
+            <input type="checkbox" name="" value=""> Consome Bebida Alcoólica<br>
+            Experiências Profissionais: <br>
+            <textarea rows="4" cols="50">Data Início/Data Fim/Empresa/Cargo </textarea>
+
+        </fieldset>
+        <form action="" method="get">
+            <button type="submit">Limpar</button>
+            <button type="submit" formaction>Inserir</button>
+        </form>
+
+        </form>    
+    
+    </body>
+</html>
