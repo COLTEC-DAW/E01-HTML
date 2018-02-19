@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manual de Programação</title>
+</head>
+<body>
+    <header>
+        <h1>Tutorial da linguagem C!</h1>
+    </header>
+
+    <div>
+        <h2>Introdução</h2>
+        <pre><code>
+            #include<"stdio.h">
+            int main() {
+                printf("Hello World\n");
+                return 0;
+            }
+        </code></pre>
+        <p>#include inclui a biblioteca para, nesse caso, funções principais da linguagem como o printf. Esse comando é necessário para escrever algo na tela/terminal, logo utilizamos-lo para escrever o seu primeiro Hello World! O int main(){} é a função principal do seu programa, tudo o que precisa ser executado está no "main". O return é para indicar que acabou e foi tudo completado com sucesso. O significade de "0", na computação, é que foi executado sem nenhum erro, se tivesse algum erro o return seria diferente de 0</p>
+    </div>
+    <div>
+        <h2>Variáveis e Expressões Matemáticas</h2>
+        <pre><code>
+            ...
+            int a = 6, b = 5;
+            printf("%d", a+b);
+            printf("%d", a*b);
+            printf("%d", a%b);
+            printf("%d", a-b);
+            ...
+        </code></pre>
+        <p>
+            "int" é um tipo primitivo em C que significa inteiro, logo "a" e "b" são números inteiros com valores, respectivamente de 6 e 5. Na segunda linha é utilizado o uma expressão matemática de soma e escrevemos-la no terminal. O "%d", significa que estamos nos referenciando a um número inteiro. A segunda expressão é multiplicação, a quarta é a subtração. A terceira pode ser um pouco diferente do habitual que significa o resto, ou seja, dividirá a/b(6/5) e escreverá no terminal o resto dessa divisão que seria, no caso, "1".  
+        </p>
+    </div>
+    <div>
+        <h2>Estruturas Condicionais</h2>
+        <pre><code>
+            if(4<3) {printf("a");}
+            else if {printf("4 não é menor que 3");}
+
+            ...
+            (4<3) ? printf("a") : printf("4 não é menor que 3");
+            ...
+        </code></pre>
+        <p>Se traduzirmos para o português fica bem claro as duas primeiras linhas, se a condição for verdadeira, acontecerá o printf("a"), senão acontecerá printf("4 não é menor que 3"). A segunda forma de escrever esse mesmo if/else if que ocupa 2 linhas chama-se if ternário, tem o mesmo próposito, acho o if ternário útil para esse caso, o qual, é muito simples de ser escrito. Se for um if complexo opte pelo if/else if</p>
+    </div>
+    <div>
+        <h2>Estrutura de Repetição</h2>
+        <pre><code>
+            
+            //teste no começo
+            a = 10;
+            while(a>1) {
+                printf("a");
+                a--;
+            }
+
+            for(a=0; a<9; a++) {
+                printf("A");
+            }
+
+            //teste no fim
+            do {
+                printf("a");
+            }while(codicao);
+        </code></pre>
+        <p>As estrturas que testam as condições no começo podem parar de serem executadas antes mesmo de escrever alguma coisa no terminal, já as que testam no fim escrevem pelo menos uma vez antes de pararem de serem executadas</p>
+    </div>
+    <div>
+        <h2>Executar o código</h2>
+        <pre><code>
+            gcc codigo.c
+            ./a.out
+        </code></pre>
+        <p>gcc-compila o código
+            ./a.out executa o código que acabou de ser compilado
+        </p>
+    </div>
+</body>
+</html>
