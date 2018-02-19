@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Manual de Programação em C</title>
+    </head>
+    <body>
+        <h1>Manual de Programação</h1>
+
+        <div class="">
+            <h2>Introdução:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+
+        <div class="">
+            <h2>Variáveis e expressões matemáticas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <pre>
+                <code>
+                    int a = 3, b = 4, c;
+                    c = a + b; // c será igual à 7!
+                </code>
+            </pre>
+        </div>
+
+        <div class="">
+            <h2>Estruturas Condicionais</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <pre>
+                <code>
+                    //Podemos comparar se é igual, maior, menor ou diferente
+
+                    //Igual
+                    int a = 1;
+                    if(a == 1)
+                        printf(" a é igual à 1!! ");
+                    else
+                        printf(" a não é igual à 1!! ")
+
+                    //Maior
+                    int a = 1, b = 2;
+                    if(a > b)
+                        printf(" a é maior que b ");
+                    else
+                        printf(" a não é maior que b!! ")
+
+                    //Menor
+                    int a = 1, b = 2;
+                    if(a < b)
+                        printf(" a é menor que b ");
+                    else
+                        printf(" a não é menor que b!! ")
+
+                    //Diferente
+                    int a = 1;
+                    if(a != 1)
+                        printf(" a é diferente de 1!! ");
+                    else
+                        printf(" a não é diferente de 1!! ")
+
+                </code>
+            </pre>
+        </div>
+
+        <div class="">
+            <h2>Estruturas de repetição</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <pre>
+                <code>
+                    //Temos 3 tipos de loop
+
+                    //while
+                    int a = 1;
+
+                    while(a < 10){
+                        printf("%d", &a);
+                        a++;
+                    }
+
+                    //for
+                    for(int i = 1; i < 10; i++){
+                        printf("%d", &i);
+                    }
+
+                    //Do while
+                    int i = 1;
+                    do{
+                        printf("%d", &i);
+                        i++;
+                    }while(i < 10);
+
+                </code>
+            </pre>
+        </div>
+
+        <div class="">
+            <h2>Como executar um programa em C</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <pre>
+                <code>
+                    gcc codigo.c
+                    ./a.out
+                </code>
+            </pre>
+        </div>
+
+    </body>
+</html>
