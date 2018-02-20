@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MANUAL DE PROGRAMAÇÃO EM C</title>
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align:center">Manual De Programação Em C</h1>
+        <div id="introduction">
+            <h2>Introdução ao C</h2>
+            <p>
+                C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly).
+                C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.
+            </p>
+        </div>
+        <div>
+            <h2>Variáveis e expressões matemáticas</h2>
+            <p>As variáveis são locais na memória onde programa pode armazenar dados fornecidos pelo Usuário ou gerados ao longo do programa.
+                As variáveis se dividem em tipos:
+                <span>
+                    <ul>
+                        <li>int: armazena números inteiros, positivos ou negativos: <span style="color:blue">int</span> x = 10;</li>
+                        <li>float: armazena números fracionados, positivos ou negativos: <span style="color:blue">float</span> x = 10.5;</li>
+                        <li>char: armazena caracteres de acordo com a tabela ASCII: <span style="color:blue">char</span> x = a;</li>
+                    </ul>
+                </span>
+            </p>
+        </div>
+        <div>
+            <h2>Estruturas Condicionais</h2>
+            <p>As Estruturas Condicionais servem para comparar statments e retornar se o statment é verdadeiro ou não</p>
+            <p>
+                <span style="color:blue">&emsp;int</span> x = 10;<br>
+                <span style="color:red">&emsp;if</span>(x == 10){<br>
+                    &emsp;&emsp;<span style="color:green">//execute alguns comandos aqui em caso de verdade</span> <br>
+                    &emsp;} <span style="color:red">else</span> { <br>
+                        &emsp;&emsp;<span style="color:green">//execute alguns comandos aqui em caso de falso</span> <br>
+                &emsp;}
+            </p>
+        </div>
+        <div>
+            <h1>Estruturas de Repetição</h1>
+            <p>As Estrutuas de Repetição servem para executar um pedaço de comando quantas vez for requerido<br>
+                <span style="color:blue">&emsp;int</span> i = 0;<br>
+                <span style="color:red">&emsp;while</span>(i<10){<br>
+                        &emsp;&emsp;<span style="color:green">//execute um comando até o fim da Repetição</span><br>
+                        &emsp;&emsp;printf("oi mundo")<br>
+                        &emsp;&emsp;i++;<br>
+                &emsp;}<br><br>
+                No exemplo acima a frase "oi mundo" seria impressa 10 vezes
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>Como executar um programa em C</h1>
+        <p>Para executar um programa em C e necessário o uso do GCC(ensinarei a maneira em um terminal linux), basta voce executar as seguintes linhas de comando:<br>
+            &emsp;<span style="color:rgb(247, 0, 255)">gcc</span> nome do seu arquivo .c<br>
+            &emsp;./a.out<br>
+            Pronto seu programa esta funcionando :)
+        </p>
+    </div>
+</body>
+</html>
