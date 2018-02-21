@@ -7,9 +7,9 @@
 
     <body>
         <fieldset style="max-width: 20%">
+            <legend> Dados pessoais </legend>
             <form>
-                <legend> Dados pessoais </legend>
-                Código: <input type="text" size="5" > </input> <br>
+                Código: <input type="text" size="5" disabled placeholder="001"> </input> <br>
                 Nome: <input type="text"> </input> <br>
                 Senha: <input type="password" size="2"> </input> <br>
                 Sexo: <input type="radio" name="s"> Masculino </input> <input type="radio" name="s"> Feminino </input> <br>
@@ -35,7 +35,7 @@
                 <input type="checkbox"> Pratica Exercícios Físicos </input> <br>
                 <input type="checkbox"> Consome Bebida alcoólica </input> <br> <br> 
                 Experiências profissionais: <br>
-                <textarea name="experiencia" cols="40" rows="2"> Data inicio/ Data fim/ Empresa/ Cargo </textarea>
+                <textarea name="experiencia" cols="40" rows="2" placeholder="Data Inicio/Data Fim/Empresa/Cargo"></textarea>
         </fieldset>
                 <input type="reset" value="Limpar"></input> 
                 <input type="button" value="Inserir" onclick="alert('Inserido com sucesso!')"></input>
