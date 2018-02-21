@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Manual de Programação 2018</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h1>Introdução</h1>
+        <p>Bem vindo ao manual de programação 2018! Nesse manual serão apresentados alguns conceitos sobre a linguage c,alguns deles são:</p>
+        <ul>
+                <li>Variáveis e expressões matemáticas</li>
+                <li>Estruturas Condicionais</li>
+                <li>Estruturas de Repetição</li>
+                <li>Execução do programa</li>
+        </ul>
+    </body>
+    <body>
+        <h2>Variáveis e expressões matemáticas</h2>
+            <p>As variáveis são locais onde são armazenados alguns componentes como valores, letras(char),etc. 
+            Cada variável possui um tipo que determina que tipo de componente pode ser armazenado nela, alguns exemplos são:</p>
+            <ul>
+                <li>Int: a variável só pode guardar números de valor inteiro</li>
+                <li>Float: armazenamentos de números com vírgula</li>
+                <li>Char: guarda uma letra</li>    
+            </ul>            
+            <p>As variáveis são usadas para armazenar os dados necessários para o funcionamento do programa. Com elas são feitas algumas operações, por exemplo, 
+            operações algébricas. Dentre elas é possível somar, subtrair, multiplicar, dividir, exponenciar, radiciar, etc. 
+            </p>
+        <h3>Exemplos de expressões matemáticas</h3>
+            <p>Nesse exemplo estarei usando números inteiros, no entanto é perfeitamente possível usar float. Para exemplicar estarei usando duas variáveis que guardam
+            números inteiros, variável "a" e "b".
+            </p>
+            <h4>Soma:</h4>
+                <code>int a, b; ---O programa começa com a declaração das varáveis que serão usadas!<br>
+                    int soma; ---É necessário, nesse caso, uma variável que guarde o resultado da soma.<br>
+                    <br>
+                    soma = a + b; --- Então, fazemos a atribuição da variável soma como sendo o resultado da soma de "a" e "b".<br>   
+                </code>        
+            <p>Esse é um exemplo clássico de operações algébricas</p>
+            <h4>Subtração:</h4>
+                <code>int a, b;<br>
+                    int sub;<br>
+                    sub =  a - b;<br>
+                    <br>
+                </code>
+            <p>Grande parte das operações algébricas seguem essa lógica, porém há algumas que se diferenciam!. Há algumas operações que só podem serem realizadas
+            com funções específicas, como é o caso da exponenciação e radiciação.
+            </p>
+            <h4>Exponenciação:</h4>
+                <code>int a, b;<br>
+                    int exp;<br>
+                    exp = pow(a, b); ---A função responsável pela exponenciação é pow, sendo o primeiro número no parênteses a base e o segundo o grau.<br>
+                    <br>
+                </code>
+            <h4>Radiciação:</h4>
+                <code>int a, b;<br>
+                    int rad;<br>
+                    exp = sqrt(a, b); ---A função sqrt realiza a radiciação, sendo o primeiro número no parênteses a raiz e o segundo o expoente.<br>
+                    <br>
+                </code>
+    </body>
+    <body>            
+        <h2>Estruturas Condicionais</h2>
+            <p>As estruturas condicioinais são usadas quando há uma necessecidade de limitar uma ação no programa ou o própio prosseguimento do programa à uma condição
+                <br>
+                Exemplo: <em>Se</em> meu saldo é maior que a quantidade que eu quero sacar na minha conta no banco é possível realizar a operação. <em>Senão</em> a operação é barrada.
+                <br>
+                Alguns exemplos de operações condicionais são: if, else-if. Vou exemplicar e explicar a ultilização de cada um.
+            </p>
+            <h4>If:</h4>
+                <p>Ele é utlizado quando há uma necessidade de executar uma determinada declaração de acordo com uma condição específica.<br>Exemplo:<br></p>
+                <code>
+                    int a, b;<br>
+                    int x;<br>
+                        if(a>b){<br>
+                        &nbsp x=4;<br>
+                        }<br>
+                </code>
+                <p>Repare que a declaração só será verdadeira se a for maior que b, caso contrário o programa continua seguindo e ignora o if.</p>
+            <h4>Else:</h4>    
+                <p>O else é usado quando é necessária a análise de mais de uma condição condição.<br>Descrião:<br></p>
+                <code>if(declaração 1){};<br>
+                else {declaração 2};
+                </code>
+                <p>Repare que caso o primeiro if seja falso o programa segue diretamente para o else e o executa, a explicação básica para o else seria:
+                    Faça isso(if), senão faça essa outra coisa(else).
+                </p>
+            <h4>If-Else Aninhados</h4>
+                <p>São vários if-else atrelados que são ultilizados quando há necessidade de especificar vários casos condicionais.<br>Descrição:<br></p>
+                <code>if(declaração 1){}<br>
+                    &nbsp else{declaração 2}<br>
+                    if(declaração 1){}<br>
+                    &nbsp  else{declaração 2}<br>
+                </code>
+    </body>
+    <body>
+        <h2>Estruturas de repetição</h2>
+            <p>Estruturas de repetição são loops utilizados para realizar uma determinada ação por uma quantidade de vezes determinadas ou até que uma condição se torne falsa.
+                Alguns exemplos dessas estruturas são o while, do-while e o for.<br> 
+            </p>
+        <h4>While:</h4>
+            <p>Realiza uma ação enquanto uma determinada ação é verdadeira ou enquanto falsa.<br></p>
+            <p>Exemplo:</p><br>
+            <code>
+                int i=0;
+                while(i<5){ --- Enquanto "i" for maior que 5 o bloco while vai executar o comando que está dentro dele.<br>
+                &nbsp x=x*y;<br>
+                &nbsp i++;--- Repare que inicialmente i é iniciado em 0 e ao longo de cada loop ele é incrementando em uma unidade(++). Logo, o bloco será executado 5 vezes.<br>    
+            }
+            </code>
+            <p>É necessário que o loop tenha uma limitação bem definida, caso o contrário o bloco pode ficar sendo executado até consumir toda a memória Ram do computador.</p><br>
+        <h4>Do-While:</h4>
+            <p>Possui o mesmo princípio que o while, a diferença é que o do-while vai executar a ação pelo menos uma vez a 
+                mais que o while sendo que nesta repetição a condição não será levada em conta.</p><br>
+            <p>Exemplo</p><br>
+            <code>do{<br>
+            &nbsp Comando    
+            }while(condição)<br>
+            </code>    
+        <h4>For:</h4>
+            <p>É um loop com delimitação definida assim como os outros, o diferencial sua sintaxe. Na sintaxe há a regra de controle que contém um contador que é
+                inicializado em algum número e vai sendo decrementado ou incrementado.<br>Exemplo:<br>
+            </p>
+            <code>
+                for(i=0;i<5;i++){
+                &nbsp Comando
+                }
+            </code>
+    </body>
+    <body>
+        <h2>Execução</h2>
+            <p>Para executar o programa há algumas etapas, no linux o compilador será o terminal. No terminal digite gcc, que é o programa responsável pela 
+                compilação, seguido do nome do arquivo do programa na sua pasta pessoal.<br>
+            </p>
+            <code>$ gcc meu_arquivo.c</code><br>
+            <p>Isso vai gerar um arquivo executável com a extensão .out, o qual será responsável pela execução do seu programa.<br></p>
+            <code>$ ./meu_arquivo.out</code><br>
+    </body>
+</html>
+
