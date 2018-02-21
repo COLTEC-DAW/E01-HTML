@@ -7,25 +7,23 @@
 
     <body>
         <fieldset style="max-width: 20%">
-            <legend> Dados pessoais </legend>
-            <form id="dados-pessoais">
+            <form>
+                <legend> Dados pessoais </legend>
                 Código: <input type="text" size="5" > </input> <br>
                 Nome: <input type="text"> </input> <br>
                 Senha: <input type="password" size="2"> </input> <br>
                 Sexo: <input type="radio" name="s"> Masculino </input> <input type="radio" name="s"> Feminino </input> <br>
                 Idade: <input type="text" size="1" > </input> <br>
                 Cartão de Crédito: <br>
-                <select name="cartoes-de-credito" multiple disabled>
+                <select name="cartoes-de-credito" multiple>
                     <option aria-checked="true"> Mastercard </option>
                     <option> Visa </option>
                     <option> AmericanExpress </option>
                 </select>
-            </form>
         </fieldset>
 
         <fieldset style="max-width: 20%">
-            <legend> Dados Profissionais </legend>
-            <form id="dados-profissionais">
+                <legend> Dados Profissionais </legend>
                 Cargo:
                 <select> 
                     <option> Analista Júnior </option>
@@ -38,10 +36,10 @@
                 <input type="checkbox"> Consome Bebida alcoólica </input> <br> <br> 
                 Experiências profissionais: <br>
                 <textarea name="experiencia" cols="40" rows="2"> Data inicio/ Data fim/ Empresa/ Cargo </textarea>
+        </fieldset>
                 <input type="reset" value="Limpar"></input> 
                 <input type="button" value="Inserir" onclick="alert('Inserido com sucesso!')"></input>
             </form>    
-        </fieldset>
 
         
 
