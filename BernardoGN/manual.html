@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual de programação</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Manual de programação em C!</h1>
+
+	<div>
+		<h2>Introdução</h2>
+		<p>
+		C é uma linguagem de programação composta por funções e procedimentos que realiza uma série de série de comandos e manipulação de variáveis para conclusão de um objetivo.<br>
+		A primeira função a ser executada chama-se <code>main</code>. Em programas mais simples, todos os comandos podem ser feitos no <code>main</code>, mas conforme a complexidade
+		aumenta é viável a<br> utilização de outras funções e procedimentos. É necessário a utilização de ';' para indicar o encerramento de um comando. Ao final do programa, utiliza-se <code>return 0</code>, indicando que<br> a tudo ocorreu como o esperado e a função main retornou o valor zero.
+		</p>
+		<p>Exemplo de código:</p>
+		<pre>
+		<code>
+			
+	int main(){  
+		...comandos... 
+		return 0; 
+	}
+
+		</code></pre>
+	</div>
+
+	<div>
+		<h2>Variáveis e expressões matemáticas</h2>
+		<p>
+		Variáveis em C são 	locais armazenados na memória que recebem um tipo de dado. Toda variável precisa de um nome e de um tipo. As váriveis podem ser do tipo <code>int</code> (inteiro)<br>
+		<code>float</code> (ponto flutuante, para números não inteiros), <code>char</code> (caractere) entre outros. Muitas expressões matemáticas são utlizadas na linguagem C, utilizam-se:
+		<ul>
+			<li> '+' para <b>soma</b>;</li>
+			<li> '-' para <b>subtração</b>;</li>
+			<li> '*' para <b>multiplicação</b>;</li>
+			<li> '/' para <b>divisão</b>;</li>
+			<li> '=' para <b>igual</b>.</li>
+		</ul>
+		<p>Exemplo de código para cálculo da média aritmética de três provas:</p>
+		<pre>
+		<code>
+	int main(){
+		int prova1, prova2, prova3, media;
+	
+		printf("Digite a nota da prova 1: ");
+		scanf("%d", &prova1);
+	
+		printf("Digite a nota da prova 2: ");
+		scanf("%d", &prova2);
+	
+		printf("Digite a nota da prova 3: ");
+		scanf("%d", &prova3);
+	
+		media = (prova1+prova2+prova3)/3;
+		printf("\nA média aritmética é %d", media);
+
+		return 0;
+	}			
+		</code>
+		</pre>
+	</div>
+
+	<div>
+		<h2>Estruturas condicionais</h2>
+		<p>
+		Estruturas condicionais são amplamente utilizadas em C. Elas são uzadas quando você precisa dar um tratamento diferente para situações diferentes. É indicada por meio de <code>if, else,</code> e <code>else if</code>. <br>Existe também o <code>switch</code> que realiza a mesma função. Utilizam-se: 
+			<ul>
+				<li>"&&" com o sentido de "e"</li>
+				<li>"||" com o sentido de "ou"</li>
+				<li>"==" para comparar se são iguais</li>
+				<li>"!=" para comparar se são diferentes</li>
+				<li>">" maior</li>
+				<li>"<" menor</li>
+				<li>">=" maior ou igual</li>
+				<li>"<=" menor ou igual</li>
+			</ul>
+
+
+		</p>
+
+
+		<p>Exemplo de programa usando <code>if</code>:</p>
+		<pre><code>
+	int main() {
+		int resposta;
+		
+		printf("Entre 1 e 5, qual é a nota da minha beleza?\n");
+		scanf("%d", &resposta);
+
+		if (resposta == 1 || resposta == 2){
+			printf("Fidapeste\n");
+		}else if (resposta == 3){
+			printf("Errado\n");
+		}else if (resposta == 4){
+			printf("Quase lá!");
+		}else if (resposta == 5){
+			printf("Acertou!");
+		}else{
+			printf("Só pode entre 1 e 5");
+		}
+
+		return 0;
+	}		
+
+		</code></pre>
+
+		<p>Exemplo de programa usando <code>switch</code>:</p>
+		<pre><code>
+	int main(){
+		int resposta;
+		
+		printf("Entre 1 e 5, qual é a nota da minha beleza?\n");
+		scanf("%d", &resposta);
+
+		switch(resposta){
+			case 1 or 2: 
+				printf("Fidapeste");
+				break;
+			case 3:
+				printf("Errado");
+				break;
+			case 4:
+				printf("Quase lá!");
+				break;
+			case 5:
+				printf("Acertou!");
+				break;
+			default:
+				printf("Só pode entre 1 e 5");
+		}
+
+		return 0;
+	}		
+
+		</code></pre>
+
+
+	</div>
+
+	<div>
+		<h2>Estruturas de repetição</h2>
+		<p>
+		Estruturas de repetição são utilizadas quando se necessita realizar um mesmo processo mais de uma vez, poupando do penoso trabalho de repetir o código diversas vezes. As principais<br> estrutras de repetição utilizadas são o <code>while</code>, o <code>do</code> e o <code>for</code>. Os comandos dentro dessa estrutura de repetição ficam em loop até que certa condição seja atingida.	
+		</p>
+
+		<p>Exemplo de usando <code>while</code>:</p>
+		<pre><code>
+	int main() {
+		int i = 0, numeroDeAlunos, nota, aprovados = 0;
+
+		printf("Número de alunos: ");
+		scanf("%d", &numeroDeAlunos);
+
+		while(i < numeroDeAlunos){
+			printf("\nDigite a nota do aluno %d\n", i);
+			scanf("%d", &nota);
+			if (nota >= 60){
+				printf("O aluno passou\n");
+				aprovados++;
+			}else{
+				printf("O aluno tomou bomba\n");
+			}
+			i++;
+		}
+
+		printf("Alunos aprovados = %d\nAlunos reprovados = %d", aprovados, numeroDeAlunos-aprovados);
+		return 0;
+	}		
+
+		</code></pre>
+
+		<p>Exemplo de usando <code>for</code>:</p>
+		<pre><code>
+	int main() {
+		int i, numeroDeAlunos, nota, aprovados = 0;
+
+		printf("Número de alunos: ");
+		scanf("%d", &numeroDeAlunos);
+
+		for(i=0; i < numDeAlunos; i++){
+			printf("\nDigite a nota do aluno %d\n", i);
+			scanf("%d", &nota);
+			if (nota >= 60){
+				printf("O aluno passou\n");
+				aprovados++;
+			}else{
+				printf("O aluno tomou bomba\n");
+			}
+		}
+
+		printf("Alunos aprovados = %d\nAlunos reprovados = %d", aprovados, numeroDeAlunos-aprovados);
+		return 0;
+	}		
+
+		</code></pre>
+		<p>O <code>do</code>, vocês pesquisam na internet</p>
+
+	</div>
+
+	<div>
+		<h2>Como executar um programa em C</h2>
+		<p>A forma de executar um programa em C vai depender do sistema operacional que você estiver utilizando. É necessário possuir gcc, que vai compilar seu programa e apontar os erros</p>
+		<ul>
+			<li>Linux ou Mac
+				<ol>
+					<li> Abra o <b>terminal</b> no diretório do arquivo</li> 
+					<li> Digite <em>gcc nome_do_seu_programa.c -o executavel</em></li>
+					<li> Digite <em>./executavel</em></li>
+				</ol>
+				<p>Outra forma:</p>
+				<ol>
+					<li> Abra o <b>terminal</b> no diretório do arquivo</li> 
+					<li> Digite <em>gcc nome_do_seu_arquivo.c</em></li>
+					<li> Digite <em>./a.out</em></li>
+				</ol>
+			<li>Windows</li>
+				<ol>
+					<li>Abra o <b>cmd</b> no diretório do arquivo</li>
+					<li>Digite <em>gcc nome_do_seu_arquivo.c -o executavel.exe</em></li>
+					<li>Digite <em>executavel.exe</em> ou simplesmente <em>executavel</em></li>
+				</ol>
+		</ul>
+	</div>
+
+</body>
+</html>
