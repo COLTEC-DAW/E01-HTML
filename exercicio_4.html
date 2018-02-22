@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro </title>
+</head>
+<body>
+    <form>
+        <!--Primeiro box-->
+        <fieldset>
+        <legend>Dasos Pessoais</legend>
+            Código: <input type="text" disabled placeholder="001"><br>
+            Nome: <input type="text" size="40"><br>
+            Senha: <input type="password" size="15"><br>
+            Sexo: <input type="radio">Masculino <input type="radio">Feminino<br>
+            Idade: <input type="text" size="5"><br>
+            Cartão Crédito:
+            <select name="bandeira do cartão">
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="american express">American Express</option>
+            </select>
+        </fieldset>
+        <!--Segundo box-->
+        <fieldset>
+        <legend>Dados Profissionais</legend>
+            Cargo:
+            <select name="tipos de analísta">
+                <option value="junior">Analista Júnior</option>
+                <option value="pleno">Analista Pleno</option>
+                <option value="senior">Analista Sênior</option>
+            </select><br>
+            Dados Pessoais:<br>
+            <input type="checkbox">Fumante<br>
+            <input type="checkbox">Pratica exercícios físicos<br>
+            <input type="checkbox">Consome bebida alcoólica<br>  
+            Expreriências Proficionais:<br>
+            <textarea rows="20" cols="50">
+        Data Início/Data Fim/Empresa/Cargo
+            </textarea><br>
+            <input type="submit" value="Limpar">
+            <input type="submit" value="Inserir">       
+        </fieldset>
+    </form>
+    
+</body>
+</html>
