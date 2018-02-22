@@ -1,0 +1,50 @@
+<!DOCTYPE >
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <h1>Formulário de Cadastro</h1>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                Código: <input type="text" size="10"><br>
+                Nome: <input type="text" size="30"><br>
+                Senha: <input type="password", size="10"><br>
+                Sexo: <input type="radio" name="sex" value="male">Masculino</input>
+                      <input type="radio" name="sex" value="female">Feminino</input><br>       
+                Idade: <input type="text" size="10"><br>
+
+                Cartão de crédito:<br>
+	                <select name="cars" multiple>
+		            <option value="volvo">Mastercard</option>
+	                	<option value="saab">Visa</option>
+		                <option value="fiat">AmericanExpress</option>
+	                </select>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                Cargo: <select name="Cargo">
+                        <option value="Analista Júnior">Analista Júnior</option>
+                        <option value="Analista Pleno">Analista Pleno</option>
+                        <option value="Analista Sênior">Analista Sênior</option>
+                </select><br>
+                Dados Pessoais:<br>
+                <input type="checkbox" name="Fumante" value="Fumante">Fumante<br>
+                <input type="checkbox" name="Pratica exercícios físicos" value="Pratica exercícios físicos">Pratica exercícios físicos<br>
+                <input type="checkbox" name="Consome bebida alcoólica" value="Consome bebida alcoólica">Consome bebida alcoólica<br>
+                Experiências profissionais:<br>
+                <textarea rows"10" cols="40">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+            </fieldset>
+
+
+            <input type="reset" value="Limpar" name="Limpar"> 
+            <input type="submit" value="Inserir" name="Inserir"> 
+            
+        </form>
+    </body>
+</html>

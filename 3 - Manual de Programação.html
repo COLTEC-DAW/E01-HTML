@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		 <meta charset="UTF-8">
+         <title>Manual de Programação</title>
+    </head>
+    <body>
+        <h1>Manual de Programação</h1>
+        
+    
+        <div id="mainPanel" style="float:left;
+        width:40%; display:block">
+            <h2>1º: Introdução</h2>
+                <p>
+                    Fonte: wikipedia.
+                    C é uma linguagem de programação compilada de propósito geral, 
+                    estruturada, imperativa, procedural, padronizada pela ISO, 
+                    criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, 
+                    para desenvolver o sistema operacional Unix (que foi originalmente
+                    escrito em Assembly).C é uma das linguagens de programação mais 
+                    populares[3][4] e existem poucas arquiteturas para as quais não 
+                    existem compiladores para C. C tem influenciado muitas outras 
+                    linguagens de programação,[5] mais notavelmente C++, que originalmente 
+                    começou como uma extensão para C.
+                </p>
+        </div>
+			
+        <div id="mainPanel" style="float:left;
+        width:40%; display:block">
+            <h2>2º: Variáveis e expressões matemáticas</h2>
+                <p>
+                        A variável é um objeto que guarda algum valor.
+                        Os principais tipos são: int: guarda algum valor inteiro
+                        float: guarda um valor decimal
+                        double: guarda um valor maior
+                        char: guarda algum caracter.
+                </p>
+        </div>
+
+        <div id="mainPanel" style="float:left;
+        width:40%; display:block">
+            <h2>3º: Estruturas Condicionais</h2>
+                <p>
+                Com a estrutura condinal podemos comparar qualquer coisa e então retornar outra coisa dependendo do caso.
+                Exemplo:
+                <textarea rows="10" cols="55">
+                #include <stdio.h>
+                int main () {
+                    int guilherme = 1;
+                    if(guilherme == 1) {
+                        printf ("Legal!\n");
+                    }
+                    return 0;
+                }
+                </textarea> 
+                </p>
+        </div>
+
+
+
+        <div id="mainPanel" style="float:left;
+        width:40%; display:block">
+            <h2>4º: Estruturas de Repetição</h2>
+                <p>
+                Como o próprio nome sugere, estrutura de repetição serve 
+                para repitir qualquer ação várias vezes. Exemplo:
+
+                <textarea rows="8" cols="55">
+                    #include <stdio.h>
+                    int main () {
+                    int guilherme = 10;
+                            
+                    return 0;
+                    }
+                </textarea>
+
+        </div>
+
+
+
+
+        <div id="mainPanel" style="float:left;
+        width:40%; display:block">
+            <h2>5º: Como executar um programa em C</h2>
+                <p>
+                Abra o terminal do linux e então digite:
+                <textarea rows="3" cols="55">
+            gcc nomeDoArquivo.c -o NomeDoArquivo.bin
+            ./nomeDoArquivo.bin
+                </textarea>
+                </p>
+        </div>
+
+	</body>
+</html>
