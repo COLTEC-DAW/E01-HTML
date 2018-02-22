@@ -121,20 +121,49 @@
                     </div>
                     <div>
                         <h2>Estruturas Condicionais</h2>
-                        <p>Estruturas condicionais são instruções da linguagem C capazes de decidir se parte do código será ou não executada.</p>
+                        <p>Estruturas condicionais são instruções da linguagem C capazes de decidir se parte do código será ou não executado.</p>
                         <code>
                             int a = 3;<br>
-                            if(a == 3){} //executa o código em parêntes caso seja verdadeiro
-                            else()
+                            if(a == 3){} //executa o código contido nas chaves caso seja verdadeiro<br>
+                            else{} //executa outro códgo contido nas chaves caso a condição anterior seja falsa
                         </code>
-                        <p>No código acima, a instrução if define que o código que ela guarda entre as chaves somente deve ser executado caso a variável 3. Entre parênteses está estabelecida a condição citada.</p>
+                        <p>No código acima, a instrução <strong>if</strong> define que o código que ela guarda entre as chaves somente deve ser executado caso a variável 3. Entre parênteses está estabelecida a condição citada.</p>
                         <p>Para comparar valores ou variáveis, são utilizados os comparadores == (igual a), != (diferente de), <(menor que), > (maior que).</p>
+                        <p>A Instrução <strong>switch</strong> efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois a operação teria sido complicada (mas possível) com varios ifs.</p>
+                        <code>
+                            int a = 3; <br>
+                            switch (a) {<br>
+                                &nbsp case 1: //se a for igual a 1, executa um codigo especifico <br>
+                                &nbsp break;<br><br>
+                                &nbsp case 2: //se a for igual a 2, executa outro codigo especifico <br>
+                                &nbsp break;<br><br>
+                                &nbsp case 3: //se a for igual a 3, executa outro codigo especifico <br>
+                                &nbsp break;<br><br>
+                                &nbsp default: //se não for igual nenhum dos testes anteriores, executa outro codigo especifico <br>
+                            }
+                        </code>
+                        <p>A condição, no caso do switch, é definida pela igualdade da variável entre parênteses com os valores dos casos definidos. O código executado pela condição que for verdadeira é definido após os dois pontos.</p>
                     </div>
                     <div>
                         <h2>Estruturas de Repetição</h2>
+                        <p>Estruturas de repetição são instruções da linguagem C capazes de decidir não somente se parte do código será ou não executado, como, também, de executar novamente o mesmo código diversas vezes até que a condição definida seja falsa.</p>
+                        <code>
+                            do{}while(a == 3); //verifica a condição após executar uma vez o código
+                            while(a == 3){}; //verifica a condição antes de executar o código pela primeira vez
+                        </code>
+                        <p>A função <strong>while</strong> define um código que deve ser executado repetidamente até que a condição definida seja falsa</p>
+                        <code>
+                            for(a = 3; a < 6; a = a + 1){}
+                        </code>
+                        <p>Já função <strong>for</strong> define um código que deve ser executado repetidamente inicializado em meio a um contexto, em que, também, é definida uma váriavel e uma instrução comum executada a cada repetição até que esta seja falsa.</p>
                     </div>
                     <div>
                         <h2>Como executar um programa em C</h2>
+                        <p>Para executar um programa aem C, salve o arquivo na sua pasta pessoal e abra o terminal. Utilize os comandos abaixo na ordem descrita:</p>
+                        <ol>
+                            <li>gcc nomeDoArquivo.c -o nomeDoArquivo.bin</li>
+                            <li>./nomeDoArquivo</li>
+                        </ol>
                     </div>
                 </li>
             </ol>
