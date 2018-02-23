@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manual de Progamação</title>
+    </head>
+    <body>
+        <h1>Manual Básico da Linguagem C </h1>
+        <div id="Introdução">
+            <h2>Introdução</h2>
+            <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela ISO. Ela foi criada em 1972, por Dennis Ritchie, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly). C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. Ela tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
+            <p>Primeiro incluimos a biblioteca que vamos utilizar e depois colocamos a main e depois declaramos as variáveis e é ali dentro que vamos desemvolver o programa.  Aqui temos a estrutura básica de um código C:</p>
+            <h4>Obs.: não deve haver espaço entre os sinais de maior e/ou menor e o nome da biblioteca que devemos incluir. </h4>
+            <code>//Isto é um comentário<br> 
+                #include < stdio.h ><br> 
+                main(){<br>
+                }</code>    
+        </div>
+        <div id="Variáveis e expressões matemáticas">
+            <h2>Variáveis e expressões matemáticas</h2>
+            <p>Temos basicamente três tipos principais de variáveis em C.</p>
+            <!--table>tr*4>td*3-->
+            <table border="ipx">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Explicação</th>
+                    <th>Exemplo prático</th>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>Armazena valores inteiros.</td>
+                    <td>1, 500, -70</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>Armazena números decimáis, positivos e negativos.</td>
+                    <td>0.3659, -25.156</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>Armazena letras, nomes, caractéres em geral.</td>
+                    <td>m, v, #, *</td>
+                </tr>
+            </table><br>
+            <p>Exemplo:</p>
+            <pre><code>
+            #include < stdio.h ><br>
+            main(){<br>
+                int num;<br>
+                float troco;<br>
+                char nome;<br>
+            }
+            </code></pre>    
+        </div>
+        <div id="Estruturas Condicionais">
+            <h2>Estruturas Condicionais</h2>
+            <p>Temos na linguagem C três tipos de estruturas que são caracterizadas como sendo de condição:</p>
+            <!--if-->
+            <p>if -> é a estrutura de teste mais básica , ela permite executar uma série de instruções caso uma condição se realize ou não. Exemplo:</p>
+            <pre><code>
+            #include < stdio.h ><br>
+            main(){<br>
+                if (condição realizada) {<br>
+                    lista de instruções;<br>
+                }<br>
+            }   
+            </code></pre>
+            <!--if...else-->
+            <p>if...else -> permite executar outra série de instruções em caso do não cumprimento da condição. A sintaxe desta expressão é a seguinte:</p>
+            <pre><code>
+            #include < stdio.h ><br>    
+            main(){<br>    
+                if (condição realizada) {<br>
+                    lista de instruções<br>
+                }<br>
+                else {<br>
+                    outra série de instruções<br>
+                }<br>
+            }    
+            </code></pre>
+            <!--switch-->
+            <p>switch -> efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com ifs imbricados. Sua sintaxe é a seguinte: </p>
+            <pre><code>
+            #include < stdio.h ><br>
+            main(){<br>
+                switch( opção ){<br>
+                    case 1:<br>
+                        lista de comandos<br>
+                    break;<br>
+                    case 2:<br>
+                        lista de comandos<br>
+                    break;
+                    case 3:
+                        lista de comandos<br>
+                    break;<br>
+                    default:
+                    lista de comandos caso nenhuma das opções anteriores tenha sido escolhida<br>
+            }    
+            </code></pre>
+        </div>
+        <div id="Estruturas de Repetição">
+            <h2>Estruturas de Repetição</h2>
+            <p>Temos duas estreuturas de repetição em C. São elas:</p>
+            <!--for-->
+            <p>for -> executa várias vezes a mesma série de instruções, ou seja, é um loop. Exemplo de sua sintaxe:  </p>
+            <pre><code>
+            #include < stdio.h ><br>
+            main(){<br>
+                for (contador; condição; modificação do contador) {<br>
+                        lista de instruções;<br>
+                }<br>
+            }
+            </code></pre>
+            <p>Contador é responsável por dizer por onde o loop deve ser avaliado, a condição é quem vai dizer qual a condição  ser avaliada e modificação do contador vai dizer se o loop vai ir somando ou subtraindo a partir da variável dada pelo contador. </p>    
+            <!--while-->
+            <p>while -> representa outro meio de executar várias vezes a mesma série de instruções. Esta instrução executa a lista de instruções enquanto a condição se realiza. A sintaxe desta expressão é a seguinte:  </p>
+            <pre><code>
+            #include < stdio.h ><br>
+            main(){<br>
+                while (condição realizada) {<br>
+                    lista de instruções;<br>
+                }<br>
+            }    
+            </code></pre>
+        </div>
+        <div id="Como executar um programa e C">
+            <h2>Como executar um programa e C</h2>
+            <p>Para executar seu programa em C, você deve ir até o terminal e digitar os seguintes comandos:</p>
+            <p>gcc nome do seu arquivo .c<br>.\a.out</p>
+            <p>Pronto, seu programa estará rodando!!</p>
+        </div>
+    </body>
+</html>
