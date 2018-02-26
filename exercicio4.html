@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Manual de Programação</title>
+ 
+</head>
+<body>
+    <div style="text-align:center">
+    <h1>Hello C</h1>
+    </div>
+    
+    <h2>Introdução</h2>
+    <ul>
+        <li>Um programa em C é composto por um conjunto de <i>Funções</i>. A função pela qual o programa começa a ser executado chama-se <i>main</i>.</li>
+        <li>Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</li>
+        <li>Um programa em C deve ser <i>Identado</i> para que possa ser lido com mais facilidade.</li>
+        
+        <h3>Identificador é o nome que pode ser dado para variaveis e funções</h3>
+        
+        <li>Um identificador deve iniciar por uma letra ou por um "_" (underscore);</li>
+        <li>A partir do segundo caracter pode conter letras, números e underscore;</li>
+        <li>Deve-se usar nomes significativos dentro do contexto do programa;</li>
+    </ul>
+    
+    <code>// Exemplo de programa em C<br>
+            // Isto é uma linha de comentário<br>
+            void main()<br>
+            { <br>
+               int a;            // declara a variável "a"<br>
+               a = 3 + 2;        // soma 3 com 2<br>
+            }</code>
+    
+    <h2>Variaveis e expressões matematicas</h2>
+        
+        <h3>Variaveis</h3>
+    <p>
+        Uma variavel é uma posição de memória que pode ser identificada através de um nome. Podem ter seu conteúdo alterado por um <b>comando de atribuição</b>. Todas variaveis em C tem um <b>tipo</b>. Cada tipo define os valores que a variável pode armazenar.
+    </p>
+    <table border="1">
+        <tr>
+        <td align="center" width="90">
+            <strong>Tipo</strong>
+        </td>
+        <td align="center" width"500">
+            <strong>Valores validos</strong>
+        </td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>letras e simbolos: 'a', 'b', 'C', '^', '*', '1', '0'</td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>de -32767 até 32767 (apenas numeros inteiros)</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>de -3,4 x 10^38 até 3,4 x 10^38 com até 6 digitos de precisão</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td>de -1,7 x 10^308 até 1,7 x 10^308 com até 10 digitos de precisão</td>
+        </tr>
+    </table>
+    <p>Toda variavel <b>deve ser declarada antes</b> de ser usada.</p>
+    <code>// Exemplo de programa em C<br>
+
+        int main()<br>
+        { <br>
+           int contador;            // declarações simples<br>
+           float PrecoDoQuilo;<br>
+           double TaxaDeCambio;<br>
+           char LetraDigitada;<br>
+           int IdadeManoel, IdadeJoao, IdadeMaria;  // Pode colocar mais de uma variável na mesma linha<br>
+           double  TaxaDoDolar,<br>
+                   TaxaDoMarco,<br>
+                   TaxaDoPeso,        // Também pode trocar de linha no meio<br>
+                   TaxaDoFranco;        <br>
+        .......  <br>
+        }</code>
+        <h3>Expressões matematicas</h3>
+        <table border="1">
+            <tr>
+                <td>+</td>
+                <td>soma</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>subtração</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>multiplicação</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>divisão</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>módulo(resto da divisão)</td>
+            </tr>
+            <tr>
+                <td>>, >=</td>
+                <td>maior e maior ou igual</td>
+            </tr>
+            <tr>
+                <td><, <=</td>
+                <td>menor e menor ou igual</td>
+            </tr>
+        </table>
+        <p>Pode-se usar parênteses para alterar a precedência.</p>
+    <h2>Estrutura condicional</h2>
+        <p>
+            Chamamos de <b>estruturas condicionais</b> as instruções para testar se uma condição é verdadeira ou não. Elas podem ser associadas às estruturas que se repetem, após o cumprimento da condição, chamamos a elas de <b>estruturas de loop</b>. 
+        </p>
+
+        <h3>if</h3>
+        <p>
+            A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte: 
+        </p>
+        <code>if (condição realizada) {<br>
+                lista de instruções;<br>
+             }</code>
+        <h3>if...else</h3>
+        <p>
+                A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição. <br>
+
+                A expressão IF... ELSE permite executar outra série de instruções em caso do não cumprimento da condição. A sintaxe desta expressão é a seguinte: 
+        </p>
+        <code>if (condição realizada) {<br>
+                lista de instruções <br>
+             } <br>
+             else { <br>
+               outra série de instruções <br>
+             }</code>
+        
+        <h3>switch</h3>
+       
+        <p>
+            A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com ifs imbricados. Sua sintaxe é a seguinte: 
+
+        </p>
+        
+        <code>switch (variável) { <br>
+
+                casa Valor1: <br>
+                 Lista d instruções; <br>
+                
+                  break; <br>
+                
+                casa Valor2 : <br>
+                 Lista de instruções; <br>
+                
+                  break; <br>
+                
+                casa Valores... : <br>
+                 Lista de instruções; <br>
+                
+                  Break; <br>
+                
+                default: <br>
+                
+                 Lista de instruções; <br>
+                
+                }
+                </code>
+        <h2>Estrutura de repetição</h2>
+        <p>
+            Estrutura de repetição nada mais é que laços de repetições. Laços de repetições permitem que um conjunto de instruções seja repetido até que se faça a condição desejada.
+        </p>
+        <h3>for</h3>
+        <code>for (variável de inicialização; condição; incremento)</code>
+        <p>
+                <b>Variável de inicialização:</b> comando de atribuição que inicia uma variável que faz o controle do laço. <br>
+                <b>Condição:</b> expressão usada que determinará o final do laço. <br>
+                <b>Incremento:</b> define a variável de controle e muda a cada passada no laço.</p>
+        <code>
+            int main() <br>
+                { <br>
+                    int i; <br>
+                    for (i=0; i<10; i++) <br>
+                    { <br>
+                       printf("%d\n", i); <br>
+                    }
+        </code>
+        <h3>while</h3>
+        <p>
+            Laço que pode ter uma condição de termino definida já no inicio ou não. Necessariamente ele testa a condição e se caso for verdadeiro executa o bloco abaixo, caso seja falso ele vai para a próxima instrução fora do laço.
+        </p>
+        <code>
+            While (Condição) <br>
+                { <br>
+                    Comandos; <br>
+                }
+        </code>
+        <h3>do while</h3>
+        <p>Laço quase igual ao While, a diferença é que primeiro ele executa um bloco e testa a condição, caso seja falsa vai para o próxima instrução.</p>
+        <code>
+                Do <br>
+                { <br>
+                    Comandos; <br>
+                } while(condição);
+        </code>
+    <h2>Como executar um programa em c</h2>
+        <p>
+                Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um único arquivo, você pode simplesmente executar este comando no terminal:
+        </p>
+        <code>gcc prog.c -o prog</code>
+        <p>onde prog.c é o nome do arquivo que contém o código. Os outros dois parâmetros, -o prog, indicam o arquivo de saída do compilador — o arquivo executável que conterá o programa. Você não verá nenhuma mensagem na tela se a compilação ocorrer sem problemas; o compilador só diz alguma coisa quando ocorrem erros.</p>
+        <p>Você precisa especificar o nome do arquivo executável de saída pois o padrão, por razões históricas, é usar o arquivo a.out. Em geral, usamos o mesmo nome do arquivo de código, tirando a extensão .c. Veja que, ao contrário do Windows, o Linux não precisa da extensão .exe para reconhecer um arquivo executável; ele utiliza os atributos de permissão do arquivo para saber se ele é executável, dos quais o gcc já cuida automaticamente. Para executar o programa, a maneira mais “universal” é digitar o seguinte comando no terminal:</p>
+        <code>./prog</code>
+        
+</body>
+</html>
