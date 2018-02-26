@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de cadastro - Ex Aula 1</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Dados pessoais</legend>
+			Nome: <input type="text" name="username"> <br>
+			Senha: <input type="password" name="pwd" size = "10"> <br>
+			Sexo: <input type="radio" name="sex" value="male">Homem</input>
+			<input type="radio" name="sex" value="female">Mulher</input> <br>
+			Idade: <input type="text" name="age" size="8"> <br>
+			Cartão de Crédito:
+			<select name="card">
+				<option value="visa">Mastercard</option>
+				<option value="mastercard">Visa</option>
+				<option value="american">American Express</option>
+			</select>
+		</fieldset>
+	</form>
+	<br>
+	<form>
+		<fieldset>
+			<legend>Dados profissionais</legend>
+			Cargo:
+			<select name="office">
+				<option value="junior">Analista Júnior</option>
+				<option value="full">Analista Pleno</option>
+				<option value="senior">Analista Sênior</option>
+			</select> <br>
+			Dados pessoais: <br>
+			<input type="checkbox" name="others">Fumante</input> <br>
+			<input type="checkbox" name="others">Pratica exercícios físicos</input> <br>
+			<input type="checkbox" name="others">Consome bebida alcoólica</input> <br>
+			Experiências profissionais: <br>
+			<textarea rows="5" cols="100"> </textarea>
+		</fieldset>
+	</form>
+</body>
+</html>
