@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Manual</title>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <div id="sidePanel" style="float: left; width:50%">
+            <p>
+                <h2>INTRODUÇÃO</h2>
+            </p>
+            <p>
+               C é uma linguagem de programação compilada de propósito geral, 
+               estruturada, imperativa, procedural, padronizada pela ISO, 
+               criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, 
+               para desenvolver o sistema operacional Unix 
+               (que foi originalmente escrito em Assembly).
+            </p>
+            <p>
+                C é uma das linguagens de programação mais populares e existem 
+                poucas arquiteturas para as quais não existem compiladores 
+                para C. C tem influenciado muitas outras linguagens de 
+                programação, mais notavelmente C++, que originalmente começou 
+                como uma extensão para C.
+            </p>
+            <pre>
+                <code>
+                    int main(){
+
+                        printf("hello, world!");
+
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div id="sidePanel2" style="float:right; width:50%;">
+            <p>
+                <h2>VARIÁVEIS E EXPRESSÕES MATEMÁTICAS</h2>
+            </p>
+            <p>
+                Variável é um espaço reservado na memória do computador para 
+                armazenar um tipo de dado. Devem receber nomes para poderem 
+                ser referenciadas e modificadas quando necessário. Restrição 
+                para nomes: não é permitido começar o nome com um algarismo (0-9), 
+                alguns caracteres não são válidos (*, -, /, +, ...), e palavras 
+                reservadas não podem ser utilizadas (main, if, while, ...).
+            </p>
+            <p>
+                As expressões matemáticas se formam-se a partir das variáveis, 
+                com os determinados sinais básicos (-, +, *, /). Cada resultado 
+                de uma expressão resulta em outra variável.
+            </p>
+            <pre>
+                <code>
+                    int main(){
+                        int variavel1, variavel2;
+                        float resultado;
+
+                        variavel1/variavel2=c;
+
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div id"sidePanel3" style="float:left; width:50%;">
+            <p>
+                <h2>ESTRUTURAS CONDICIONAIS</h2>
+            </p>
+            <p>
+                Chamamos de estruturas condicionais as instruções para
+                testar se uma condição é verdadeira ou não. 
+                Elas podem ser associadas às estruturas que 
+                se repetem, após o cumprimento da condição, 
+                chamamos a elas de estruturas de loop. 
+            </p>
+            <p>
+                A instrução IF é a estrutura de teste mais básica e é 
+                encontrada em todas as linguagens (com sintaxes diferentes). 
+                Ela permite executar uma série de instruções caso uma condição 
+                se realize. A sintaxe desta expressão é a seguinte: 
+            </p>
+            <pre>
+                <code>
+                    int main(){
+                        if(condição){
+                            comandos;
+                        }
+
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div id"sidePanel4" style="float:right; width:50%;">
+            <p>
+                <h2>ESTRUTURAS DE REPETIÇÃO</h2>
+            </p>
+            <p>
+                As estruturas condicionais permitem que uma certa instrucão se 
+                repita mais de uma vez. Assim como na estrutura de condição, 
+                a repetição também possui uma condição para que ela tenha um 
+                limite(ou não).
+            </p>
+            <p>
+                As três estruturas existentes são o for, while e o do while, 
+                mostrados respectivamente:
+            </p>
+            <pre>
+                <code>
+                    int main(){
+
+                        for(início; condição; contador){
+                            comandos;
+                        }
+                        
+                        return 0;
+                    }
+
+                    int main(){
+                       
+                        while(condição){
+                            comandos;
+                        }
+
+                        return 0;
+                    }
+
+                    int main(){
+                        
+                        do{
+                            comandos;
+                        }while(condição);
+
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div id="sidePanel5" style="float: left; width:100%">
+            <p>
+                <h2>COMO EXECUTAR UM PROGRAMA EM C</h2>
+            </p>
+            <p>
+                Após fazer os comandos do programa e salva-lo, para a execução siga os passos abaixo:
+            </p>
+            <pre>
+                <code>
+                    $ gcc progama.c
+                    $ ./a.out
+                </code>
+            </pre>
+        </div>
+    </body>
+
+</html>
