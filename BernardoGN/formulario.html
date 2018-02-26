@@ -9,7 +9,7 @@
 		<form>
 			<fieldset style="width: 24%">
 				<legend>Dados pessoais</legend>
-				Código: <input type="number" name="codigo", min="1", style="width: 24%"><br>
+				Código: <input type="text" name="codigo", value="001", style="width: 24%", disabled><br>
 				Nome: <input type="text" name="nome", size="30"><br>
 				Senha: <input type="password" name="senha", size="7"><br>
 				Sexo: <input type="radio" name="sexo", value="Masculino" checked>Masculino
@@ -17,12 +17,11 @@
 				
 				Idade: <input type="number" name="idade", min="1", style="width: 13%"><br>
 				Cartão Crédito:<br>
-				<select name="cartoes">
+				<select name="cartoes", size="5">
 					<option value="Mastercard">Mastercard</option>
 					<option value="Visa">Visa</option>
 					<option value="AmericanExpress">American Express</option>
 				</select>
-				<br><br><br><br><br>
 			</fieldset>
 		</form>
 
