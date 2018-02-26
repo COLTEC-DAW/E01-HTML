@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            Codigo: <input type="text" name="cod"><br>
+            Nome: <input type="text" name="name"><br>
+            Senha: <input type="password" name="pwd"><br>
+            Idade: <input type="text" name="age"><br>
+            Sexo: <input type="radio" name="sex" value="Masculino">Masculino</input>
+            <input type="radio" name="sex" value="Feminino">Feminino</input><br>
+
+            Cartao de Credito
+            <select name="cartao">
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="americanExpress">American Express</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+
+            Cargo
+            <select name="cargo">
+                <option value="junior">Analista Junior</option>
+                <option value="pleno">Analista Pleno</option>
+                <option value="senior">Analista Senior</option>
+            </select><br>
+
+            Dados pessoais: <br><input type="checkbox" name="dados" value="fumante">Fumante</input><br>
+            <input type="checkbox" name="dados" value="esportista">Pratica exercicios fisicos</input><br>
+            <input type ="checkbox" name="dados" value="alcoolatra">Consome bebida alcoolica</input><br>
+
+            Experiencias profissionais:<br><textarea rows="5" cols="30">Data inicio/ Data fim/ Empresa/ Cargo
+            </textarea><br>
+
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Inserir">
+
+        </fieldset>
+    </form>
+</body>
+</html> 
