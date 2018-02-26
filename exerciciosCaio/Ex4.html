@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Manual de Programacao</h1>
+
+    <h2>Introdução</h2>
+    <p></p> Para começar devemos incluir uma ou mais bibliotecas no nosso codigo. No inicio do curso sera utilizada a biblioteca stdio.h que contem os comandos printf e scanf. Veja no exemplo abaixo como incluir uma biblioteca no seu programa:<br>
+    <code>#include biblioteca desejada</code>
+
+    <h2>Variáveis e expressões matemáticas</h2>
+    <p></p>Uma variável é uma posição de memória que pode ser identificada através de um nome e pode ter seu conteúdo alterado por um comando de atribuição, após esta atribuição ela muda de valor.
+    <p>Toda variavel em C tem um tipo e ele define os valores que a variavel pode armazenar. Observe na tabela abaixo:</p>
+    <table border = "1px">
+        <tr>
+            <th>Tipo</th>
+            <th>Valores validos</th>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>letras e símbolos:   'a',  'b', 'H', '^', '*','1','0'</td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>de -32767 até 32767 (apenas números inteiros)</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>de -3.4 x 1038 até +3.4 x 10+38com até 6 dígitos de precisão</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td>de -1.7 x 10308 até +1.7 x 10+308com até 10 dígitos de precisão</td>
+        </tr>
+    </table><br> 
+    <p>É importante ressaltar que todas variaveis têm que ser inicializadas antes de serem usadas.</p>
+    <code>
+        int x = 2 + 4; //variavel x foi criada e tem valor 6<br>
+        int y = 3; //variavel y foi criada e tem valor 3<br>
+        int z = x + y; //variavel z foi criada e tem valor de x(6) + y(3) = <strong>9</strong>
+    </code><br> 
+
+
+    <h2>Estruturas Condicionais</h2>
+    <p>A condição na linguagem C é definida como uma expressão que pode ser verdadeira ou falsa. Se a condição for verdadeira os comandos que estão dentro do if serão executados, mas se a condição for falsa os comandos serão ignorados ou os comandos que estão dentro do else serão executados, se tiver o else do codigo</p>
+    <code>
+        int x; //variavel x foi criada sem valor definido<br>
+        int y = 3; //variavel y foi criada e tem valor 3<br>
+        if(y = 3){ //se a variavel y tiver o valor igual a 3 os comandos dentro dessa chave serao cumpridos
+        <pre>   x = 5; //como nesse caso a condicao e verdadeira x adquire o valor 5</pre>
+        } else { //se a variavel y nao tiver o valor igual a 3 os comandos dentro dessa chave serao cumpridos<br>
+            x = 4; //se a condicao fosse falsa x iria adquirir o valor 4<br>
+        }
+    </code><br>
+
+    <h2>Estruturas de Repetição</h2>
+    <p>O comando while permite que um certo trecho de programa seja executado enquanto uma certa condição for verdadeira. </p>
+    <p>Primeiramente a condição é testada, se ela for falsa os comandos do bloco sao ignorados. Porem se for verdadeira os comandos sao executados e a condição é testada novamente. Veja o exemplo a seguir:</p>
+    <code>
+        int x = 2; //variavel x foi criada e tem valor 2<br>
+        int y; //variavel y foi criada sem valor definido<br>
+        while(x=2){ //enquanto o valor da variavel x for igual a 2 os comandos dentro da chave serao cumpridos
+        <pre>  y = 5; //enquanto a variavel x tiver o valor 2 a variavel y tera valor 5</pre>
+        }
+    </code>
+    <p>Alem do comando <strong>while</strong> tambem existem os comandos <strong>for</strong> e <strong>do-while</strong></p>
+
+    <h2>Como executar um programa em C</h2>
+    <p>Para compilar um programa no UBUNTU você deve primeiramente abrir o terminal. Depois você precisa compilar o programa, para isto escreva no terminal: gcc NomeDoCodigo.c</p>
+    <p>Se o seu progrma compilou, não teve erros e, de preferência, nenhum warning, execute-o digitando ./a,out NomeDoCodigo.c</p>
+    <code>gcc NomeDoCodigo.c<br>./a.out NomeDoCodigo.c</code>
+
+</body>
+</html>
