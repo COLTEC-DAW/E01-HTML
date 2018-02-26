@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Coltec IP </title>
+	<style>
+		body {
+			
+			color: #fff;
+			background-color: white;
+			background-size:100%;
+			
+		}
+		h1 {
+			
+			text-align: center;
+			color:black;
+			font-size: 40px;
+		}
+
+		h2 {
+			
+			color:black;
+			font-size: 30px;
+			font-family: Generica;
+			
+			
+		}
+
+		h3{
+			color: green;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		p {
+
+			color: black;
+			font-size: 17px;
+		}
+
+		code{
+			color: black
+
+		}
+
+		pre{
+			color: black
+
+		}
+</style>
+</head>
+<body>
+	<h1> Colégio Técnico da UFMG - Informática</h1>
+		<hr>
+		 <h3>Aula 1 - Iniciação a programação em C</h3> 
+		 <div>
+
+				<h2>Introdução</h2>
+				
+				<p>A linguagem C foi criada por Dennis Ritchie, em 1972, no centro de Pesquisas da Bell Laboratories. Sua primeira utilização importante foi a reescrita do Sistema Operacional UNIX, que até então era escrito em assembly.
+         
+				  Em meados de 1970 o UNIX saiu do laboratório para ser liberado para as universidades. Foi o suficiente para que o sucesso da linguagem atingisse proporções tais que, por volta de 1980, já existiam várias versões de compiladores C oferecidas por várias empresas, não sendo mais restritas apenas ao ambiente UNIX, porém compatíveis com vários outros sistemas operacionais.  
+
+					patíveis com vários outros sistemas operacionais. O C é uma linguagem de propósito geral, sendo adequada à programação estruturada. No entanto é mais utilizada escrever compiladores, analisadores léxicos, bancos de dados, editores de texto, etc..</p>
+				
+         </div>
+	
+	
+
+         <div>
+
+				<h2>Variáveis e expressões matemáticas</h2>
+				
+				<p>Em C, fazer operações matemáticas simples é bastante fácil e intuitivo. Por exemplo, se quisermos que uma variável contenha o resultado da conta 123 + 912, fazemos assim:
+				  var = 123 + 912;
+				   
+				  Os operadores aritméticos básicos são 5: + (adição), - (subtração), * (multiplicação), / (divisão) e % (resto de divisão inteira).
+
+				<code><pre> 
+				int a = 15;
+				int b = 72;
+				int c = a * b;  /* c valerá 15×72 */
+				</pre></code>
+					</p>
+				
+         </div>
+
+         <div>
+
+				<h2>Estruturas Condicionais</h2>
+				
+				<p>Estrutura de decisão if...else (se...então...senão)
+
+				A estrutura if...else é a mais simples estrutura de controle do C. Esta estrutura permite executar um entre vários blocos de instruções. O controle de qual bloco será executado é dado por uma condição (expressão lógica ou numérica). Esta estrutura pode se apresentar de dois modos diferentes: condicional simples ou composta.</p>
+				
+			<pre><code>
+				if(num >= 0) {
+			    resultado = sqrt(num);
+				printf("Raiz Quadrada: ");
+				printf("%f",resultado);
+			}
+			</code></pre>
+         </div>
+
+         <div>
+
+				<h2>Estruturas de Repetição</h2>
+				
+				<p>Estrutura de repetição nada mais é que laços de repetições. Laços de repetições permitem que um conjunto de instruções seja repetido até que se faça a condição desejada.<br><br>
+
+					Laço FOR :<br>
+					Laço utilizado geralmente quando existe um termino definido, sempre vai tem um fim definido para esse laço implementado no inicio.
+					<code><pre>
+
+			
+						int main(){
+    					int i;
+    					for (i=0; i<10; i++){
+       				    printf("%d\n", i);
+              }   
+				getch();
+       }
+
+					</pre></code>
+
+
+					<br><p>Laço WHILE<br>
+					Laço que pode ter uma condição de termino definida já no inicio ou não.
+
+					Necessariamente ele testa a condição e se caso for verdadeiro executa o bloco abaixo, caso seja falso ele vai para a próxima instrução fora do laço.
+				</p>
+					<code><pre>
+						#include< conio.h >
+						#include< stdio.h >
+
+						int main(){
+						int i=0;
+						while(i < 10){
+       					i = i+1;
+       					printf ("%d\n", i);
+    			}    
+			getch ();
+		}
+				</pre></code>
+					<br>
+				</p>
+				
+         </div>
+
+
+         <div>
+
+				<h2>Como executar um programa em C</h2>
+				
+				<p>Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um único arquivo, você pode simplesmente executar este comando no terminal:
+					<br><br>
+					<code> $ gcc prog.c -o prog </code>
+					<br><br>	
+						Você precisa especificar o nome do arquivo executável de saída pois o padrão, por razões históricas, é usar o arquivo a.out. Em geral, usamos o mesmo nome do arquivo de código, tirando a extensão .c. Veja que, ao contrário do Windows, o Linux não precisa da extensão .exe para reconhecer um arquivo executável; ele utiliza os atributos de permissão do arquivo para saber se ele é executável, dos quais o gcc já cuida automaticamente.<br>
+
+						Para executar o programa, a maneira mais “universal” é digitar o seguinte comando no terminal:<br><br>
+						<code> $ ./prog </code>
+				</p>
+				
+         </div>
+
+
+
+
+			
+<footer>
+	<p><small> Desenvolvido por: Waterfall Corporation </small></p>
+	<p><small>Contato:
+		<a href="mailto:dellaretiitalo@gmail.com">
+		dellaretiitalo@gmail.com</a>.</small>
+	</p>
+</footer>
+</body>
+</html>
+
+	
