@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário de cadastro</title>
+	</head>
+	<body>
+		<h1>Cadastre-se</h1>
+		<form>
+			<fieldset>
+			<legend>Dados pessoais</legend>
+				Código: <input type="text" size="10" disabled="true" value="001"><br>
+				Nome:   <input type="text" size="30"><br>
+				Senha:  <input type="password" size="8"><br>
+				Sexo:   <input type="radio" name="s">Masculino</input><input type="radio" name="s">Feminino</input><br>
+				Idade:  <input type="text" size="6"><br>
+				Cartão de crédito: <br>
+				<select size="4">
+					<option value="1">MasterCard</option>
+					<option value="2">Visa</option>
+					<option value="3">American Express</option>
+				</select><br>
+			</fieldset>
+			<fieldset>
+			<legend>Dados profissionais</legend>
+				Cargo: <select>
+					<option value="1">Analista Júnior</option>
+					<option value="2">Analista Pleno</option>
+					<option value="3">Analista Sênior</option>
+				</select><br>
+				Dados Pessoais:<br>
+				<input type="checkbox">Fumante</input><br>
+				<input type="checkbox" checked="true">Pratica exercícios Físicos</input><br>
+				<input type="checkbox">Consome bebida alcoólica</input><br>
+				Experiências Profissionais:<br>
+				<textarea rows="3" cols="50"  placeholder="Data Início/Data Fim/ExpressCargo"></textarea>
+			</fieldset>
+			<button>Limpar</button>
+			<button>Inserir</button>
+		</form>
+	</body>
+</html>
