@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manual de Programação</title>
+</head>
+<body>
+    <h1>Manual de Programação</h1>
+    <p>Bem vindo(a) ao manual de programação para calouros, bons estudos!</p>
+    <h2>Introdução</h2>
+    <p> A linguagem C foi desenvolvida em 1972, nos Laboratórios Bell, por Dennis
+        Ritchie e implementada pela primeira vez num computador DEC PDP-11 que
+        usava o sistema operacional UNIX. Ela é o resultado da evolução de uma linguagem
+        de programação mais antiga, denominada BCPL, desenvolvida por
+        Martin Richards. Tendo sido desenvolvida por programadores, e para programadores,
+        C tornou-se rapidamente uma ferramenta de programação
+        bastante difundida entre os profissionais da área.</p>
+    <p> A popularidade da linguagem C deve-se, principalmente, ao fato dela ser
+        uma linguagem flexível, portátil e eficiente. Sua flexibilidade lhe permite ser
+        utilizada no desenvolvimento de diversos tipos de aplicação, desde simples
+        jogos eletrônicos até poderosos controladores de satélites. Graças à sua portabilidade,
+        os programas codificados em C podem ser executados em diversas
+        plataformas, praticamente, sem nenhuma alteração. E, finalmente, sua
+        eficiência proporciona alta velocidade de execução e economia de memória.</p>
+    <p><small>Fonte: IME-USP - https://www.ime.usp.br/~slago/slago-C.pdf</small></p>
+
+    <h2>Variáveis e expressões matemáticas</h2>
+    <p> Programas servem essencialmente para manipular dados: ao executarmos
+        um programa, fornecemo-lhes dados e esperamos que ele faça alguma coisa
+        com eles. Os dados podem se apresentar em duas formas distintas: como
+        constantes ou variáveis Além da distinção entre as formas em que os dados
+        podem se apresentar, existe também uma distinção entre os tipos de dados 
+        que o computador é capaz de manipular; como, por exemplo, números, letras, 
+        palavras, etc.
+    </p>
+    <p>
+        <img src="https://uploaddeimagens.com.br/images/001/300/622/original/Captura_de_tela_2018-02-21_22.23.31.png?1519262708" alt="Tipos">
+    </p>
+    <p> O C oferece operadores para as quatro operações aritméticas e também um
+        operador para calcular o resto da divisão entre dois números inteiros. 
+    </p>
+    <img src="https://uploaddeimagens.com.br/images/001/300/625/full/Captura_de_tela_2018-02-21_22.28.30.png?1519262957" alt="expressoes">
+    <p><small>Fonte: IME-USP - https://www.ime.usp.br/~slago/slago-C.pdf</small></p>
+
+    <h2>Estruturas Condicionais</h2>
+    <p> A estrutura condicional serve para selecionar e executar um
+        entre dois comandos alternativos. É possível que, algumas vezes, um destes
+        comandos alternativos (ou ambos) sejam também condicionais.</p>
+    <img src="https://uploaddeimagens.com.br/images/001/300/630/full/Captura_de_tela_2018-02-21_22.36.59.png?1519263505" alt="condicionais">
+    <p><small>Fonte: IME-USP - https://www.ime.usp.br/~slago/slago-C.pdf</small></p>
+
+    <h2>Estruturas de Repetição</h2>
+    <p> A estrutura de repetição com contador tem seu funcionamento controlado
+        por uma variável que conta o número de vezes que o comando é executado.
+        Em C, essa estrutura é implementada pelo comando for, cuja forma básica é
+        a seguinte:
+    </p>
+    <p>for( inicialização; condição; alteração) comando;</p>
+    <p> A inicialização é uma expressão que atribui um valor inicial ao contador, a
+        condição verifica se a contagem chegou ao fim e a alteração modifica o valor
+        do contador. Enquanto a contagem não termina, o comando associado ao for
+        é repetidamente executado. O funcionamento dessa estrutura pode ser
+        acompanhado na figura a seguir: 
+    </p>
+    <img src="https://uploaddeimagens.com.br/images/001/300/637/full/Captura_de_tela_2018-02-21_22.45.01.png?1519264061" alt="repeticao">
+    <p><small>Fonte: IME-USP - https://www.ime.usp.br/~slago/slago-C.pdf</small></p>
+
+    <h2>Como executar um programa em C</h2>
+    <p>Vamos utilizar um sistema do tipo UNIX, como o Linux. Compilaremos o Programa em C através no GCC. Por isso instale-o!</p>
+    <p> Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um 
+        único arquivo, você pode simplesmente executar este comando no terminal:
+    </p>
+    <i>gcc prog.c -o prog</i>
+    <p>
+        onde prog.c é o nome do arquivo que contém o código. Os outros dois parâmetros, -o prog, indicam o arquivo de saída do compilador — 
+        o arquivo executável que conterá o programa. Você não verá nenhuma mensagem na tela se a compilação ocorrer sem problemas; o 
+        compilador só diz alguma coisa quando ocorrem erros.
+    </p>
+    <p>Para executar o programa, a maneira mais “universal” é digitar o seguinte comando no terminal:</p>
+    <i>./prog</i>
+    <p><small>Fonte: Instituto de Fisíca da USP - https://fig.if.usp.br/~esdobay/c/gcc.html</small></p>
+</body>
+</html>

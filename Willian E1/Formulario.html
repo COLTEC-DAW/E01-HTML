@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+    <fieldset>
+    <legend>Dados pessoais</legend>
+        Código: <input type="text" name="nome" value="001" size="4" disabled> <br>
+        Nome: <input type="text" size="30"><br>
+        Senha: <input type="password" size="10"><br>
+        Sexo: <input type="radio", name="sexo"> Masculino   <input type="radio", name="sexo"> Feminino <br>
+        Idade: <input type="text" size="6"> <br>
+        Cartão de crédito: <br>
+        <select name="info" size ="5">
+            <option value="MasterCard">MasterCard</option>
+            <option value="Visa">Visa</option>
+            <option value="AmericanExpress">American Express</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+    <legend>Dados profissionais</legend>
+        Cargo: <select name="time">
+            <option value="AnalistJunior">Analista Júnior</option>
+            <option value="AnalistPleno">Analista Pleno</option>
+            <option value="AnalistSenior">Analista Sênior</option>
+        </select> <br>
+
+        Dados pessoais: <br>
+        <input type="checkbox" name="Fumante" id="pessoais">Fumante <br>
+        <input type="checkbox" name="Pratica" id="pessoais">Pratica exercícios físicos <br>
+        <input type="checkbox" name="Bebida" id="pessoais">Consome bebida alcoólica <br>
+        Experiências profissionais: <br>
+        <textarea name="comentario" id="comentario" cols="40" rows="10"></textarea>
+    </fieldset>
+    <input type="submit", value="Limpar">
+    <input type="submit", value="Inserir">
+    </form>
+</body>
+</html>
