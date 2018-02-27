@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MANUAL - C</title>
+
+    </head>
+        <body>
+    
+        <div id="mainPanel" style="float:left;
+        width:2%; display:block">
+            <hr size="1850" width="1" align="left">            
+        </div>           
+
+        <div id="mainPanel" style="float:center;
+        width:60%; display:block">
+            <h2>INTRODUÇÃO</h2>
+            <p align="justify">C é uma linguagem de programação compilada de propósito geral, 
+                estruturada, imperativa, procedural, padronizada pela ISO, 
+                criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, para 
+                desenvolver o sistema operacional Unix (que foi
+                originalmente escrito em Assembly).
+
+                C é uma das linguagens de programação mais populares e 
+                existem poucas arquiteturas para as quais não existem 
+                compiladores para C. C tem influenciado muitas outras
+                linguagens de programação,[5] mais notavelmente C++, 
+                que originalmente começou como uma extensão para C.</p>
+
+
+        <div id="mainPanel" style="float:left;
+        width:2%; display:block">
+            <hr size="90" width="1" align="left">            
+        </div>            
+                
+        <code><pre>
+                #include <stdio.h>
+                int main(){
+
+                printf("Ola mundo.");
+    
+                return 0;
+                }
+        </pre></code>
+
+        </div>           
+
+        <div id="mainPanel" style="float:center;
+        width:60%; display:block">
+            <h2>VARIÁVEIS E EXPRESSÔES MATEMÁTICA</h2>
+            <p align="justify">Em C, devemos informar o tipo dos nossos dados.
+                    Assim, o compilador sabe alocar (reservar) o
+                    espaço de memória ideal.
+                    TEMOS QUE SABER QUAL O TIPO (PARA
+                    ALOCAR O TAMANHO ESPECÍFICO DE BYTES)
+                    E QUAL O NOME QUE SERÁ USADO PARA
+                    REPRESENTAR O ESPAÇO QUE ESTÁ SENDO
+                    ALOCADO (DEFINIÇÃO DO NOME DA
+                    VARIÁVEL).
+                    OBS: COMANDOS EM C TERMINAM COM UM ;</p>
+
+            <div id="mainPanel" style="float:left;
+            width:0%; display:block">
+                <hr size="150" width="1" align="left">            
+            </div>            
+                        
+            <code><pre>
+                #include <stdio.h> 
+                int main () { 
+
+                    int x = 10; 
+                    int y = 2; 
+                    int z;
+                    z = x+y;
+
+                return 0; 
+                }
+            </pre></code>
+
+            </div>           
+    
+        <div id="mainPanel" style="float:center;
+            width:60%; display:block">
+            
+            <h2>ESTRUTURAS CONDICIONAIS</h2>
+                <p align="justify">A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte: </p>
+
+                    <div id="mainPanel" style="float:left;
+                    width:0%; display:block">
+                        <hr size="90" width="1" align="left">            
+                    </div>            
+                            
+                <code><pre>
+                if (condição realizada) {
+                    lista de instruções 
+                    } 
+                    else { 
+                    outra série de instruções 
+                }
+                </pre></code>
+
+                </div>           
+
+        <div id="mainPanel" style="float:center;
+        width:60%; display:block">
+                <h2>ESTRUTURAS REPETIÇÃO</h2>
+                <p align="justify">Um for sempre está acompanhado de uma variável contadora que armazena quantas vezes
+                        o bloco de sentenças do for deve ser executado. 
+                    
+                        Em seguida avalia a
+                        expressão, que determina se o valor da variável contadora está dentro do limite desejado.
+                        Caso positivo, o bloco de sentenças é executado e, em seguida, é executada a atualização,
+                        que altera o valor da variável contadora. 
+
+                    </p>
+
+                <div id="mainPanel" style="float:left;
+                width:0%; display:block">
+                    <hr size="60" width="1" align="left">            
+                </div>            
+                        
+                <pre><code>
+                for (i=1; i<6; i++) {
+                    printf("%d", i);
+                }
+            </code></pre>
+            </div>           
+        
+        <div id="mainPanel" style="float:center;
+        width:60%; display:block">
+                <h2>COMO EXECUTAR UM PROGRAMA EM C</h2>
+                <p align="justify">Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um único arquivo, você pode simplesmente executar este comando no terminal:</p>
+
+                <div id="mainPanel" style="float:left;
+                width:2%; display:block">
+                    <hr size="40" width="1" align="left">            
+                </div>            
+                        
+                <pre><code>
+                $ gcc prog.c -o prog
+                </code></pre>
+
+            </div>           
+        
+    </body>
+</html>
