@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicio 01 - Formulário de cadastro</title>
+    </head>
+
+    <body>
+        <fieldset style="max-width: 20%">
+            <legend> Dados pessoais </legend>
+            <form>
+                Código: <input type="text" size="5" disabled placeholder="001"> </input> <br>
+                Nome: <input type="text"> </input> <br>
+                Senha: <input type="password" size="2"> </input> <br>
+                Sexo: <input type="radio" name="s"> Masculino </input> <input type="radio" name="s"> Feminino </input> <br>
+                Idade: <input type="text" size="1" > </input> <br>
+                Cartão de Crédito: <br>
+                <select name="cartoes-de-credito" multiple>
+                    <option aria-checked="true"> Mastercard </option>
+                    <option> Visa </option>
+                    <option> AmericanExpress </option>
+                </select>
+        </fieldset>
+
+        <fieldset style="max-width: 20%">
+                <legend> Dados Profissionais </legend>
+                Cargo:
+                <select> 
+                    <option> Analista Júnior </option>
+                    <option> Analista Pleno </option>
+                    <option> Analista Sênior </option>     
+                </select> <br>
+                Dados Pessoais: <br> 
+                <input type="checkbox"> Fumante </input> <br>
+                <input type="checkbox"> Pratica Exercícios Físicos </input> <br>
+                <input type="checkbox"> Consome Bebida alcoólica </input> <br> <br> 
+                Experiências profissionais: <br>
+                <textarea name="experiencia" cols="40" rows="2" placeholder="Data Inicio/Data Fim/Empresa/Cargo"></textarea>
+        </fieldset>
+                <input type="reset" value="Limpar"></input> 
+                <input type="button" value="Inserir" onclick="alert('Inserido com sucesso!')"></input>
+            </form>    
+
+        
+
+    </body>
+</html>
