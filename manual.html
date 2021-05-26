@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manual de C</title>
+    </head>
+    <body>
+        <h1>Manual de Programação: C</h1>
+        <h2>Introdução </h2>
+        <p>
+            A linguagem C foi desenvolvida em 1972, nos Laboratórios Bell, por Dennis 
+            Ritchie e implementada pela primeira vez num computador DEC PDP-11 que 
+            usava o sistema operacional UNIX. Ela é o resultado da evolução de uma linguagem de programação mais antiga, denominada BCPL, desenvolvida por 
+            Martin Richards. Tendo sido desenvolvida por programadores, e para programadores, C tornou-se rapidamente uma ferramenta de programação 
+            bastante difundida entre os profissionais da área. 
+            <br> <br>
+            A popularidade da linguagem C deve-se, principalmente, ao fato dela ser 
+            uma linguagem flexível, portátil e eficiente. Sua flexibilidade lhe permite ser 
+            utilizada no desenvolvimento de diversos tipos de aplicação, desde simples 
+            jogos eletrônicos até poderosos controladores de satélites. Graças à sua portabilidade, os programas codificados em C podem ser executados em diversas plataformas, praticamente, sem nenhuma alteração. E, finalmente, sua 
+            eficiência proporciona alta velocidade de execução e economia de memória. 
+        </p>
+        <p>
+            Retirado do manual de C do IME USP <br>
+            <a href="https://www.ime.usp.br/~slago/slago-C.pdf">https://www.ime.usp.br/~slago/slago-C.pdf</a>
+        </p>
+
+        <h2>Variáveis e expressões matemáticas</h2>
+        <p>
+            Uma variável é uma possição de memória que pode ser identificada através de um nome.
+            Podem ter seu conteúdo alterado por um comando de atribuição.
+            Após a atribuição mudam de valor.
+        </p>
+
+        <h4>Tipos de Variáveis</h4>
+        <ul>
+            <li>
+                Todas as variáveis em C tem um tipo;
+            </li>
+            <li>
+                Cada tipo define os valores que a variável pode armazenar;
+            </li>
+            <li>
+                Cada tipo ocupa uma certa quantidade de nemória.
+            </li>
+        </ul>
+
+        <h4>Expressões Matemáticas</h4>
+        <p>
+            A linguagem C oferece de base 4 operadores aritméticos que podem 
+            ser usados, <br> além do operador mod (que calcula o resto de uma divisão), 
+            sendo eles:
+        </p>
+        
+        <table border="1px">
+            <tr>
+                <td>
+                    +
+                </td>
+                <td>Soma</td>
+            </tr>
+            <tr>
+                <td>
+                    -
+                </td>
+                <td>Subtração</td>
+            </tr>
+            <tr>
+                <td>
+                    *
+                </td>
+                <td>Multplicação</td>
+            </tr>
+            <tr>
+                <td>
+                    /
+                </td>
+                <td>Divisão</td>
+            </tr>
+            <tr>
+                <td>
+                    %
+                </td>
+                <td>Resto da divisão (Mod)</td>
+            </tr>
+        </table>
+
+        <p>
+            Retirado do "Introdução ao C" da PUC-RS <br>
+            <a href="https://www.inf.pucrs.br/~pinho/LaproI/IntroC/IntroC.htm">https://www.inf.pucrs.br/~pinho/LaproI/IntroC/IntroC.htm</a>
+        </p>
+
+        <h2>Estruturas Condicionais</h2>
+        <p> A estrutura condicional serve para selecionar e executar um
+            entre dois comandos alternativos. É possível que, algumas vezes, um destes
+            comandos alternativos (ou ambos) sejam também condicionais.</p>
+            <ul>
+                <li>if</li>
+                <li>else if</li>
+                <li>else</li>
+            </ul>
+        São exemplos de estruturas de condição usadas em C
+        <p>
+            Retirado do manual de C do IME USP <br>
+            <a href="https://www.ime.usp.br/~slago/slago-C.pdf">https://www.ime.usp.br/~slago/slago-C.pdf</a>
+        </p>
+    
+        <h2>Estruturas de Repetição</h2>
+        <p> A estrutura de repetição com contador tem seu funcionamento controlado
+            por uma variável que conta o número de vezes que o comando é executado.
+            Em C, essa estrutura é implementada pelo comando for, cuja forma básica é
+            a seguinte: <br> <br>
+            for(inicialização; condição; alteração) comando; <br> <br>
+            A inicialização é uma expressão que atribui um valor inicial ao contador, a
+            condição verifica se a contagem chegou ao fim e a alteração modifica o valor
+            do contador. Enquanto a contagem não termina, o comando associado ao for
+            é repetidamente executado. O funcionamento dessa estrutura pode ser
+            acompanhado na figura a seguir: 
+        </p>
+        <img src="https://i.ibb.co/5RkhWDL/repeticao.png" alt="repeticao">
+        <p>
+            Retirado do manual de C do IME USP <br>
+            <a href="https://www.ime.usp.br/~slago/slago-C.pdf">https://www.ime.usp.br/~slago/slago-C.pdf</a>
+        </p>
+    
+        <h2>Como executar um programa em C</h2>
+        <p>Vamos utilizar um sistema do tipo UNIX, como o Linux. Compilaremos o Programa em C através do GCC. Por isso instale-o!</p>
+        <p> Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa consistir de um 
+            único arquivo, você pode simplesmente executar este comando no terminal:
+        </p>
+        <li>gcc programa.c -o programa</li>
+        <p>
+            Onde programa.c é o nome do arquivo que contém o código. Os outros dois parâmetros, -o programa, indicam o arquivo de saída do compilador — 
+            o arquivo executável que conterá o programa. Você não verá nenhuma mensagem na tela se a compilação ocorrer sem problemas; o 
+            compilador só diz alguma coisa quando ocorrem erros.
+        </p>
+        <p>Para executar o programa:</p>
+        <li>./programa</li>
+        <p>
+            Retirado do manual de C do IME USP <br>
+            <a href="https://www.ime.usp.br/~slago/slago-C.pdf">https://www.ime.usp.br/~slago/slago-C.pdf</a>
+        </p>
+    </body>
+</html>
