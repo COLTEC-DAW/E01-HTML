@@ -1,0 +1,49 @@
+<!-- 4º Exercicio -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+    </head>
+    <body>
+        <!-- Engloba todo o fomulário -->
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    Código: <input type="text" size="5" value="001"></br>
+                    Nome:   <input type="text" size="30"></br>
+                    Senha:  <input type="password" size="10"> </br>
+                    Sexo:   <input type="radio" name="sex" value="Masc">Masculino</input>
+                            <input type="radio" name="sex" value="Fem">Feminino</input></br>
+                    Idade:  <input type="number" size="5" min="0"></br>
+                    Cartão de crédito: </br>
+                    <select name="select">
+                        <option value="valor1">Mastercard</option>
+                        <option value="valor2">Visa</option>
+                        <option value="valor3">American Express</option>
+                    </select>
+                </fieldset> 
+        
+                <fieldset>
+                    <legend>Dados profissionais:</legend>
+                    Cargo:  <select name="sec">
+                                <option value="valor1">Analista Júnior</option>
+                                <option value="valor2">Analista Pleno</option>
+                                <option value="valor3">Analista Sênior</option>
+                            </select></br>
+                    Dados Pessoais:</br>
+                    <input type=checkbox value="Fumante">Fumante</br>
+                    <input type=checkbox value="Pratica exercicios fisicos">Pratica exercicios fisicos</br>
+                    <input type=checkbox value="Consome bebida alcoólica">Consome bebida alcoólica</br>
+                    Experiências profissionais:</br>
+                    <textarea rows="5" cols="40">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+
+        </br><footer>Este formulário foi desenvolvido por <a href="http://www.linkedin.com/in/erik-neves" target="_blank">Erik Neves.</a></footer>
+    </body>
+</html>
