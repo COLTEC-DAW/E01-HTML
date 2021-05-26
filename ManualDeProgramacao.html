@@ -1,0 +1,354 @@
+<!-- 3º Exercicio -->
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>Manual básico da linguagem C!</title>
+    </Head>
+
+    <body>
+        <h1>Manual básico da linguagem C!</h1>
+        <p>Olá calourinhos! Esse é um manual simples e rápido para introduzi-los aos códigos em linguagem C.</p>   
+    
+        <div>
+            <h2>Introdução:</h2>
+            <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix (originalmente escrito em Assembly).</p>
+            <p>C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação (por exemplo, a linguagem Java), mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
+            <p><i>Exemplo de um código em C que confere se um ano é bissexto:</i></p>
+            <div>
+                <pre>
+    #include < stdio.h>
+    #include < stdlib.h>
+    #define sucesso 0
+    
+    int main(){
+        
+        int ano;
+        
+        printf("Digite o ano: ");
+        scanf("%i", &ano);
+        
+        if((ano%4==0)&&(ano%100!=0)||(ano%400==0)){
+            printf("Eh bissexto.\n");
+        }else{
+            printf("Nao eh bissexto.\n");
+        }   
+        return sucesso;
+    }
+                </pre>
+            </div>
+        </div>
+
+        <div>
+            <h2>Variáveis e expressões matemáticas:</h2>
+            <p>Na programação utilizamos dois conceitos muito importantes, que vão te ajudar a fazer seus próprios códigos em breve:</p>
+            <ul>
+                <li><i>Variaveis:</i> São "lugares" onde armazenamos dados. Essas variaveis indicam um lugar na memória onde estão as informações que precisamos.</li>
+                <table border="10px" bgcolor="white">
+                    <tr>
+                        <td align="middle">Sintaxe:</td>
+                        <td align="middle">Armazena:</td>
+                        <td align="middle">Código:</td>
+                    </tr>
+                    <tr>
+                        <td align="middle">int</td>
+                        <td align="middle">números inteiros</td>
+                        <td align="middle"><code>int NumeroI = 5; //A variavel "NumeroI" recebe o valor 5</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">float</td>
+                        <td align="middle">números decimais</td>
+                        <td align="middle"><code>float NumeroD = 5.2; //A variavel "NumeroD" recebe o valor 5.2</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">double</td>
+                        <td align="middle">números decimais</td>
+                        <td align="middle"><code>double NumeroDE = 5; //A variavel "NumeroDE" recebe o valor 5 </br>(possui uma precisão maior que o float)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">char</td>
+                        <td align="middle">caracteres</td>
+                        <td align="middle"><code>char Letra = "E"; //A variavel "Letra" recebe o caracter "E"</code></td>
+                    </tr>
+                </table>
+
+                </br>
+
+                <li><i>Operações:</i> São como as vistas nas aulas de matemática, segue alguns exemplos:</li>
+                <table border="10px" bgcolor="white">
+                    <tr>
+                        <td align="middle">Caracter:</td>
+                        <td align="middle">Operação:</td>
+                        <td align="middle">Código:</td>
+                    </tr>
+                    <tr>
+                        <td align="middle">+</td>
+                        <td align="middle">soma</td>
+                        <td align="middle"><code>int Soma = 5 + 8; //Atribui a variavel "Soma" o valor 13(5+8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">-</td>
+                        <td align="middle">subtração</td>
+                        <td align="middle"><code>int Sub = 5 - 8; //Atribui a variavel "Sub" o valor -3(5-8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">/</td>
+                        <td align="middle">divisão</td>
+                        <td align="middle"><code>int Div = 16 / 8; //Atribui a variavel "Div" o valor 2(16/2)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">*</td>
+                        <td align="middle">multiplicação</td>
+                        <td align="middle"><code>int Mult = 5 * 8; //Atribui a variavel "Mult" o valor 40(5*8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">%</td>
+                        <td align="middle">resto</td>
+                        <td align="middle"><code>int Res = 10 % 8; //Atribui a variavel "Res" o valor 2(10%8 Resto da divisão 10/8)</code></td>
+                    </tr>
+                </table>
+            </ul>
+
+            <p><i>Exemplo de um código que utliza variaveis e realiza operações:</i></p>
+            <div>
+                <pre>
+    #include < stdio.h>
+    #include < stdlib.h>
+    #define sucesso 0
+    
+    int main(){
+        
+        int Numero01 = 5;
+        int Numero02 = Numero01 * 7;
+        float Decimal01,Decimal02;
+        
+        Decimal01 = Numero01 % Numero02;
+        Decimal02 = Decimal01 / Numero01;
+
+        return sucesso;
+    }
+                </pre>
+            </div>
+        </div>
+
+        <div>
+            <h2>Estruturas Condicionais:</h2>
+            <p>
+                Para realizar determinadas tarefas vamos precisar verificar se algum dado esta correto, até mesmo para validar uma senha!
+                Em C possuimos uma estrutura que faz essa verificação e algumas variações dela para outras situações.
+            </p>
+
+            <table border="10px" bgcolor="white">
+                <tr>
+                    <td align="middle">Sintaxe:</td>
+                    <td align="middle">Função:</td>
+                </tr>
+                <tr>
+                    <td align="middle">if</td>
+                    <td align="middle">Executa um bloco de informações se uma informação for verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">else</td>
+                    <td align="middle">Executa um bloco de informações caso a estrutura 'if' anterior não seja verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">else if</td>
+                    <td align="middle">Seguinte a uma estrutura 'if' que irá fazer outra checagem da informação</td>
+                </tr>
+                <tr>
+                    <td align="middle">switch</td>
+                    <td align="middle">Simplifica o código, substituindo uma sequência de 'else if's</td>
+                </tr>
+            </table>
+
+            <p><i>Exemplos de códigos(simplificados) com essas estruturas:</i></p>
+            <ul>
+                <li>
+                    <p>Exemplo 'if':</p>
+                    <pre>
+// Irá entrar na estrutura e imprimir a mensagem "Senha correta."
+int Senha = 999999;
+if(Senha == 999999){
+    print("Senha correta.\n");
+}
+                    </pre>
+                </li>
+                <li>
+                    <p>Exemplo 'else':</p>
+                    <pre>
+// Irá entrar na estrutura e imprimir a mensagem "Senha incorreta."
+int Senha = 888888;
+if(Senha == 999999){
+    printf("Senha correta.\n");
+}else{
+    printf("Senha incorreta.\n");
+}
+                    </pre>
+                </li>
+                <li>
+                    <p>Exemplo 'else if':</p>
+                    <pre>
+// Irá entrar na estrutura e imprimir a mensagem "Administrador conectado."
+int Senha = 888888;
+if(Senha == 999999){
+    printf("Senha correta.\n");
+}else if(Senha == 888888){
+    printf("Administrador conectado.\n");
+}else{
+    printf("Senha incorreta.\n");
+}
+                    </pre>
+                </li>
+                <li>
+                    <p>Exemplo 'switch':</p>
+                    <pre>
+// Irá entrar na estrutura e imprimir a mensagem "User #04."
+int Senha = 888888;
+
+switch(Senha){
+    case 555555:
+        printf("User #01!.\n");
+    break;
+    case 666666:
+        printf("User #02!.\n");
+    break;
+    case 777777:
+        printf("User #03!.\n");
+    break;
+    case 888888:
+        printf("User #04!.\n");
+    break;
+    default:
+        printf("User inválido!.\n");
+    break;
+}
+                    </pre>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h2>Estruturas de Repetição:</h2>
+            <p>
+                As vezes precisamos executar repetidas vezes um mesmo trecho do código, e nem sempre vamos saber o número exato de vezes que teremos que repetir =/...</br>
+                Mas para resolver esse problemas temos algumas estruturas que nos auxiliam em cada situação.
+            </p>
+
+            <table border="10px" bgcolor="white">
+                <tr>
+                    <td align="middle">Estrutura:</td>
+                    <td align="middle">Função:</td>
+                </tr>
+                <tr>
+                    <td align="middle">for</td>
+                    <td align="middle">Repete um bloco de código por N vezes</td>
+                </tr>
+                <tr>
+                    <td align="middle">while</td>
+                    <td align="middle">Repete um bloco de código enquanto uma condição for verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">do while:</td>
+                    <td align="middle">Similar ao 'while' porem checa a condição ao fim do bloco de código</td>
+                </tr>
+            </table>
+
+            <p><i>Exemplos de códigos(simplificados) com essas estruturas:</i></p>
+
+            <ul>
+                <li>
+                    <p>Exemplo 'for':</p>
+                    <pre>
+int i;
+// for(contador; condição; modificação do contador){}
+for(i=0;i<10;i++){
+    printf("%d, ", i);
+}
+//Saida 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+                    </pre>
+                </li>
+                <li>
+                    <p>Exemplo 'while':</p>
+                    <pre>
+// while(condição){}
+//O bloco dentro do while ira se repetir até que o usuario digite 10
+int aux = -1;
+int index = 10 
+
+while(aux != index){
+    printf("Digite 10 para encerrar o loop: ")
+    scanf("%d", &aux);
+}     
+                    </pre>
+                </li>
+                <li>
+                    <p>Exemplo 'do while':</p>
+                    <pre>
+// do{}while(condição);
+int aux = -1;
+int index = 10 
+do{
+    printf("Digite 10 para encerrar o loop: ")
+    scanf("%d", &aux);
+}while(aux != index);
+                    </pre>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h2>Como executar um programa em C:</h2>
+            <p>
+                Há varias maneiras de se executar um código, pode-se usar uma IDE, compiladores onlinde e/ou utilizar o proprio terminal(como será explicado a seguir).</br>   
+            </p>
+            <p>
+                <i>Configurando o compilador na sua máquina:</i>
+                <ul>
+                    <li><b>Caso use o linux pule as duas próximas etapas!</b></li>
+                    <li>Inicialmente baixe e instale o <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWYwRTB5SGVUQndETXloNlU4Nng4a08zOUc1QXxBQ3Jtc0tuclJ6dzVaMGxNZG5abUx2M3ViN25obU1yLV8wRFZkRGNPZ3Nlb2I2ZGo2QXVFY0VWY2dIQzBHZFI4cE9tQUdHWlZfUmJhcVRxbUFEOXJjVngzdDh2YnlJVGtXbkZzOE9xd2pCMktRNTZQV1dYNDlwbw&q=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmingw-w64%2Ffiles%2FToolchains%2520targetting%2520Win64%2FPersonal%2520Builds%2Fmingw-builds%2F" target="_blank">mingw;</a></li>
+                    <li>Após a instalação, configure o comando gcc como uma variavel de seu sistema;</li>
+                </ul> 
+            </p>
+            <p>
+                <i>Executando seu programa(Hello.c):</i>
+                <ul>
+                    <li>Abra o prompt de comando e navegue até o <i>diretório</i> onde esta seu código;</li>
+                    <li>Digite no terminal o seguinte comando: "gcc Hello.c"</li>
+                    <li>Seu código ja está <i>compilado</i>, agora basta roda-lo para ver sua execução;</li>
+                    <li>Digite no terminal o seguinte comando: "./a.exe" e seu código irá ser executado;</li>
+                </ul>
+            </p>
+            <p>
+                <i><b>Exemplo de um código e sua saída:</b></i>
+                <pre><i>Nome do arquivo: Hello.c</i>
+#include < stdio.h>
+#include < stdlib.h>
+#define sucesso 0
+
+int main(){
+    
+    printf("Hello world!\n");
+
+    return sucesso;
+}</pre>
+                <i>Execução do arquivo:</i></br>
+                cmd: gcc Hello.c </br>
+                cmd(Saída): Hello world!
+            </p>
+
+            <p>Caso precise de um tutorial mais detalhado para a instalação/configuração do gcc clique <a href="https://www.youtube.com/watch?v=aducc6-ra90" target="_blank">aqui.</a></p>
+        </div>
+        <div>
+            <p>
+                Meu consagrado, agora você ja possui alguns conhecimentos básicos sobre programação em C!</br>
+                Agora aplique esses conhecimentos em exercicios para garantir seu aprendizado</br></br>
+                <i><b>Desafio: </b></i> 
+                Faça um código que controle os pedidos de um restaurante(Menu, preços e pagamento)</br>
+                O usuario pode pedir quandos itens quiser em um pedido!
+            </p>
+        </div>
+    </body>
+
+    <footer></br>Este breve tutorial foi desenvolvido por <a href="http://www.linkedin.com/in/erik-neves" target="_blank">Erik Neves.</a></footer>
+</html>
