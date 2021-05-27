@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Ex. 5 - Formulário de cadastro
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                Código: <input type="text" size = "30"><br>
+                Senha: <input type="text" size = "30"><br>
+                Sexo: <input type="radio" name="sex" value = "Masc">Masculino</input>
+                      <input type="radio" name="sex" value = "Fem">Feminino</input><br>
+                Idade: <input type="text" size = "30"><br>
+                <p>Cartão de Crédito</p>
+                <select name="cartao">
+                    <option value = "master">MasterCard</option>
+                    <option value = "visa">Visa</option>
+                    <option value = "american">American Express</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                Cargo <select name="sec">
+                    <option value = "junior">Analista Júnior</option>
+                    <option value = "pleno">Analista Pleno</option>
+                    <option value = "senior">Analista Sênior</option>
+                </select>
+                <p>Dados pessoais:</p>
+                <input type = "checkbox">Fumante
+                <input type = "checkbox">Pratica Exercícios Físicos
+                <input type = "checkbox">Consome bebida alcoólica
+                <p>Experiências Profissionais</p>
+                <textarea rows="10" cols="40">Data início/ Data Fim/ Empresa/ Cargo</textarea>
+                <p></p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>
