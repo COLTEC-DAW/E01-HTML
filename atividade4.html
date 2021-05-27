@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <title>Formulario</title>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                Codigo : <input type = "text" size = "20"><br>
+                Nome : <input type = "text" size = "30"><br>
+                Senha : <input type = "password" size = "20"><br>
+                Sexo : 
+                <input type="radio" name = "genero" id = "masculino" value= "masculino">
+                <label for = "masculino">Masculino</label>
+                <input type="radio" name = "genero" id = "feminino" value= "feminino">
+                <label for = "feminino">Feminino</label><br>
+                Idade : <input type = "text" size = "20"><br>
+                Cartão de credito:<br>
+                <select name="cartão">
+                    <option value= "mastercard">Mastercard</option>
+                    <option value= "visa">Visa</option>
+                    <option value= "american">American Express</option>
+                </select>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                Cargo: 
+                <select name="dados">
+                    <option value= "junior">Analista Junior</option>
+                    <option value= "pleno">Analista Pleno</option>
+                    <option value= "sênior">Analista Sênior</option>
+                </select><br>
+                Dados pessoais:<br>
+                <label for = "fumante">Fumante</label>
+                <input type="radio" name = "fumante" id = "fumante" value= "fumante"><br>
+                
+                <label for = "Pratica de exerciocios fisicos">Pratica de exerciocios fisicos</label>
+                <input type="radio" name = "Pratica de exerciocios fisicos" id = "Pratica de exerciocios fisicos" value= "Pratica de exerciocios fisicos"><br>
+                
+                <label for = "Consome bebida alcoolica">Consome bebida alcoolica</label>
+                <input type="radio" name = "Consome bebida alcoolica" id = "Consome bebida alcoolica" value= "Consome bebida alcoolica"><br>
+
+               <label for="experiencias"> Experiencias Profissionais:</label><br>
+                <textarea cols="30" rows="10">Data/Inicio Data/Fim Empresa/Cargo</textarea>
+            </fieldset>
+        </form>
+        <button type = "limpar">Limpar</button>
+      <button type = "inserir">Inserir</button>
+    </body>
+</html>
