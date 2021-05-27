@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>Manual de C</title>
+    </Head>
+
+
+    <body>
+        <h1>Manual básico de C </h1>
+
+        <br>
+        ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼████████┼┼┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼░███░░░░░██░┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼░██░░░░░░░░█░┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼░██░░░░░░░░░█░┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼██░░░░░░░░░██┼┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼░█░░░░░░░░░██┼┼┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼██░░░░░░░░██░┼┼┼ ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼░█░░░░░░░░██░┼┼┼┼ ┼┼┼┼┼┼┼┼┼░█████░░░┼┼┼┼┼░█░░░░░░░░█░┼┼┼┼┼ ┼┼┼┼┼┼┼░█████████████░┼██░░░░░░░█░┼┼┼┼┼┼ ┼┼┼┼┼┼░██░░░░░░██░░█████░░░░░░░██┼┼┼┼┼┼┼ ┼┼┼┼┼┼██░░░░░░░░░█░░░░░██░░░░░░██┼┼┼┼┼┼┼ ┼┼┼┼░███░░░░░░░░░░█░░░░░░░░░░░░██┼┼┼┼┼┼┼ ┼┼┼░██░░█░░░░░░░░░░█░░░█░░░░░░░░█░┼┼┼┼┼┼ ┼┼░██░░░██░░░░░░░░░██░██░░░░░░░░░█░┼┼┼┼┼ ┼┼░██░░░███░░░░░░░░░█░░░██░░░░░░░██┼┼┼┼┼ ┼┼┼░█░░░░░░██░░░░░░░░░░░░█░░░░░░░░█┼┼┼┼┼ ┼┼░███░░░░░░██░░░░░░░░░░░██░░░░░░░██░┼┼┼ ┼░██░██░░░░░░███░██░░░░░██░░░░░░░░████░┼ ┼██░░░██░░░░░░░░█████████░░░░░░░░░█░░██┼ ┼██░░░░██░░░░░░░░░░░░░░██░░░░░░░░██░░░█┼ ┼┼█░░░░░███░░░░░░░░░░░░█░█░░░░░░██░░░░█┼ ┼░██░░░░░░███████░░░░███░░██░░░██░░░░██┼ ┼████░░░░░░░░█████████░░░░░░█░░░░░░░░█░┼ ┼██░██░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░██┼┼ ┼┼██░░███░░░░█░░░░░░██░░░░░░░░░░░░░██░┼┼ ┼┼░██░░███████░█████░░░░░░██░░░░░░██░┼┼┼ ┼┼┼┼███░░░░█░░█░██░░░░░████░░░░░███░┼┼┼┼ ┼┼┼┼┼░███████████████████████████░┼┼┼┼┼┼ ┼┼┼┼┼┼┼┼░░░░░░░░░░░░░░░░░░░░░░░░┼┼┼┼┼┼┼┼
+
+        <div>
+            <h2>Introdução:</h2>
+            <p>Considerada uma linguagem de alto nível genérica, a C pode ser usada em diversos tipos de projeto, como a criação de aplicativos, sistemas operacionais, drivers, entre outros. Trata-se de uma linguagem estruturada que se tornou muito popular nos anos 80 — tanto que é difícil encontrar arquiteturas para as quais não existam compiladores para a C, o que garante o seu elevado nível de portabilidade.</p>
+            <p>Uma das grandes vantagens dessa linguagem é a capacidade de gerar códigos rápidos, ou seja, com um tempo de execução baixo. Além disso, a programação em C é bastante simplificada, pois sua estrutura é simples e flexível. Tendo isso em mente, podemos dizer que as principais características da linguagem C são:</p>
+        <ul>  
+           <li>portabilidade;</li> 
+           <li>geração de código eficiente;</li>
+           <li>simplicidade;</li>
+           <li>confiabilidade;</li>
+           <li>facilidade de uso;</li>
+           <li>regularidade. </li>
+        </ul>  
+        </br>
+            <p><i>Exemplo de um código em C que diz "Hello world".</i></p>
+            <div>
+                <pre>
+    #include < stdio.h>
+    #include < stdlib.h>
+    #define sucesso 0
+
+    int main(){
+
+        printf(" Hello world ");
+        
+        return sucesso;
+    }
+                </pre>
+            </div>
+        </div>
+
+        <div>
+            <h2>Variáveis e expressões matemáticas:</h2>
+            <p>Na programação utilizamos dois conceitos muito importantes, que vão te ajudar a fazer seus próprios códigos em breve:</p>
+            <ul>
+                <li><i>Variaveis:</i> São "lugares" onde armazenamos dados. Essas variaveis indicam um lugar na memória onde estão as informações que precisamos.</li>
+                <table border="3" bgcolor="black">
+                    <tr>
+                        <td align="middle">Sintaxe:</td>
+                        <td align="middle">Armazena:</td>
+                        <td align="middle">Código:</td>
+                    </tr>
+                    <tr>
+                        <td align="middle">int</td>
+                        <td align="middle">números inteiros</td>
+                        <td align="middle"><code>int NumeroI = 5; //A variavel "NumeroI" recebe o valor 5</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">float</td>
+                        <td align="middle">números decimais</td>
+                        <td align="middle"><code>float NumeroD = 5.2; //A variavel "NumeroD" recebe o valor 5.2</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">double</td>
+                        <td align="middle">números decimais</td>
+                        <td align="middle"><code>double NumeroDE = 5; //A variavel "NumeroDE" recebe o valor 5 </br>(possui uma precisão maior que o float)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">char</td>
+                        <td align="middle">caracteres</td>
+                        <td align="middle"><code>char Letra = "E"; //A variavel "Letra" recebe o caracter "E"</code></td>
+                    </tr>
+                </table>
+
+                </br>
+
+                <li><i>Operações:</i> São como as vistas nas aulas de matemática, segue alguns exemplos:</li>
+                <table border="3" bgcolor="black">
+                    <tr>
+                        <td align="middle">Caracter:</td>
+                        <td align="middle">Operação:</td>
+                        <td align="middle">Código:</td>
+                    </tr>
+                    <tr>
+                        <td align="middle">+</td>
+                        <td align="middle">soma</td>
+                        <td align="middle"><code>int Soma = 5 + 8; //Atribui a variavel "Soma" o valor 13(5+8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">-</td>
+                        <td align="middle">subtração</td>
+                        <td align="middle"><code>int Sub = 5 - 8; //Atribui a variavel "Sub" o valor -3(5-8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">/</td>
+                        <td align="middle">divisão</td>
+                        <td align="middle"><code>int Div = 16 / 8; //Atribui a variavel "Div" o valor 2(16/2)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">*</td>
+                        <td align="middle">multiplicação</td>
+                        <td align="middle"><code>int Mult = 5 * 8; //Atribui a variavel "Mult" o valor 40(5*8)</code></td>
+                    </tr>
+                    <tr>
+                        <td align="middle">%</td>
+                        <td align="middle">resto</td>
+                        <td align="middle"><code>int Res = 10 % 8; //Atribui a variavel "Res" o valor 2(10%8 Resto da divisão 10/8)</code></td>
+                    </tr>
+                </table>
+            </ul>
+
+            <div>
+                <pre>
+    #include < stdio.h>
+    #include < stdlib.h>
+    #define sucesso 0
+
+    int main(){
+
+        int Numero01 = 5;
+        int Numero02 = Numero01 * 7;
+        float Decimal01,Decimal02;
+
+        Decimal01 = Numero01 % Numero02;
+        Decimal02 = Decimal01 / Numero01;
+
+        return sucesso;
+    }
+                </pre>
+            </div>
+        </div>
+
+        <div>
+            <h2>Estruturas Condicionais:</h2>
+            <p>
+                Para realizar determinadas tarefas vamos precisar verificar se algum dado esta correto, até mesmo para validar uma senha!
+                Em C possuimos uma estrutura que faz essa verificação e algumas variações dela para outras situações.
+            </p>
+
+            <table border="3" bgcolor="black">
+                <tr>
+                    <td align="middle">Sintaxe:</td>
+                    <td align="middle">Função:</td>
+                </tr>
+                <tr>
+                    <td align="middle">if</td>
+                    <td align="middle">Executa um bloco de informações se uma informação for verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">else</td>
+                    <td align="middle">Executa um bloco de informações caso a estrutura 'if' anterior não seja verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">else if</td>
+                    <td align="middle">Seguinte a uma estrutura 'if' que irá fazer outra checagem da informação</td>
+                </tr>
+                <tr>
+                    <td align="middle">switch</td>
+                    <td align="middle">Simplifica o código, substituindo uma sequência de 'else if's</td>
+                </tr>
+            </table>
+
+            <br></br>
+        <div>
+            <h2>Estruturas de Repetição:</h2>
+            <p>
+                As vezes precisamos executar repetidas vezes um mesmo trecho do código, e nem sempre vamos saber o número exato de vezes que teremos que repetir =/...</br>
+                Mas para resolver esse problemas temos algumas estruturas que nos auxiliam em cada situação.
+            </p>
+
+            <table border="3" bgcolor="black">
+                <tr>
+                    <td align="middle">Estrutura:</td>
+                    <td align="middle">Função:</td>
+                </tr>
+                <tr>
+                    <td align="middle">for</td>
+                    <td align="middle">Repete um bloco de código por N vezes</td>
+                </tr>
+                <tr>
+                    <td align="middle">while</td>
+                    <td align="middle">Repete um bloco de código enquanto uma condição for verdadeira</td>
+                </tr>
+                <tr>
+                    <td align="middle">do while:</td>
+                    <td align="middle">Similar ao 'while' porem checa a condição ao fim do bloco de código</td>
+                </tr>
+            </table>
+
+            
+
+        <div>
+            <h2>Como executar um programa em C:</h2>
+            <p>
+                Há varias maneiras de se executar um código, pode-se usar uma IDE, compiladores onlinde e/ou utilizar o proprio terminal(como será explicado a seguir).</br>   
+            </p>
+            <p>
+                <i>Configurando o compilador na sua máquina:</i>
+                <ul>
+                    <li><b>Caso use o linux pule as duas próximas etapas!</b></li>
+                    <li>Inicialmente baixe e instale o <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWYwRTB5SGVUQndETXloNlU4Nng4a08zOUc1QXxBQ3Jtc0tuclJ6dzVaMGxNZG5abUx2M3ViN25obU1yLV8wRFZkRGNPZ3Nlb2I2ZGo2QXVFY0VWY2dIQzBHZFI4cE9tQUdHWlZfUmJhcVRxbUFEOXJjVngzdDh2YnlJVGtXbkZzOE9xd2pCMktRNTZQV1dYNDlwbw&q=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmingw-w64%2Ffiles%2FToolchains%2520targetting%2520Win64%2FPersonal%2520Builds%2Fmingw-builds%2F" target="_blank">mingw;</a></li>
+                    <li>Após a instalação, configure o comando gcc como uma variavel de seu sistema;</li>
+                </ul> 
+            </p>
+            <p>
+                <i>Executando seu programa(Hello.c):</i>
+                <ul>
+                    <li>Abra o prompt de comando e navegue até o <i>diretório</i> onde esta seu código;</li>
+                    <li>Digite no terminal o seguinte comando: "gcc Hello.c"</li>
+                    <li>Seu código ja está <i>compilado</i>, agora basta roda-lo para ver sua execução;</li>
+                    <li>Digite no terminal o seguinte comando: "./a.exe" e seu código irá ser executado;</li>
+                </ul>
+            </p>
+            <p>
+                <i><b>Exemplo de um código e sua saída:</b></i>
+                <pre><i>Nome do arquivo: Hello.c</i>
+#include < stdio.h>
+#include < stdlib.h>
+#define sucesso 0
+
+int main(){
+
+    printf("Hello world!\n");
+
+    return sucesso;
+}</pre>
+        <i>Execução do arquivo:</i></br>
+            cmd: gcc Hello.c </br>
+            cmd(Saída): Hello world! 
+</html> 
