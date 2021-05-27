@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 3(Manual de programação)</title>
+    </head>
+    <body>
+        <head>
+            <h1>Manual de Programação em C</h1>
+            <footer>Feito por: Pedro Henrique Assunção</footer>
+        </head>
+
+        <div id="Introdução">
+            <h2>Introdução</h2>
+            <p>
+                Considerada uma linguagem de alto nível genérica, 
+                a C pode ser usada em diversos tipos de projeto, 
+                como a criação de aplicativos, sistemas operacionais, 
+                drivers, entre outros. Trata-se de uma linguagem estruturada 
+                que se tornou muito popular nos anos 80 — tanto que é difícil encontrar 
+                arquiteturas para as quais não existam compiladores para a C, o que garante o 
+                seu elevado nível de portabilidade.
+            </p>
+
+            <p>
+                Uma das grandes vantagens dessa linguagem é a capacidade de gerar códigos rápidos, 
+                ou seja, com um tempo de execução baixo. Além disso, a programação em C é bastante simplificada, 
+                pois sua estrutura é simples e flexível. Tendo isso em mente, podemos dizer que as principais características
+                da linguagem C são:
+            </p>
+
+            <ul>
+                <li>Portabilidade;</li>
+                <li>Geração de código eficiente;</li>
+                <li>Simplicidade;</li>
+                <li>Confiabilidade;</li>
+                <li>Facilidade de uso;</li>
+                <li>Regularidade. </li>
+            </ul>
+
+            <p>
+                Por fim, a popularidade da linguagem C é foi grande que ela ainda influenciou diretamente a estrutura e 
+                ]sintaxe de outras, como C++, Objective C e C#.
+            </p>
+        </div>
+
+        <div id="Variáveis-e-expressões-matemáticas">
+            <h2>Variáveis e expressões matemáticas</h2>
+            <h3>Expressões matemáticas</h3>
+            <table border="1">
+                <tr>
+                    <th>Símbolo</th>
+                    <th>Função</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Adição</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtração</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicação</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Divisão</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Módulo(resto)</td>
+                </tr>
+            </table>
+
+            <h3>Variáveis</h3>
+
+            <table border = "1">
+                <tr>
+                    <th>Tipo</td>
+                    <th>Valores válidos</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>Números interos</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>Números reais com até 6 digitos de precisão</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>Números com até 10 digitos de precisão</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>Letras e simbolos</td>
+                </tr>
+            </table>
+
+            <div>
+                <h3> Identificadores </h3>
+                <p> São os nomes que podem ser dados para variáveis e funções. </p>
+                <p> Para a escolha destes nomes é necessário seguir alguams regras: </p>
+                <ul>
+                    <li> Um identificador deve iniciar por uma letra ou por um "_" (underscore); </li>
+    
+                    <li> A partir do segundo caracter pode conter letras, números e underscore; </li>
+    
+                    <li> Deve-se usar nomes significativos dentro do contexto do programa; </li>
+    
+                    <li> C é uma linguagem case-sensitive, ou seja, faz diferença entre nomes com letras maiúsculas e nomes com letras minúsculas.  Peso   e  peso são diferentes; </li>
+    
+                    <li> Costuma-se usar maiúsculas e minúsculas para separar palavras: "PesoDoCarro"; </li>
+    
+                    <li> Deve ser diferente dos comandos da linguagem; </li>
+    
+                    <li> Deve ter no máximo 31 caracteres (no caso do TurboC); </li>
+    
+                    <li> Pode conter números a partir do segundo caracter; </li>
+    
+                    <li> Exemplos: </li>
+                </ul>
+                <p><font face="Courier New">Idade, Contador, PesoDoCarro,               Usuario_1, CorDaPagina, RaioDoCirculo</font></p>
+            </div>
+
+        </div>
+
+        <div id="bloco">
+            <h2>Estruturas condicionais</h2>
+            <h3> O conceito de bloco </h3>
+            <p>
+                Uma expressão seguida de um ponto e virgula é chamado de <b>instrução.</b> Quando você quiser reunir várias instruções, você poderá criar o que chamamos de <b>bloco</b>, ou seja, um conjunto de instruções (seguidas, respectivamente, por pontos e vírgulas) entre chaves {e}. As instruções <i>if</i>, <i>while</i> e <i>for</i> podem, por exemplo, ser seguidas de um bloco de instruções a serem executadas. 
+            </p>
+        </div>
+
+        <div id="if">
+            <h3> A instrução IF </h3>
+            <p>
+                A instrução <b>IF</b> é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte:
+                
+                <br /><pre>if (condição realizada) {
+                <br />    lista de instruções;
+                <br />}</pre>
+            </p>
+        </div>
+
+        <div id="ifelse">
+            <h3> A instrução IF... ELSE </h3>
+            <p>
+                A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição.
+            </p>
+
+            <p>
+                A expressão IF... ELSE permite executar outra série de instruções em caso do não cumprimento da condição. A sintaxe desta expressão é a seguinte:
+            </p>
+
+            <br /><pre>if (condição realizada) {
+                <br />    lista de instruções
+                <br /> }
+                <br /> else {
+                    <br />   outra série de instruções
+                    <br /> }</pre>
+        </div>
+
+        <div id="for">
+            <h2>Estruturas de repetição</h2>
+            <h3> O loop FOR </h3>
+            <p>
+                A instrução <b>for</b> executa várias vezes a mesma série de instruções: é um loop.
+            </p>
+            <p>
+                Em sua sintaxe, basta especificar o nome da variável que serve de contador (e, eventualmente, o seu valor inicial, a condição sobre a variável para a qual o loop para (basicamente uma condição que testa se o valor do contador excede um limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador.
+            </p>
+            <p>
+                A sintaxe desta expressão é a seguinte:
+            </p>
+            <pre>
+                <br />for (contador; condição; modificação do contador) {
+                    <br />lista de instruções;
+                <br />}</pre>
+        </div>
+
+        <div id="while">
+            <h3>A instrução WHILE</h3>
+            <p>
+                A instrução <b>while</b> representa outro meio de executar várias vezes a mesma série de instruções. A sintaxe desta expressão é a seguinte:
+            </p>
+
+            <p>
+            <pre>
+                <br />while(condição realizada){
+                    <br />lista de instruções;
+                <br />}
+            </pre>
+            Esta instrução executa a lista de instruções enquanto (significado da palavra While) a condição se realiza.
+            </p>
+            <p>
+                Como a condição de saída pode ser qualquer estrutura condicional, o risco de loop infinito (loop cuja condição é sempre verdadeira) é grande, ou seja, pode causar uma falha do programa em curso de execução.
+            </p>
+        </div>
+
+        <div id="Como-compilar-um-codigo-em-C">
+
+            <h2>Como compilar um codigo em C</h2>
+            <p>
+                Para poder compilar em C, no Windows, usaremos uma ferramenta de código
+                aberto chamada MinGW (caso deseje testar, pode usar a versão 64 bits do MinGW,
+                porém a versão 32 é compatível com ambos os sistemas). Ao instalar você pode escolher
+                algumas especificações e se quer ou não que ela opere em modo visual (em janela), além da
+                integração com o Explorer.
+            </p>
+
+            <p>
+                Uma vez instalado o MinGW, você precisará selecionar o mingw32-base e mingw32-gcc-g++, pois ele é o 
+                compilador C / C++ para podermos trabalhar. Depois disso, basta ir no menu Installation e clicar em Apply Changes e, 
+                em seguida, no botão Apply. Ele irá instalar todos os arquivos do compilador que serão necessários para nosso teste.
+            </p>
+
+            <p>Após concluída a instalação, já podemos usar o compilador.</p>
+
+            <p>
+                Para começar precisamos abrir o prompt de comando do windows através do comando cmd na barra de pesquisa,
+                feito isso basta localizar a pasta onde o arquivo está e usar o comando gcc nome_do_arquivo.c -o nome_arquivo.exe,
+                após isso o seu código está compilado e basta digitar seu nome no cmd para executar.
+            </p>
+        </div>
+    </body>
+</html>
