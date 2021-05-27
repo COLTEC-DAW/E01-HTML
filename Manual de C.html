@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Manual de Programação em C</title>
+
+    </head>
+
+    <body>
+
+        
+
+        <h1>Manual de Programação: C</h1>
+
+        <div>
+
+            <h2>Introdução </h2>
+        <p>
+
+            A linguagem C foi desenvolvida em 1972, nos Laboratórios Bell, por Dennis 
+            Ritchie e implementada pela primeira vez num computador DEC PDP-11 que 
+            usava o sistema operacional UNIX. Ela é o resultado da evolução de uma linguagem de programação mais antiga, denominada BCPL, desenvolvida por 
+            Martin Richards. Tendo sido desenvolvida por programadores, e para programadores, C tornou-se rapidamente uma ferramenta de programação 
+            bastante difundida entre os profissionais da área. 
+            
+        </p>
+
+        <p>
+
+            A popularidade da linguagem C deve-se, principalmente, ao fato dela ser 
+            uma linguagem flexível, portátil e eficiente. Sua flexibilidade lhe permite ser 
+            utilizada no desenvolvimento de diversos tipos de aplicação, desde simples 
+            jogos eletrônicos até poderosos controladores de satélites. Graças à sua portabilidade, os programas codificados em C podem ser executados em diversas plataformas, praticamente, sem nenhuma alteração. E, finalmente, sua 
+            eficiência proporciona alta velocidade de execução e economia de memória. 
+
+        </p>
+
+        </div>
+        <div>
+
+            <h2>Variáveis e expressões matemáticas</h2>
+
+            <p>
+
+                Em C , nós podemos executar operações aritméticas usando variáveis e constantes. Algumas operações mais comuns são:
+                <br> <br>
+                + |
+                
+                adição
+                <br>
+                -
+                |
+                subtração
+                <br>
+                * |
+                multiplicação
+                <br>
+                / |
+                divisão
+                <br>
+                % |
+                resto (módulo)
+                <br>
+                <br>
+                Estas operações podem ser usadas como mostra o exemplos abaixo, assumindo que as variáveis necessárias já estão declaradas:
+    
+                <code>
+    
+                    celsius = (fahrenheit - 32) * 5.0 / 9.0; <br>
+    
+                    forca =  massa * aceleracao;<br>
+    
+                    i = i + 1;
+    
+                </code>
+    
+            </p>
+
+        </div>
+
+        <div>
+
+            <h2>Estruturas Condicionais</h2>
+
+            <h3>Instrução IF</h3>
+
+            <p>
+
+                A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte:
+
+            </p>
+
+            <code>
+
+                if (condição realizada) {<br><br>
+                    lista de instruções;<br><br>
+                 }
+
+            </code>     
+            
+            <p>
+
+
+                A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição.
+
+                A expressão IF... ELSE permite executar outra série de instruções em caso do não cumprimento da condição. A sintaxe desta expressão é a seguinte:
+
+            </p>
+            
+            <code>
+
+                if (condição realizada) {<br><br>
+                    lista de instruções;<br><br>
+                 }else{<br><br>
+
+                    outras instruções<br><br>
+
+                 }
+
+            </code>     
+
+            <h3>Instrução SWITCH</h3>
+
+            <p>
+
+                A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com varios if imbricados. Sua sintaxe é a seguinte:
+
+
+                <code>
+                    <br><br>
+                    switch (variável) { <br><br>
+
+                        case Valor1:<br><br>
+                        Lista de instruções;<br><br>
+                        
+                          break;<br>
+                        
+                        case Valor2:<br><br>
+                         Lista de instruções;<br><br>
+                        
+                          break;<br>
+                        
+                        case Valores:<br><br>
+                         Lista de instruções;<br><br>
+                        
+                          break;<br>
+                        
+                        default:<br><br>
+                        
+                         Lista de instruções;<br>
+                        <br>
+                        }<br>
+
+                </code>
+
+                <p>
+
+                    Os parênteses após a palavra-chave switch indicam uma expressão cujo valor é testado, sucessivamente, para cada uma das case. Quando a expressão testada é igual a um dos seguintes valores seguindo um case, a lista de instrução que vem depois, é executada. A palavra-chave break indica a saída da estrutura condicional. A palavra-chave default precede a lista de instruções, que será executada se a expressão nunca for igual a um dos valores.
+
+                </p>
+            </p>
+
+        </div>    
+        <div>
+
+            <h2>Estruturas de Repetição</h2>
+
+            <h3>Instrução FOR</h3>
+
+            <code>
+
+                for (contador; condição; modificação do contador) {<br><br>
+                    lista de instruções;<br><br>
+                }
+
+            </code>
+
+            <p>
+                Este loop exibe cinco vezes o valor do i, ou seja, 1, 2, 3, 4, 5. Ele começa em i = 1, verifique se i é inferior a 6 e, assim por diante, até atingir o valor de i = 6, para o qual a condição não será realizada, o loop vai se interromper e o programa continuará seu curso.
+
+                Você deverá verificar sempre se o loop tem uma condição de saída (ou seja, o contador se incrementa corretamente);
+
+            </p>
+
+
+            <code>
+
+                for (i = 0; i <=10; i++) {<br><br>
+                    printf("Pão: %i", i);<br><br>
+                }
+
+            </code>
+            
+            <h3>Instrução WHILE</h3>
+
+            <p>
+
+                Esta instrução executa a lista de instruções enquanto (significado da palavra While) a condição se realiza.
+
+
+                Como a condição de saída pode ser qualquer estrutura condicional, o risco de loop infinito (loop cuja condição é sempre verdadeira) é grande, ou seja, pode causar uma falha do programa em curso de execução.
+
+            </p>
+            <code>
+
+                while (condição realizada) {<br><br>
+                    lista de instruções;<br><br>
+                 
+                 }<br>
+
+            </code>
+        </div>  
+        <div>
+
+            <h2>Como executar um programa em C</h2>
+
+            <h3>Visual Studio</h3>    
+            
+            <p>
+
+                É extremamente recomendado(principalmente durante as aula do Leandro Maia) utilizar o Visual Studio, uma IDE onde você pode escrever seus códigos e apertar a tecla atalho para compilar pois IDES já possuem compiladores prontos.
+
+
+
+            </p>
+
+            <p>
+
+                Caso estiver utilizando outro Sistema Operacional além do windows é possivel programar utilizando o Visual Studio Code, porém, será necessário baixar e instalar o compilador
+
+            </p>
+
+            <h3>Como instalar compilador para o VS CODE</h3>
+
+            <p>
+
+                >Aperta CTRL+SHIFT+X no Visual Studio para Abrir as extensões e instale o C/C++ da Microsoft (para autocompletar os codigos) e o Code Runner (para Executar).
+                Baixe o compilador <a href="https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/" title="Mingw">MinGW</a><br><br>
+                >Instale o MinGw (anota o diretório onde instalou) e abra o MinGW Installer, vai em Basic Setup e marca o mingw32-base-bin, Installation -> Apply Changes.<br><br>
+                >Vá nas variáveis do ambiente no Windows -> Variaveis do Sistema -> Path, e adicione a pasta bin do MinGW que você instalou.<br><br>
+                >Volte no VS Code -> Botão Direito no Code Runner -> Configure Extension Settings. Aba User -> Extensions.<br><br> 
+                >Procure Code-runner: Executor Map e vai em Edit in settings.json (O caminho aqui fica em C:\Users\NomeUsuario\AppData\Roaming\Code\User\settings.json) e deixa assim:<br><br>
+
+            </p>
+
+        </div>
+
+    </body>
+</html>
