@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Manual de Programação </title>
+    </head>
+
+    <body>
+        <h1> Manual de Programação </h1>
+
+        <div>
+            <h2> Introdução a Linguagem C </h2>
+
+            <p> A linguagem C é uma linguagem de alto nível, genérica. Foi desenvolvida por 
+                programadores para programadores tendo como meta características de flexibilidade
+                e portabilidade. O C é uma linguagem que nasceu juntamente com o advento da teoria 
+                de linguagem estruturada e do computador pessoal. Assim tornou-se rapidamente uma
+                linguagem “popular” entre os programadores. O C foi usado para desenvolver o sistema 
+                operacional UNIX, e hoje esta sendo usada para desenvolver novas linguagens, entre elas
+                a linguagem C++ e Java.
+
+            </p>
+
+            <h3> Características </h3>
+            <ul>
+                <li> O C é uma linguagem de alto nível com uma sintaxe bastante estruturada 
+                    e flexível tornando sua programação bastante simplificada. </li>
+
+                <li> Programas em C são compilados, gerando programas executáveis.  </li>
+
+                <li> O C compartilha recursos tanto de alto quanto de baixo nível,
+                    pois permite acesso e programação direta do microprocessador. 
+                    Com isto, rotinas cuja dependência do tempo é crítica, 
+                    podem ser facilmente implementadas usando instruções em Assembly. 
+                    Por esta razão o C é a linguagem preferida dos programadores de aplicativos. </li>
+
+                <li> O C é uma linguagem estruturalmente simples e de grande portabilidade. 
+                     O compilador C gera códigos mais enxutos e velozes do que muitas outras linguagens. </li>
+
+                <li> Embora estruturalmente simples (poucas funções intrínsecas) o C não perde funcionalidade,
+                     pois permite a inclusão de uma farta quantidade de rotinas do usuário. Os fabricantes de 
+                     compiladores fornecem uma ampla variedade de rotinas pré-compiladas em bibliotecas. </li>
+               
+        </div>
+
+        <div>
+            <h2> Variáveis e Expressões Matemáticas</h2>
+            <h3> Variáveis </h3>
+
+            <p>
+                Variáveis são, basicamente, uma posição na memória da máquina que identificamos 
+                por um nome (identificador). Na linguagem C, todas as variáveis precisam ser declaradas
+                no início do programa, antes de serem usadas.
+            </p>
+
+            <p>
+                Elas também devem receber um tipo, que vai determinar quais espécies de valores 
+                cada variável pode armazenar. Por fim, uma variável pode ter seu conteúdo alterado 
+                a qualquer momento.
+
+            </p>
+
+            <p> Em C, os tipos de variáveis são: </p>
+
+            <ul>
+                <li> char: armazena letras e símbolos; </li>
+                <li> int: armazena números inteiros; </li>
+                <li> float: armazena números reais; </li>
+                <li> double: representam números de ponto flutuante de precisão dupla,
+                     onde precisam duas vezes a quantidade de memória das variáveis float
+                     fornecendo 15 dígitos, sendo o dobro da precisão de variáveis float. </li>
+            </ul>
+
+            <h3> Expressões Matemáticas </h3>
+            <p> Operadores aritméticos: </p>
+
+            <ul>
+                <li> + (adição) </li>
+                <li> - (subtração) </li>
+                <li> * (multiplicação) </li>
+                <li> / (divisão) </li>
+                <li> % (resto de divisão inteira) </li>
+            </ul>
+
+            <b> Exemplo: </b>
+
+            <code> 
+                <pre>
+                    #include <stdio.h>
+
+                        int main()
+                        {
+                           int i = 5;
+                           int j = 2;
+                           float f = 3.0;
+                           f = f + j / i;
+                           printf("O valor de f é %f", f);
+                           return 0;
+                        }
+
+                </pre>
+            </code>
+
+        </div>
+
+        <div>
+            <h3> Estruturas Condicionais </h3>
+            <b>If-Else</b>
+
+            <p> A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, 
+                gostaríamos de poder escolher as instruções a serem executadas em caso do não 
+                cumprimento da condição. </p>
+            
+            <p> A expressão IF... ELSE permite executar outra série de instruções em caso do 
+                não cumprimento da condição. A sintaxe desta expressão é a seguinte: </p>
+
+            <code>
+                <pre>
+                    if (condição realizada) {
+                        lista de instruções
+                     }
+                     else {
+                       outra série de instruções
+                     }
+                </pre>
+            </code>
+
+            <b> Switch </b>
+
+            <p> A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma 
+                variável. Esta conexão condicional simplifica muito o teste de vários valores de 
+                uma variável, pois esta operação teria sido complicada (mas possível) com varios
+                if imbricados. Sua sintaxe é a seguinte: </p>
+            
+            <code>
+                <pre>
+                    switch (variável) { 
+
+                        casa Valor1:
+                         Lista de instruções;
+                        
+                          break;
+                        
+                        casa Valor2 :
+                         Lista de instruções;
+                        
+                          break;</bold>
+                        
+                        casa Valores... :
+                         Lista de instruções;
+                        
+                          Break;
+                        
+                        default:
+                        
+                         Lista de instruções;
+                        
+                        }                        
+                </pre>
+            </code>
+
+        </div>
+
+        <div>
+            <h2> Estruturas de Repetição </h2>
+            <b> For </b>
+
+            <p> A instrução for executa várias vezes a mesma série de instruções: é um loop. </p>
+            <p> Em sua sintaxe, basta especificar o nome da variável que serve de contador 
+                (e, eventualmente, o seu valor inicial, a condição sobre a variável para a qual
+                o loop para (basicamente uma condição que testa se o valor do contador excede um limite) e,
+                finalmente, uma instrução que incrementa (ou decrementa) o contador. </p>
+
+            <code>
+                <pre>
+                    for (contador; condição; modificação do contador) {
+                        lista de instruções;
+                       }
+                </pre>
+            </code>
+
+            <b> While </b>
+            <p> A instrução while representa outro meio de executar várias vezes 
+                a mesma série de instruções. A sintaxe desta expressão é a seguinte:</p>
+            
+            <code> 
+                <pre>
+                    while (condição realizada) {
+                        lista de instruções;
+                     }
+                </pre>
+            </code>
+
+        </div>
+
+        <div>
+            <h2> Como executar um programa em C? </h2>
+            <p> Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar 
+                programas em C. Se o programa consistir de um único arquivo, você pode simplesmente 
+                executar este comando no terminal: </p>
+            
+            <code> $ gcc prog.c -o prog </code>
+
+            <p> 
+                Você precisa especificar o nome do arquivo executável de saída pois o padrão, 
+                por razões históricas, é usar o arquivo a.out. Em geral, usamos o mesmo nome 
+                do arquivo de código, tirando a extensão .c. Veja que, ao contrário do Windows, 
+                o Linux não precisa da extensão .exe para reconhecer um arquivo executável; ele 
+                utiliza os atributos de permissão do arquivo para saber se ele é executável,
+                dos quais o gcc já cuida automaticamente.
+            </p>
+
+            <p> Para executar o programa, a maneira mais “universal” é digitar o seguinte comando no terminal:  </p>
+
+            <code> $ ./prog </code>
+
+        </div>
+
+
+
+
+
+    </body>
+</html>
