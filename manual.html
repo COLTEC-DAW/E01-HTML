@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANUAL PROGRAMAÇÃO</title>
+</head>
+
+<body>
+    <h1>MANUAL PROGRAMAÇÃO</h1>
+    <div container="Introdução">
+
+    </div>
+    <div container="Variáveis e expressões matemáticas">
+        <h2>Variáveis e expressões matemáticas</h2>
+        <ul>Uma variável é uma possição de memória que pode ser identificada através de um nome.</ul>
+        <ul>Podem ter seu conteúdo alterado por um comando de atribuição.</ul>
+        <ul>Após a atribuição mudam de valor.</ul>
+        <h3>Tipos</h3>
+        <ul>
+            <li>Todas as variáveis em C tem um tipo;</li>
+            <li>Cada tipo define os valores que a variável pode armazenar;</li>
+            <li>Cada tipo ocupa uma certa quantidade de nemória.</li>
+        </ul>
+        <table border='1'>
+            <tr>
+                <th>TIPO</th>
+                <th>VALORES VÁLIDOS</th>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>letras e símbolos: 'a', 'b', 'H', '^', '*','1','0'</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>de -32767 até 32767 (apenas números inteiros)</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>de -3.4 x 1038 até +3.4 x 10+38com até 6 dígitos de precisão</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>de -1.7 x 10308 até +1.7 x 10+308com até 10 dígitos de precisão</td>
+            </tr>
+        </table>
+        <h3>Declarando</h3>
+        <ul>Todas as variáveis tem que ser declaradas antes de serem usadas;</ul>
+        <ul>Não há uma inicialização implícita na declaração</ul>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                // Exemplo de programa em C
+
+                #include <stdio.h>   //  Arquivo de cabeçalho (header)
+                void main()
+                { 
+                   int NroDeHoras = 0;            // declara e inicializa com Zero
+                   float PrecoDoQuilo = 10.53;    // declara e inicializa com 10.53
+                   double  TaxaDoDolar = 1.8,
+                           TaxaDoMarco = 1.956,
+                           TaxaDoPeso = 1.75,        
+                           TaxaDoFranco = 0.2;        
+                .......  
+                }
+            </code></pre>
+        </div>
+        <ul>Constantes são identificadores que não podem ter seus valores alterados durante a execução do programa.</ul>
+        <ul>Para criar uma constante existe o comando #define que, em geral é colocado no início do programa-fonte.</ul>
+        <h3>Exempos</h3>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+#define NRO_DE_DIAS_DA_SEMANA 7 // Não se coloca ponto-e-vírgula após o valor
+#define NRO_DE_HORAS_DO_DIA 24
+void main ()
+{
+   int TotalDeHoras;
+
+    TotalDeHoras = 10 * NRO_DE_DIAS_DA_SEMANA * NRO_DE_HORAS_DO_DIA;
+......
+}
+            </code></pre>
+        </div>
+        <h3>Expressões aritiméticas</h3>
+        <table border='1'>
+            <tr>
+                <th>OPERADOR</th>
+                <th>DESCRIÇÃO</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Soma</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtração</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>decremento</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>incremento</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplicação</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Divisão</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>resto da divisão</td>
+            </tr>
+        </table>
+    </div>
+
+    <div container="Estruturas Condicionais">
+        <h2>Estruturas Condicionais</h2>
+        <p>Chamamos de estruturas condicionais as instruções para testar se uma condição é verdadeira ou não. Elas podem
+            ser associadas às estruturas que se repetem, após o cumprimento da condição, chamamos a elas de estruturas
+            de loop.</p>
+        <p>A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes
+            diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta
+            expressão é a seguinte:</p>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                if (condição realizada) {
+                    lista de instruções;
+                 }                 
+            </code></pre>
+        </div>
+        <p>É possível definir várias condições a serem cumpridas com os conectores AND e OR (&& e ||).</p>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                if ((condição1)&&(condição2)) // ambas precisam ser verdadeiras
+                if ((condição1)||(condição2)) // só uma precisa estar correta
+            </code></pre>
+        </div>
+    </div>
+    <div container="Estruturas de Repetição">
+        <h2>Estruturas de repetição- LOOP</h2>
+        <p>Os loops são estruturas que executam várias vezes a mesma série de instruções até que uma condição não seja
+            mais realizada. Às vezes, chamamos estas estruturas de instruções repetitivas ou iterações. A forma mais
+            comum de fazer um loop é criar um contador (uma variável que se incrementa, ou seja, que aumenta de 1 a cada
+            volta do loop) e parar o loop quando o contador excede um determinado valor.</p>
+        <h3>For</h3>
+        <p>A instrução for executa várias vezes a mesma série de instruções: é um loop.</p>
+        <p>Em sua sintaxe, basta especificar o nome da variável que serve de contador (e, eventualmente, o seu valor
+            inicial, a condição sobre a variável para a qual o loop para (basicamente uma condição que testa se o valor
+            do contador excede um limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador.
+        </p>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                for (contador; condição; modificação do contador) {
+                    lista de instruções;
+                }
+                //ou seja:
+                for (i=1; i&gt;6; i++) {
+                    printf("%d", i);
+                }
+            </code></pre>
+        </div>
+        <p>Este loop exibe cinco vezes o valor do i, ou seja, 1, 2, 3, 4, 5. Ele começa em i = 1, verifique se i é
+            inferior a 6 e, assim por diante, até atingir o valor de i = 6, para o qual a condição não será realizada, o
+            loop vai se interromper e o programa continuará seu curso.</p>
+        <h3>While</h3>
+        <p>A instrução while representa outro meio de executar várias vezes a mesma série de instruções. Esta instrução
+            executa a lista de instruções enquanto (significado da palavra While) a condição se realiza.</p>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                while (condição realizada) {
+                    lista de instruções;
+                 
+                }
+            </code></pre>
+        </div>
+    </div>
+    <div container="Como executar um programa em C">
+        <h2></h2>
+        <p>Com o gcc já instalado no seu sistema, é muito simples usá-lo para compilar programas em C. Se o programa
+            consistir de um único arquivo, você pode simplesmente executar este comando no terminal:</p>
+        <div style="border: 3px solid; width: 50%">
+            <pre><code>
+                $ gcc prog.c -o prog
+            </code></pre>
+        </div>
+        <h3>Preguiça de instalar?</h3>
+        <p>Use um compilador Online!</p>
+        <a href="https://www.onlinegdb.com/online_c_compiler" target="_blank" rel="noopener noreferrer">Clique aqui para
+            ver um<a></a>
+    </div>
+</body>
+
+
+</html>
