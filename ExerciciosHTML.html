@@ -1,32 +1,100 @@
-
+<!-- Prova de Múltipla Escolha -->
 <!DOCTYPE html>
 
 <html>
     <head></head>
     <body>
-        <title>Notícias Diárias</title>
+        <title>Prova de Múltipla Escolha</title>
         <header>
-            <h1>Notícias Diárias</h1>
-            <h3>Sempre trazendo a informação até você</h3>
+            <h1>Prova</h1>
         </header>
         <div>
-            <p> 
-                Informação,informação,informação,informação, <br>
-                informação,<strong>informação</strong>,informação,informação, <br>
-                informação,informação,informação,informação.
-            </p>
-            <p> 
-                Outra <strong><em>informação</em></strong>,outra informação,outra informação, <br>
-                outra informação,outra informação,outra informação, <br>
-                outra informação,outra informação,<b><i>informação</i></b>, <br>
-                outra informação,outra informação,outra informação.
-            </p>
-            <p>
-                Última informação,última informação,última informação, <br>
-                última <em>informação</em>,última informação,última informação, <br>
-                última informação,última informação,última informação, <br>
-                última informação,última informação,<strong>última</strong> informação.
-            </p>
+            <h3>Questão 1</h3>
+            <label for="primeira atividade">Qual tag é responsável por criar links?</label> 
+            <menu id="primeira atividade">
+                <li type="A">a</li>
+                <li type="A">b</li>
+                <li type="A">i</li>
+                <li type="A">u</li>
+            </menu>
+            <button onclick="respostaCerta()">  A </button>
+            <button onclick="respostaErrada()"> B </button>
+            <button onclick="respostaErrada()"> C </button>
+            <button onclick="respostaErrada()"> D </button>
         </div>
+        <div>
+            <h3>Questão 2</h3>
+            <label for="Segunda Atividade">
+                Qual tag é responsável por informar ao navegador que um 
+                determinado trecho é um cabeçalho?  
+            </label> 
+            <menu id="Segunda Atividade">
+                <li type="A">head</li>
+                <li type="A">footer</li>
+                <li type="A">header</li>
+                <li type="A">title</li>
+            </menu>
+            <button onclick="respostaErrada()"> A </button>
+            <button onclick="respostaErrada()"> B </button>
+            <button onclick="respostaCerta()">  C </button>
+            <button onclick="respostaErrada()"> D </button>
+        </div>
+        <div>
+            <h3>Questão 3</h3>
+            <label for="Terceira Atividade">
+                Qual elemento container cria uma lista desordenada?  
+            </label> 
+            <menu id="Terceira Atividade">
+                <li type="A">div</li>
+                <li type="A">menu</li>
+                <li type="A">ol</li>
+                <li type="A">ul</li>
+            </menu>
+            <button onclick="respostaErrada()"> A </button>
+            <button onclick="respostaErrada()"> B </button>
+            <button onclick="respostaErrada()"> C </button>
+            <button onclick="respostaCerta()">  D </button>
+        </div>
+        <div>
+            <h3>Questão 4</h3>
+            <label for="Quarta Atividade">
+                Qual tag de alteração de texto o deixa <u>sublinhado</u>?  
+            </label> 
+            <menu id="Quarta Atividade">
+                <li type="A">u</li>
+                <li type="A">b</li>
+                <li type="A">i</li>
+                <li type="A">em</li>
+            </menu>
+            <button onclick="respostaCerta()">  A </button>
+            <button onclick="respostaErrada()"> B </button>
+            <button onclick="respostaErrada()"> C </button>
+            <button onclick="respostaErrada()"> D </button>
+        </div>      
+        <div>
+            <h3>Questão 5</h3>
+            <label for="Quinta Atividade">
+                Qual sentença informa ao browser a versão do HTML?
+            </label> 
+            <menu id="Quinta Atividade">
+                <li type="A">!DOCTYPE html</li>
+                <li type="A">html</li>
+                <li type="A">script></li>
+                <li type="A">div</li>
+            </menu>
+            <button onclick="respostaCerta()">  A </button>
+            <button onclick="respostaErrada()"> B </button>
+            <button onclick="respostaErrada()"> C </button>
+            <button onclick="respostaErrada()"> D </button>
+        </div>   
+        <script>
+             function respostaErrada(){
+                 alert("Resposta Errada.")
+             }
+             function respostaCerta(){
+                alert("Resposta Correta!")
+             }
+        </script>
+        
     </body>
 </html>
