@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANUAL PROGRAMAÇÃO</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <form>
+                <fieldset style="width: 25%">
+                    <legend>Dados pessoais:</legend>
+                    <div class="input-group">
+                        <lable for="code" class="field-label">Código:</lable>
+                        <input type="text" id="code">
+                    </div>
+                    <div class="input-group">
+                        <lable for="nome" class="field-label">Nome:</lable>
+                        <input type="text" id="nome">
+                    </div>
+                    <div class="input-group">
+                        <lable for="Senha" class="field-label">Senha:</lable>
+                        <input type="text" id="Senha">
+                    </div>
+                    <div class="group-layout">
+                        <label>Gênero:</label>
+                        <input type="radio" name="layout" id="layout-yes">
+                        <label for="layout-yes">Masculino</label>
+                        <input type="radio" name="layout" id="layout-no">
+                        <label for="layout-no">Feminino</label>
+                        <input type="radio" name="layout" id="layout-no">
+                        <label for="layout-no">Não Binário</label>
+                    </div>
+                    <div class="input-group">
+                        <lable for="Idade" class="field-label">Idade:</lable>
+                        <input type="text" id="Idade">
+                    </div>
+                    <label for="cargos">Cartão de Crédito</label>
+                    <div class="input-group">
+                        <select id="cargos" name="cargos" multiple>
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="Visa">Visa</option>
+                            <option value="American">American Express</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form>
+                <fieldset style="width: 20%">
+                    <legend>Dados profissionais:</legend>
+                    <div class="input-group">
+                        <label for="cargos">Cargo:</label>
+                        <select id="cargos" name="cargos">
+                            <option value="Junior">Analista Junior</option>
+                            <option value="Pleno">Analista Pleno</option>
+                            <option value="Senior">Analista Senior</option>
+                        </select>
+                    </div>
+                    <div class="group-layout">
+                        <label>Dados pessoais:</label>
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="layout-yes">Fumante</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">Pratica Exercicio Físico</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">Consome Bebida Alcólica</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="experiencia" class="field-label">Experiências Profissionais</label>
+                        <div><textarea id="experiencia"></textarea></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="buttons">
+            <button type="subimit" class="botons btn-submmit">Inserir</button>
+            <button class="botons" type="clean">Limpar</button>
+        </div>
+</body>
+
+</html>
