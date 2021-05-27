@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex. 4 - Manual</title>
+    </head>
+    <body>
+        <h1>Manual de Programação</h1>
+        <h3>Por: Julia Rezende</h3>
+        <div style ="border: 3px solid pink">
+            <h2>Introdução</h2>
+            <p> 
+                Criada pelo cientista da computação Dennis Ritchie, em 1972, a linguagem C foi derivada de outras duas: a BCPL e a Algol 68. Embora tenha sido pensada com o propósito exclusivo de ser usada no desenvolvimento de uma nova versão do sistema operacional Unix, hoje é aplicada nos mais variados tipos de projeto. A linguagem C ainda é uma das mais populares do mercado devido às diversas vantagens que apresenta.
+            </p>
+            <p>
+                Exemplo básico de código em C:
+                <p></p>
+                <code>
+                    int main(){<p></p>
+                        printf("Hello World!\n");<p></p>
+
+                        return 0;<p></p>
+                    }
+                </code>
+            </p>
+        </div>
+        <p></p>
+        <div style ="border: 3px solid pink">
+            <h2>Variáveis e expressões matemáticas</h2>
+            <h3>Tipos principais de variáveis:</h3>
+            <ul>
+                <li>int = Número inteiro</li>
+                <li>float = Número racional</li>
+                <li>char = Caracter</li>
+            </ul>
+            <h3>Principais expressões matemáticas</h3>
+            <ul>
+                <li>+ para soma</li>
+                <li>- para subtração</li>
+                <li>/ para divisão</li>
+                <li>* para multiplicação</li>
+                <li>% para usar o resto de uma divisão</li>
+                <li>>, <, >=, <= para maior que, menor que, maior ou igual a, menor ou igual a</li>
+            </ul>
+            <p>
+                <code>
+                    int main(){<p></p>
+                        int soma;<p></p>
+                        soma = 2 + 2; <p></p>
+
+                        return 0;<p></p>
+                    }
+                </code>
+            </p>
+        </div>
+        <p></p>
+        <div style ="border: 3px solid pink">
+            <h2>Estruturas condicionais</h2>
+            <p>Usamos as estruturas condicionais para executar determinado código caso o parâmetro seja verdadeiro</p>
+            <code>
+                int main(){<p></p>
+                    int numero;<p></p>
+                    printf("Digite um numero: ")<p></p>
+                    scanf("%i", &numero);<p></p>
+                    if(numero == 0){<p></p>
+                        printf("O numero digitado eh 0");<p></p>
+                    }<p></p>
+
+                    else if(numero == 2){<p></p>
+                        printf("O numero digitado eh 2");<p></p>
+                    }<p></p>
+
+                    else{<p></p>
+                        printf("O numero digitado nao eh 0 nem 2");<p></p>
+                    }<p></p>
+                    return 0;<p></p>
+                }
+            </code>
+            
+            <p>O código só imprime "O numero digitado eh 0" SE a variável numero tiver valor 0.</p>
+            <p>Usamos o else if quando queremos adicionar outra condição a ser verificada.</p>
+            <p>O código só entra no else caso nenhuma das condicionais anteriores for verdadeira.</p>
+           
+        </div>
+        <p></p>
+        <div style ="border: 3px solid pink">
+            <h2>Estruturas de repetição</h2>
+            <h4>WHILE - O código é executado enquando a condicional for verdadeira.</h4>
+            <code>
+                int main(){<p></p>
+                    int i = 0, limite = 10;<p></p>
+                    while(i != limite){<p></p>
+                        printf("Valor de i = %d", i);<p></p>
+                        i = i + 1;<p></p>
+                    }<p></p>
+                    return 0;<p></p>
+                }
+            </code>
+            <p></p>
+            <h4>FOR - Estrutura (variavel; limite; iterização)</h4>
+            <code>
+                int main(){<p></p>
+                    int limite = 10<p></p>
+                    for(i = 0; i <= limite; i++){<p></p>
+                        printf("Valor de i = %d", i);<p></p>
+                    }<p></p>
+                }
+            </code>
+        </div>
+        <p></p>
+        <div style ="border: 3px solid pink">
+            <h2>Como exeuctar um programa em C</h2>
+            <ul>
+                <li>Usar o Mingw para instalar o GCC (compilador) na sua máquina</li>
+                <li>Digitar o código no seu editor de preferência: VS, Code blocks, Sublime...</li>
+                <li>Compilar e rodar</li>
+                <li>Lembre-se de encerrar a compilação antes de rodar novamente!</li>
+            </ul>
+        </div>
+    </body>
