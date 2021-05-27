@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <title>Manual de Programação</title>
+    <body>
+        <h1>Manual de Programação</h1>
+        <h2>Introdução</h2>
+        <ul>
+            <div style="border:1px solid black">
+                <li>
+                    C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix.
+                </li>            
+            </div>    
+            <br>
+            <div style="border:1px solid black">
+                <li>
+                    C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação (por exemplo, a linguagem Java), mais notavelmente C++, que originalmente começou como uma extensão para C.
+                </li>  
+            </div>
+        </ul>
+        <h2>Variáveis e expressões matemáticas</h2>
+        <ul>
+            <div style="border:1px solid black">
+                <li>Em C temos as variaveis principais:</li>
+                <ol>
+                    <li>Int para numeros inteiros</li>
+                    <li>Char para caracteres</li>
+                    <li>Float para numeros reais</li>
+                </ol>
+            </div><br>
+            <div style="border:1px solid black">
+            <li>Em C temos as expressoes principais:</li>
+                <ol>
+                    <li>+ para soma</li>
+                    <li>- para subtração</li>
+                    <li>/ para divisão</li>
+                    <li>% para resto da divisão</li>
+                    <li>= para atribuição</li>
+                </ol>
+            </div>
+            <h2>Estruturas Condicionais</h2>
+            <div style="border:1px solid black">
+                <li>Em c usamos <code>if()</code>, <code>else if()</code> e <code>switch case()</code> como estruturas condicionais.</li>
+                <ol>
+                    <li><code>if()</code> é o mais basico para uma condiçao.<br>
+                    <code>
+                        #include < stdio.h><br>
+                        #include < stdlib.h><br>
+                        if(1>2){<br>
+                            printf("1 é maior que 2")<br>
+                        }<br>
+                    </code>
+                    </li>
+                </ol>
+            </div><br>
+            <div style="border:1px solid black">
+                    <li>
+                        O <code>else if()</code> é uma segunda condição para o <code>if()</code>
+                        <ol>
+                            <li><code>#include < stdio.h><br>
+                                #include < stdlib.h><br>
+                                if(1>2){<br>
+                                    printf("1 é maior que 2")<br>
+                                }else if(3>2){<br>
+                                    printf("3 é maior que 2")<br>
+                                }<br>
+                            </code></li>
+                        </ol>
+                    </li>
+            </div><br>
+            <div style="border:1px solid black">
+                <li>O <code>switch case()</code> é usado para usar varias condiçoes como no caso de um menu</li>
+                <ol>
+                   <li>
+                        <code>
+                            #include < stdio.h><br>
+                            #include < stdlib.h><br>
+                            int menu<br>
+                            printf("Digite um numero de 1 a 5")<br>
+                            scanf("%d", &menu)<br>
+                            switch case(menu){<br>
+                                case 1:<br>
+                                    printf("Voce digitou 1")<br>
+                                break;<br>
+                                case 2:<br>
+                                    printf("Voce digitou 2")<br>
+                                break;<br>
+                                case 3:<br>
+                                    printf("Voce digitou 3")<br>
+                                break;<br>
+                                case 4:<br>
+                                    printf("Voce digitou 4")<br>
+                                break;<br>
+                                case 5:<br>
+                                    printf("Voce digitou 5")<br>
+                                break;<br>
+                                default:<br>
+                                    printf("Invalido")<br>
+                                break;<br>
+                            }
+                        </code>
+                   </li> 
+                </ol>
+            </div> 
+            <h2>Estruturas de Repetição</h2>
+            <div style="border:1px solid black">
+                <li>Temos 2 estruturas de Repetição <code>for()</code> e <code>while()</code></li>
+                <ol>
+                    <li>For()
+                        <br>
+                        <code>
+                            #include < stdio.h><br>
+                            #include < stdlib.h><br>
+                            for(int x = 0, x < 100, x++){<br>
+                                printf("%d", x)<br>
+                            }<br>
+                        </code>
+                    </li>
+                </ol>
+            </div><br>
+            <div style="border:1px solid black">
+                <ol>
+                    <li>while()<br>
+                        <code>
+                            #include < stdio.h><br>
+                            #include < stdlib.h><br>
+                            int x;    <br>
+                            while(x<100){<br>
+                                printf("%d", x)<br>
+                            }<br>
+                        </code>
+                    </li>
+                </ol>
+            </div><br>
+            <h2>Como executar um programa em C</h2>
+            <div style="border:1px solid black">
+                <li>Para executar um programa basta apenas entras no terminal e digitar:<br></li>
+                <ol>
+                    <li>gcc nome_do_arquivo<br></li>   
+                    <li>-o nome_do_arquivo</li>
+                </ol>
+            </div>    
+        </ul>
+    </body>
+</html>
+
