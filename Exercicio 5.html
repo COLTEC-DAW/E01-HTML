@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <form>
+        <fieldset style="width: 25%;">
+            <legendn:><p>Dados Pessoais</p></legend>
+            Codigo<input type="text" size="30"><br>
+            Nome: <input type="text" size="30"><br>
+            Senha: <input type="text" size="30"><br>
+            Sexo: <button> Masculino</button> <button>Feminino</button><br>
+            Idade <input type="text" size="10"><br>
+            Cartao de credito: 
+            <select multiple> name="Opcoes" id="Cartoes">
+                <option value="MASTERCARD">MASTERCARD</option>
+                <option value="VISA">VISA</option>
+                <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+            </select>
+        </fieldset>
+
+        <fieldset style="width: 25%;">
+            <legendn:><p>Dados Profissionais</p></legend>
+            Cargo: <select name="Opcoes" id="Cartoes">
+                        <option value="Analista Júniot">Analista Junior</option>
+                        <option value="Analista Pleno">Analista Pleno</option>
+                        <option value="Analista Sênior">Analista Senior</option>
+                    </select>
+            <p>Dados Pessoais</p>
+            <input type="checkbox" id="Fumante" name = "Fumante" size="30"> Fumante<br>
+            <input type="checkbox" id="Pratica Exercicios fisicos" name = "Pratica Exercicios fisicos" size="30"> Pratica Exercicios fisicos<br>
+            <input type="checkbox" id="Consome bebida alcoolica" name = "Consome bebida alcoolica" size="30"> Consome bebida alcoolica<br>
+            <p>Experiencias Profissionais:</p>
+            <textarea rows = "5" cols="40" maxlength="500">Data Inicio/Data Fim  Empresa/Cargo</textarea>
+            
+
+        </fieldset>
+
+        <input type="reset" value="Limpar"><input type="submit" value="Enviar">
+        </form>
+</html>
