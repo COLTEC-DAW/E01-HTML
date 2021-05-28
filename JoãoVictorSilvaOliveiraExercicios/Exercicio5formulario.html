@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+    <style>
+        input#Codigo{
+            background-color: rgba(180, 176, 176, 0.705);
+        }
+        input#Nome{
+            width: 200px;
+            margin-left: 8px;
+        }
+        input#Senha{
+            margin-left: 8px;
+        }
+        input#SexoM{
+            margin-top: 10px;
+        }
+        input#SexoF{
+            margin-top: 10px;
+        }
+        input#Idade{
+            margin-left:13px;
+        }
+        input#cartao{
+            margin-left: 10px;
+        }
+        select#Cargo{
+            width: 150px;
+        }
+        input#experiencias{
+            width: 300px;
+            height: 100px;
+        }
+        textarea{
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+   <form>
+       <fieldset>
+           <legend>
+               Dados Pessoais
+           </legend>
+           <label for="input#Codigo">Código:</label>
+           <input type="number" id="Codigo"><br>
+
+           <label for = "input#Nome">Nome: </label>
+           <input  type="text"  id="Nome"><br>
+
+           <label for ="input#Senha">Senha:</label>
+           <input type = "password" id="Senha"><br>
+
+           <label for="input#sexoM">Sexo</label>
+           <input type ="radio" id='SexoM'> Masculino
+           <input type ="radio" id='SexoF'> Feminino<br>
+
+           <label for="input#Idade">Idade:</label>
+           <input type="number" id="Idade"><br>
+
+           <label for="input#cartao">Cartão</label>
+           <input type="text" list="ListaCartao" id="cartao">
+           <datalist id="ListaCartao">
+               <option value="MasterCard"></option>
+               <option value="Visa"></option>
+               <option value="American Express"></option>
+             </datalist>
+       </fieldset>
+   </form>
+
+   <form>
+       <fieldset>
+           <legend>Dados Profissionais</legend>
+            Cargo:
+           <select  id="Cargo">
+            <option value="AnalistaJunior">Analista Junior</option>
+            <option value="AnalistaPleno">Analista Pleno</option>
+            <option value="AnalistaSenior">Analista Senior</option>
+           </select><br>
+
+           Dados Pessoais<br>
+           <input type="checkbox" id ="Fumante"> Fumante<br>
+           <input type="checkbox" id ="Exercicios"> Pratica Exercicios Fisicos<br>
+           <input type="checkbox" id ="Bebida"> Consome bebida alcolica<br>
+
+           Experiencias Profissionais<br>
+           <textarea id = "textarea">Data Inicio/Data fim/Empresa/Cargo</textarea>
+           </form>
+          </fieldset>
+   </form>
+   <input type="submit" value ="limpar">
+   <input type="submit" value ="inserir">
+</body>
+</html>

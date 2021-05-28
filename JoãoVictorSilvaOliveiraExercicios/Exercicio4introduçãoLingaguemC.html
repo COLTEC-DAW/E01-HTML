@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Linguagem e C Tutorial</title>
+    <style>
+        body{
+            background-color: black;
+            color:rgb(247, 247, 247);
+        }
+        h1#Titulo{
+
+            border-radius: 15px;
+            text-align: center ;
+            background-color: darkred;
+            color: black;
+        }
+        div#Exemplo1{
+            box-shadow: 10px 5px rgba(255, 0, 0, 0.562);
+ 
+            color:black;
+            background-color: rgb(252, 252, 252);
+            border: 2spx rgb(241, 3, 3);
+            width: 600px;
+            height: 200px;
+            text-align: left;
+            border-radius: 5px;
+        }
+        div#Exemplo2{
+            box-shadow: 10px 5px rgba(255, 0, 0, 0.562);
+            border-radius: 5px;
+
+            color:black;
+            background-color: rgb(252, 252, 252);
+            border: 2spx rgb(241, 3, 3);
+            width: 600px;
+            height: 300px;
+            text-align: left;   
+        }
+    </style>
+</head>
+<body>
+    <h1 id = 'Titulo'><b>Linguagem em C basica</b></h1>
+
+    <h2>Exemplo de um programa</h2>
+    <div id ='Exemplo1'>
+<p> // Exemplo de programa em C <br>
+    // Isto é uma linha de comentário <br>
+    void main() <br>
+    { <br>
+       int a;            // declara a variável "a"<br>
+       a = 3 + 2;        // soma 3 com 2<br>
+    }</p>
+    </div>
+    <div>
+        <ul>
+            <li>Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.</li>
+            <li>Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</li>
+            <li>Um programa em C deve ser Identado para que possa ser lido com mais facilidade.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Variáveis</h2>
+        <p>As variáveis são compenentes na memoria que guardam um determinado tipo de dado, como um numero ou uma palavra<br> 
+        e são divididas em varias categorias int(Numeros inteiros), char(letra), string(textos) etc.</p>
+    </div>
+    <div id ='Exemplo1'>
+        <p>int a,b, SomaGeral;<br>
+            a = 3; // a recebe o valor 3<br>
+            b = a * 2; // b recebe o dobro do valor de a<br> 
+            c = a + b + 2; // c recebe 11</p>
+            </div>
+      <div>
+          <h2>Declaração de Variáveis</h2>
+          Todas as variáveis tem que ser declaradas antes de serem usadas;
+          Não há uma inicialização implícita na declaração
+      </div> 
+
+      <div id ='Exemplo2'>
+        <p>// Exemplo de programa em C
+
+            #include <stdio.h>   //  Arquivo de cabeçalho (header)<br>
+            void main()<br>
+            { <br>
+               int contador;            // declarações simples<br>
+               float PrecoDoQuilo;<br>
+               double TaxaDeCambio;<br>
+               char LetraDigitada;<br>
+               int IdadeManoel, IdadeJoao, IdadeMaria;  // Pode colocar mais de uma variável na<br>
+                                    // na mesma linha<br>
+               double  TaxaDoDolar,<br>
+                       TaxaDoMarco,<br>
+                       TaxaDoPeso,        // Também pode trocar de linha no meio<br>
+                       TaxaDoFranco;<br>
+            .......  
+            }</p>
+            </div>
+      <div>  
+
+        <h1>Declaração de Variáveis</h1>
+
+            Todas a variaveis obrigatoriamente tem que ser declaradas antes de serem utilizadas<br>
+            Para declarar-se uma função primeiro você define o tipo de dado que ela armazena e depois seu nome<br>
+        <div id ='Exemplo1'>
+            <p>
+                #include <stdio.h>     //  Arquivo de cabeçalho (header)<br>
+                void main()<br>
+                {<br>
+                    int Numero1;    //Declaração da varavel<br>
+                    float Numeroracional;<br>
+                    ....<br>
+                }
+                 </p>
+                </div>
+          <div> 
+              <div>            
+                  <h1>Operações</h1>
+                  Para realizar Operações em c se usa os operadores + (soma), - (subtração), * (multiplicação), / (divisão)<br>
+                  <div id ='Exemplo1'>
+                    <p>
+                        #include <stdio.h>     //  Arquivo de cabeçalho (header)<br>
+                        void main()<br>
+                        {<br>
+                            int soma;    //Declaração da varavel<br>
+                            int Numero2;<br>
+                            soma = 2+2;\\O valor de soma agora é 4<br>
+                            Numero2 = soma*2; \\ O valor do Numero2 agora é igual a 8<br> 
+                        }
+                         </p>
+                        </div>  
+            </div>
+            <div>
+                <h1>A função printf</h1>
+                <p>A função printf exibe um ou mais dados na tela. Para tanto ele deve receber pelo menos dois parâmetros, separados por vírgula:<br>
+                um string de formato que define, através de caracteres especiais, os tipos dos dados a serem impressos e suas posições na linha de impressão;<br>
+                um dado a ser impresso. Este dado pode ser qualquer um dos dados visto anteriormente.</p>
+                <div id ='Exemplo1'>
+                    <p> 
+                    #include <stdio.h>  	// Necessário para usar a função printf<br>
+                    // A função printf exibe um ou mais dados na tela<br>
+                    void main ()<br>
+                    {<br>
+                    printf("%s","Isto é uma string ....\n"); // note o '\n' no final da string;<br>
+                    printf("%s","Outra string ...."); <br>
+                    printf("%s","Terceira string\n"); <br>
+
+                    }
+                         </p>
+                        </div> 
+            </div>
+     
+</body>
+</html>
