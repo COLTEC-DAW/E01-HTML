@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+    <div id="MANUAL DE PROGRAMACAO">
+        <head>
+            <p> Exercício 4:</p>
+            <h1> MANUAL DE PROGRAMAÇÃO: C</h1>
+        </head>
+
+        <body>
+            <div id="INTRODUCAO">
+                <h2> INTRODUCAO À LINGUAGEM C</h2>
+                <p></p>
+                <h3>História</h3>
+                <p> Criada pelo cientista da computação Dennis Ritchie, em 1972, a linguagem C foi derivada
+                    de outras duas: a BCPL e a Algol 68. Embora tenha sido pensada com o propósito exclusivo
+                    de ser usada no desenvolvimento de uma nova versão do sistema operacional Unix, hoje é
+                    aplicada nos mais variados tipos de projeto.</p>
+                <p>A linguagem C ainda é uma das mais populares do mercado devido às diversas vantagens que
+                    apresenta. Por isso, é quase uma obrigatoriedade no currículo de uma pessoa que trabalha 
+                    com desenvolvimento. Então, para iniciar seus estudos nesse assunto, vamos abordar os 
+                    seguintes tópicos:</p>
+                <p> Fonte: <a href="https://blog.betrybe.com/linguagem-de-programacao/linguagem-c/">Tryble Blog</a></p>
+
+                <h3>O que é C</h3>
+                <p>C foi criada com um propósito: ser usada no desenvolvimento de uma nova versão do sistema operacional
+                    Unix. A primeira versão do Unix utilizava Assembly. Então podemos dizer que desde o principio C foi
+                    uma linguagem criada por programadores para programadores.</p>
+                <p>A linguagem C é considerada de propósito geral, ou seja é uma linguagem capaz de ser usada para
+                    praticamente qualquer tipo de projeto.</p>
+                <p>É extremamente portável, ou seja um programa escrito em linguagem C pode ser facilmente usado em
+                     qualquer plataforma.</p>
+                <p>A linguagem C influenciou de forma direta muitas linguagens como C++, Java, C# , Objective C, e
+                     muitas outras linguagens de programação tem sua sintaxe e estruturas influenciadas por C.</p>
+                <P>Fonte: <a href="http://linguagemc.com.br/o-que-e-linguagem-c/">Linguagem em C?</a></P>
+            </div>
+
+            <div id="VARIAVEIS E EXPRESSOES MATEMATICAS">
+                <h2> VARIÁVEIS E EXPRESSOES MATEMATICAS</h2>
+                <h3>Identificadores</P>
+                <p>São os nomes que podem ser dados para variáveis e funções.</p>
+                <h3>Variáveis</h3>
+                <p>Uma variável é uma possição de memória que pode ser identificada através de um nome.</p>
+                <p>Podem ter seu conteúdo alterado por um comando de atribuição.</p>
+                <p>Após a atribuição mudam de valor.</p>
+                <legend>
+                    <code >
+                        <p>int a,b, SomaGeral;</p>
+                        <p>a = 3; // a recebe o valor 3</p>
+                        <p>b = a * 2; // b recebe o dobro do valor de a </p>
+                        <p>c = a + b + 2; // c recebe 11</p>
+                    </code>
+                </legend>
+
+                <h4>Tipos de variáveis</h4>
+                <ul>
+                    <li>Todas as variáveis em C tem um tipo</li>
+                    <li>Cada tipo define os valores que a variável pode armazenar;</li>
+                    <li>Cada tipo ocupa uma certa quantidade de nemória.</li>
+                </ul>
+
+                <table border="1">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Valores Válidos</th>
+                    </tr>
+
+                    <tr>
+                        <td> char </td>
+                        <td> letras e símbolos:   'a',  'b', 'H', '^', '*','1','0'</td>
+                    </tr>
+
+                    <tr>
+                        <td> int </td>
+                        <td> de -32767 até 32767 (apenas números inteiros)</td>
+                    </tr>
+
+                    <tr>
+                        <td> float</td>
+                        <td> de -3.4 x 10^38 até +3.4 x 10^+38 com até 6 dígitos de precisão</td>
+                    </tr>
+
+                    <tr>
+                        <td> double </td>
+                        <td> de -1.7 x 10^308 até +1.7 x 10^+308com até 10 dígitos de precisão</td>
+                    </tr>
+
+                </table>
+                    <h3>Declaração de Variáveis</h3>
+                    <ul>
+                        <li>Todas as variáveis tem que ser declaradas antes de serem usadas;</li>
+                        <li>Não há uma inicialização implícita na declaração </li>
+                    </ul>
+
+                    <code>
+                        
+                        <p>// Exemplo de programa em C</p>
+
+                        <p>#include <stdio.h>   //  Arquivo de cabeçalho (header)</p>
+                        <p>void main()</p>
+                        <p>{</p> 
+                        <p>  int contador;            // declarações simples</p>
+                        <p>  float PrecoDoQuilo;</p>
+                        <p>  double TaxaDeCambio;</p>
+                        <p>  char LetraDigitada;</p>
+                        <p>  int IdadeManoel, IdadeJoao, IdadeMaria;  // Pode colocar mais de uma variável na </p>
+                        <p>					    // na mesma linha</p>
+                        <p>  double  TaxaDoDolar,</p>
+                        <p>  TaxaDoMarco,</p>
+                        <p>  TaxaDoPeso,        // Também pode trocar de linha no meio</p>
+                        <p>  TaxaDoFranco;        </p>
+                        <p>  .......  </p>
+                        <p>}</p>
+                    </code>
+                    <h3>Constantes</h3>
+                    <p>Constantes são identificadores que não podem ter seus valores alterados durante a execução do programa.</p>
+                    <p>Para criar uma constante existe o comando #define que, em geral é colocado no início do programa-fonte.</p>
+
+                    <code>
+                        <p>#define LARGURA_MAXIMA 50           // Não se coloca ponto-e-vírgula após o valor</p>
+                        <p>#define NRO_DE_DIAS_DA_SEMANA 7</p>
+                        <p>#define NRO_DE_HORAS_DO_DIA 24</p>
+                        <p>#define VALOR_DE_PI  3.1415</p>
+                        <p>void main ()</p>
+                        <p>{</p>
+                        <p>int TotalDeHoras;</p>
+                        <p>TotalDeHoras = 10 * NRO_DE_DIAS_DA_SEMANA * NRO_DE_HORAS_DO_DIA;</p>
+                        <p>......</p>
+                        <p>}</p>
+                    </code>
+            <p>Fonte <a href="https://www.inf.pucrs.br/~pinho/LaproI/IntroC/IntroC.htm">PUC RS</a></p>
+            </div>
+
+            <div id="ESTRUTURAS CONDICIONAIS">
+                <h2>ESTRUTURAS CONDICIONAIS</h2>
+                <p>Chamamos de estruturas condicionais as instruções para testar se uma condição
+                     é verdadeira ou não. Elas podem ser associadas às estruturas que se repetem,
+                      após o cumprimento da condição, chamamos a elas de estruturas de loop.</p>
+                <h3>IF e ELSE IF</h3>
+                <p>A instrução IF é a estrutura de teste mais básica e é encontrada em todas as 
+                    linguagens (com sintaxes diferentes). Ela permite executar uma série de
+                    instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte:</p>
+
+                <p>A expressão IF... ELSE permite executar outra série de instruções em caso do
+                não cumprimento da condição. A sintaxe desta expressão é a seguinte:</p>
+
+                    <code>
+                        <p>if (condição realizada) {</p>
+                        <p>    lista de instruções</p>
+                        <p> }</p>
+                        <p> else {</p>
+                        <p>   outra série de instruções</p>
+                        <p> }</p>
+                    </code>
+
+                <h3>SWITCH</h3>
+                <p>A Instrução switch efetua vários testes de valores sobre o conteúdo 
+                    de uma mesma variável. Esta conexão condicional simplifica muito o 
+                    teste de vários valores de uma variável, pois esta operação teria sido
+                    complicada (mas possível) com varios if imbricados. Sua sintaxe é a seguinte:</p>
+
+                <code>switch (variável) { 
+
+                    <p>casa Valor1:</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;</p>
+                    <p>casa Valor2 :</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;</bold></p>
+                    <p>casa Valores... :</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;  </p>
+                    <p>default:</p>
+                    <p>Lista de instruções;</p>
+                    <p>}</p>
+
+                </code>
+
+            </div>
+
+            <div id="ESTRUTURAS DE REPETICAO">
+                <h2>ESTRUTURAS DE REPETICAO</h2>
+                <h3>For</h3>
+                <p>A instrução for executa várias vezes a mesma série de instruções: é um loop.</p>
+                <code>
+                    <p> for (contador; condição; modificação do contador) {</p>
+                    <p>    lista de instruções;</p>
+                    <p>   }</p>
+                </code>
+                <h3>while</h3>
+                <p>A instrução while representa outro meio de executar várias
+                    vezes a mesma série de instruções. A sintaxe desta expressão é a seguinte:</p>
+                
+                <code>
+                    <p>while (condição realizada) {</p>
+                    <p>lista de instruções;</p>
+                    <p>}</p>
+                </code>
+            </div>
+
+            <div id="COMO EXECUTAR UM PROGRAMA EM C">
+                <h2>COMO EXECUTAR UM PROGRAMA EM C</h2>
+                <p> A forma mais simples de se fazer é usando o prompt de comando:</p>
+                <P>Primeiro temos que  ir até a pasta onde o arquivo.c se encontra e compilá-lo</P>
+                <p>Para isso, basta digitar o nome do compilador, o arquivo a ser compilado,
+                    o parâmetro do comando, e o nome final do programa. Onde gcc é o processo
+                    (o compilador), meucodigo.c é o código fonte, o parâmetro -o significa que
+                    eu estou indicando qual é a saída e o meuprograma.exe indica o nome final 
+                    do programa compilado</p> 
+                    <code>
+                        <p>gcc C:\Users\rodri\Documents\meucodigo.c -o </p>
+                        <p>C:\Users\rodri\Documents\meuprograma.exe</p>
+                        <p></p>
+                    </code>
+                    <a href="https://velhobit.com.br/programacao/rodando-sua-primeira-aplicacao-c-no-windows-ou-linux.html#:~:text=Para%20isso%2C%20basta%20digitar%20o,o%20nome%20final%20do%20programa.&text=Onde%20gcc%20é%20o%20processo,nome%20final%20do%20programa%20compilado.">Clique aqui para saber mais</a>
+            </div>
+        </body>
+    </div>
+</html>
