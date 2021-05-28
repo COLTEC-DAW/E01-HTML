@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+    
+    <form>
+        <table border="1" width=370>
+            Dados pessoais:
+            <td>
+                Código: <input type="text" name="codigo" maxlength="3" size="5" /><br>
+                Nome: <input type="text" name="nome" /><br>
+                Senha: <input type="password" name="senha" ><br>
+                Sexo:
+                <input type="radio" name="sexo" value="masculino"> Masculino
+                <input type="radio" name="sexo" value="feminino"> Feminino
+                <input type="radio" name="sexo" value="intersexo"> Intersexo<br>
+                Idade: <input type="number" name="idade" /><br>
+                Cartão de Crédito:<br>
+                <select size="3" >
+                    <option value="mastercard" selected>Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="american_express">American Express</option>
+                </select><br>
+            </td>
+        </table>
+        <table border="1" width=370>
+            Dados Profissionais:
+            <td>
+                Cargo:
+                <select>
+                    <option value="analista_junior" selected>Analista Júnior</option>
+                    <option value="analista_pleno">Analista Pleno</option>
+                    <option value="analista_senior">Analista Senior</option>
+                </select><br>
+                Dados Pessoais:<br>
+                <input type="checkbox" name="dados_pessoais" value="fumante">Fumante<br>
+                <input type="checkbox" name="dados_pessoais" value="pratica_exercicios_fisicos">Pratica Exercícios Físicos<br>
+                <input type="checkbox" name="dados_pessoais" value="consome_bebida_alcoolica">Consome Bebida Alcoólica<br>
+                Experiências Profissionais:<br>
+                <textarea name="experiencias_profissionais" cols="38" rows="3" >Data Início/Data Fim/Empresa/Cargo</textarea>
+            </td>
+        </table>
+    </form>
+
+</body>
+
+</html>
