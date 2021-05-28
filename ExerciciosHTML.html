@@ -4,131 +4,71 @@
 <html>
     <head></head>
     <body>
-        <title>### Manual de Programação</title>
+        <title>Formulario de cadastro</title>
         <header>
-            <h1>### Manual de Programação</h1>
+            <h1>Formulario de cadastro</h1>
         </header>
-        <div>
-            <h2>Introdução</h2>
-            <p>
-                Olá. Aprenderemos um pouco de programação na linguagem C. Para isso, o <br>
-                conteúdo que será passado aqui será dividido em 4 módulos, quais sejam: <br>
-            </p>
-                <li>Variáveis e Expressões Matemáticas;</li>
-                <li>Estruturas Condicionais;</li>
-                <li>Estruturas de Repetição;</li>
-                <li>Como Executar um Programa em C.</li>
-        </div>    
-        <div>
-            <h3> Variáveis e Expressões Matemáticas</h3>
-            <p> Para começar, é bom estar ciente de que toda variável precisa ser <br>
-                declarada antes de usada, e de que se usada ante de inicializada <br>
-                o resultado será impreciso, pois as operações serão feitas com o <br>
-                lixo na variável.
-            </p>
-            <p>  
-                int a;<br>
-                int b;<br>
-                int c;<br><br>
-                c = a+b; // c = valor imprevisivel <br><br>
-                
-                d = e + f  // error: uso de identificadores não declarados
-            </p>
-            <p>
-                Os operadores aritméticos básicos em C são:
-            </p>
-            <li>+ para adição;</li>
-            <li>- para subtração;</li>
-            <li>* para multiplição;</li>
-            <li>/ para divisão;</li>
-            <li>% para módulo (resto da divisão).</li>
-
-            <p>
-                Genericamente, para efetuar qualquer uma dessas operações sobre as <br>
-                variáveis, basta representar a operação tal qual se faz normalmente <br>
-                no papel ou calculadora: colocando o símbolo correspondente entre as <br>
-                variáveis (atentando-se para a ordem de precedência de cada operador, <br>
-                que segeue a ordem comum da matemática). Ex: [a+(b-c)]/[d*e] 
-            </p>
-        </div>
-        <div>
-            <h3>Estruturas Condicionais</h3>
-            <p>
-                Em c, exitem estruturas que só efetuam determinado trecho de código quando <br>
-                uma sentença é verdadeira, do contrário, efetuam outro trecho ou simplesmente <br>
-                ignoram ele.
-            </p>
-             <p>
-                Uma dessas estruturas é o if o else e o else if. <br> 
-             </p>
-            <p>
-                Se uma expressão for verdadeira, <br>
-                o if efetuará o bloco de código que ele contém, do contrário, o código continuará <br>
-                a ser executado a partir do bloco if. 
-            </p>
-            <p>
-                if(senteça){<br><br>
-                }
-            </p>
-            <p>
-                O else executa um trecho de código quando a expressão dentro do if é falsa, ou seja, <br>
-                ele trabalha em conjunto com o if.                
-            </p>
-            <p>
-                if(senteça){ <br><br>
-                }else {<br><br>
-                }
-            </p>
-            <p>
-                O else if é uma junção do if e do else. Ele faz um segundo teste em outra expressão  <br>
-                caso o if tenha retornado falso; basicamente atuando como um else que faz uma comparação. 
-            </p>
-            <p>
-                if(senteça){ <br><br>
-                }else if(sentença){ <br><br>
-                }
-            </p>
-
-        <div>
-            <h3>Estruturas de Repetição</h3>
-            <p>
-                As estruturas de repetição em C são:
-            </p>
-            <p>
-                for, while e do while. 
-            </p>
-            <p>
-                O for possui três campos separados por ponto e vírgula que atuam <br>
-                no seu processo de decição. O primeiro campo serve para determinar o  <br>
-                valor inicial de uma variável auxiliar. O segundo campo serve para constuir <br>
-                uma condição  para a repetição. O terceiro campo serve para alterar o valor <br>
-                de uma variável, geralmente a auxiliar então definidia, para se alcançar a <br>
-                condição falsa para o encerramento do for.
-            </p>
-            <p>
-                for(i = 0; i < n; i++ ){<br><br> 
-                }
-            </p>
-            <p>
-                O do while e o while são muito pareceidos. Ambos efetuam um teste para <br>
-                a repetição, com a diferença de que o do while efetua o trecho definido pelo <br>
-                while pelo menos uma vez, ainda que a sentença testada seja falsa.
-            </p>
-            <p>
-                do{ <br><br>
-                }while() <br><br>
-
-                while(){ <br><br>
-                }
-            </p>
-        </div>
-        <div>
-            <h3>Como Executar um Programa em C</h3>    
-            <p>
-                Para executar um código em C é necessário compilá-lo para que seja gerado o executável, <br>
-                após isso, basta executar o programa.
-            </p>
-        </div>
-           
+        <form>
+            <div>
+                <div  style="margin: 10px; margin: 10px; margin-right: 1000px; border-style: solid; ">    
+                    <label for="0">Dados Pessoais:</label>
+                    <br>
+                    <label for="1">Codigo:</label>
+                    <input type="number" id="1">
+                    <br>
+                    <label for="2">Nome:</label>
+                    <input type="text" id="2">
+                    <br>
+                    <label for="3">Senha:</label>
+                    <input type="password" id="3">
+                    <br>
+                    <label for="4">Sexo:</label>
+                    <input type="radio" name="Masculino" id="4">
+                    <label for="4">Masculino</label>
+                    <input type="radio" name="Feminino" id="5">
+                    <label for="5">Feminino</label>
+                    <br>
+                    <label for="6">Idade:</label>
+                    <input type="number" id="6">
+                    <br>
+                    <label for="7">Cartão de Crédito:</label>
+                    <select id="7">
+                        <option value="masterCard">Mastercard</option>
+                        <option value="visa">Visa</option>
+                        <option value="americanExpress">American Express</option>
+                    </select>
+                </div>
+                <br>
+                <div id="8" style="margin: 10px; margin: 10px; margin-right: 1000px; border-style: solid; ">
+                    <label for="8">Dados Profissionais:</label>
+                    <div >
+                        <label for="9">Cargo:</label>
+                        <select id="9">
+                            <option value="analistaJunior">Analista Júnior</option>
+                            <option value="analistaPleno">Analista Pleno</option>
+                            <option value="analistaSenior">Analista Sênior</option>
+                        </select>
+                    </div>
+                    <label for="10">Dados Pessoais:</label>
+                    <div id="10">
+                        <input type="checkbox" name="" id="11">
+                        <label for="11">Fumante:</label>
+                        <br>
+                        <input type="checkbox" name="" id="12">
+                        <label for="12">Pratica exercicios fisicos:</label>
+                        <br>
+                        <input type="checkbox" name="" id="13">
+                        <label for="13">Consome bebida alcoólica:</label>
+                    </div>
+                    <label for="14">Experiências Profissionais:</label>
+                    <br>
+                    <textarea name="experienciasProfissionais" id="14" cols="40" rows="4" ></textarea>
+                </div>
+            </div>
+            <div style="margin: 10px;">
+                <button type="reset">Limpar</button>
+                <button type="submit">Inserir</button>
+            </div>
+        </form>   
     </body>
 </html>
