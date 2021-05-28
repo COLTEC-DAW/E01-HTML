@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Exercicio HTML 4</title>
+    </head>
+    <body>
+
+        <h1>Olá calouros!</h1>
+        <h3>Hoje vamos aprender alguns conceitos básicos<br>da linguagem de programação C.</h3>
+        <h5>Por Ava Melillo Simões - 303 - 28/05/2021</h5>
+
+        <div id="introducao">
+            <br>
+            <h2>Introdução</h2>
+            <p>A linguagem C, que em breve vão aprender, é uma linguagem de programaçaõ <bold>estrutural</bold> (entenderão esse termo mais posteriormente no curso) e multi-plataforma (praticamente para todas as plataformas foi implementado pelo menos um
+                compilador C).</p>
+            <p>Algumas caracterísicas de programas em C são:</p>
+            <ul>
+                <li>Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.</li>
+                <li>Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</li>
+                <li>Um programa em C deve ser identado (um tipo de organização de código) para que possa ser lido com mais facilidade.</li>
+            </ul>
+
+        </div>
+
+
+        <div id="execucao">
+            <br>
+            <h2>Como executar um programa em C</h2>
+            <p>Enquanto você for praticando os conceitos mostrados aqui, você deve executar o seu código para ver se ele está funcionando corretamente!</p>
+            <p>Para fazer isso, você deve salvar o seu código com o nome que preferir e abrir o terminal.</p>
+            <p>Agora, caso não o tenha feito, instale o compilador, inserindo essa linha no terminal:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    sudo apt install gcc
+                </code>
+            </div>
+
+            <p>após isso, você deve entrar na pasta que você salvou o código dentro do terminal e inserir "gcc" e o nome do seu código com a extensão</p>
+            <p>(dica: use Tab para autopreencher o nome do documento que você está procurando).</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="background-color: rgb(36, 35, 35); color: greenyellow;">
+                    gcc CodigoQueQueroCompilar.c
+                </code>
+            </div>
+
+            <p>Nesse momento aparecerão os warnings e os erros do seu programa, se existirem.</p>
+            <p>Agora, para executar o código, só falta escrever:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="background-color: rgb(36, 35, 35); color: greenyellow;">
+                    ./a.out
+                </code>
+            </div>
+        </div>
+
+        <div id="variaveis e expressoes">
+            <br>
+            <h2>Variáveis e expressões matemáticas</h2>
+            <p>Variáveis são nada mais nada menos que um tipo de armazenamento de dados que fica guardado na memória.</p>
+            <p>Em C, quando você declara uma variável, você deve especificar qual tipo de dado ela vai armazenar, como um inteiro (int), um número decimal (float) ou uma frase (string).</p>
+            <p>Para declarar a variável, basta escrever o seu tipo e o nome que deseja que ela tenha:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+            <code style="color: greenyellow;">
+                int main (){<br>
+                    <br>
+                    <br>
+                    int Var_NumInteiro;<br>
+                    float Var_NumDecimal;<br>
+                    string Var_Frase;<br>
+                    <br>
+                    return 0;<br>
+                }
+            </code>
+            </div>
+
+            <p>Você pode criar várias variáveis de um memso tipo na mesma linha, ou atribuir um valor para ela na declaração:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    int main (){<br>
+                        <br>
+                        <br>
+                        int Var_NumInteiro = 3;<br>
+                        float num1, num2, num3;<br>
+                        string Var_Frase = "Hello World!";<br>
+                        <br>
+                        return 0;<br>
+                    }
+                </code>
+            </div>
+
+            <p>As expressões matemáticas em c funcionam da mesma maneira que você já conhece, porém usando alguns símbolos específicos:</p>
+            
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    multiplicação: * (ex.: a*b)
+                    <br>divisão: / (ex.: a/b)
+                    <br>adição: + 
+                    <br>subtração: - 
+                    <br>resto da divisão: %
+                    <br>potência: ^ (ex.: a^2)
+                </code>
+            </div>
+
+        </div>
+
+
+        <div id="condicionais">
+            <br>
+            <h2>Estruturas condicionais</h2>
+
+            <p>Chamamos de estruturas condicionais as instruções para testar se uma condição é verdadeira ou não.</p>
+            <p>A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens.
+            <br>Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    if (condição){<br><br>
+                        *instruções que serao realizadas<br>
+                        se a condição for verdadeira*<br>
+                    }<br>
+                    *se a condição for falsa, as instruções dentro das chaves<br>
+                    não são executadas e o programa pula para essa área*<br>
+                </code>
+            </div>
+
+            <p>A condição deve ficar entre parênteses. É possível definir várias condições a serem cumpridas com os conectores AND e OR (&& e ||).</p>
+            <p>Exemplo:</p>
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    if ((condição1) && (condição2)){<br><br>
+                        *instruções que serao realizadas<br>
+                        se as duas condições forem verdadeiras*<br>
+                    }<br>
+                    *se uma ou ambas das condições forem falsas, as instruções dentro das chaves<br>
+                    não são executadas e o programa pula para essa área*<br><br>
+                    if ((condição1) || (condição2)){<br><br>
+                        *instruções que serao realizadas<br>
+                        se uma das condições for verdadeira*<br>
+                    }<br>
+                    *somente se ambas das condições forem falsas, as instruções dentro das chaves<br>
+                    não são executadas e o programa pula para essa área*<br>
+                </code>
+            </div>
+        </div>
+
+        <div id="repeticao">
+            <br>
+            <h2>Estruturas de Repetição</h2>
+            <p>As estruturas de repetição consistem em blocos de código que devem ser executados um determinado número de vezes.</p>
+            <p>Às vezes é necessário que um programa que repita o mesmo código diversas vezes, e para isso usamos as instruções FOR e WHILE.</p>
+            <p>A instrução FOR é muito útil quando se sabe de antemão quantas vezes a repetição deverá ser executada.
+            <br>Este laço utiliza uma variável para controlar a contagem do loop, bem como seu incremento.</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    
+                    for (valor_inicial; condição_final; valor_incremento){<br>
+                        <br>
+                        *bloco de instruções que serão repetidas*<br>
+                    }
+                </code>
+            </div>
+
+            <p>O valor inicial será o primeiro número da contagem do FOR; a condição final é o que determina quando o FOR vai parar
+            <br>(como por exemplo, quando o valor de contagem chegar em 5); e o valor do incremento é o valor que será somado ao valor de contagem
+            <br>a cada repetição. Por exemplo, se o FOR tiver os valores (i = 2; i < 7; i = i + 1), o valor inicial é 2, a cada repetição o valor
+            <br>aumentará em 1 unidade, e o contador para quando ele chegar a 7, ou seja, o for repetirá 5 vezes.
+            </p>
+
+            <p>A outra instrução de repetição, o WHILE, é usado quando é necessário que aquele bloco de texto se repita <bold>enquanto uma condição
+            <br>é verdadeira</bold>. Por exemplo:</p>
+
+            <div style="background-color: rgb(36, 35, 35);">
+                <code style="color: greenyellow;">
+                    int i = 0;<br><br>
+
+                    while (i < 3){<br>
+                        <br>
+                        *bloco de instruções que serão repetidas*<br>
+                        i = i + 1;<br>
+                    }
+                </code>
+            </div>
+
+            <p>Nesse caso, o WHILE permanecerá em loop até que o valor de i deixe de ser menor que 3, ou seja, depois de 3 repetições,
+            <br>já que o i está sendo incrementado com 1 unidade em cada repetição.
+            </p>
+
+        </div>
+
+        <footer>
+            <div id="despedida">
+
+                <h3>E esse foi o tutorial inicial da linguagem C! Espero que todas as 0 pessoas lendo isso tenham gostado! Até mais!</h3>
+            </div>
+        </footer>
+        
+    </body>
+
+</html>
