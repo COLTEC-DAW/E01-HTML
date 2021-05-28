@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form>
+            <form>
+                <fieldset>
+                    <legend>
+                        Dados pessoais
+                    </legend>
+                    <form>
+                        <label for="codigo">
+                            Código:
+                        </label>
+                        <input type="text" name="codigo" value="001" disabled> <br>
+                        <label for="nome">
+                            Nome:
+                        </label>
+                        <input type="text" name= nome required> <br>
+                        <label for="senha">
+                            Senha:
+                        </label>
+                        <input type="password" name= senha required> <br>
+                        <label for="sexo">
+                            Sexo:
+                        </label>
+                        <input type="radio" name="sexo">
+                        Masculine
+                        <input type="radio" name= "sexo">
+                        Feminine <br>
+                        <label for="idade">
+                            Idade:
+                        </label>
+                        <input type="text" name="idade" required> <br>
+                        <label for="cartao">Cartão de credito:</label>
+                        <select name="carao" required>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="visa">Visa</option>
+                            <option value="amexp">American Express</option>
+                        </select>
+                    </form>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>
+                        Dados Profissionais
+                    </legend>
+                    <form>
+                        <label for="cargo:">Cargo:</label>
+                        <select name="cargo" required> 
+                            <option value="analistajr">Analista Junior</option>
+                            <option value="analistapl">Analista Pleno</option>
+                            <option value="analistasr">Analista Sênior</option> 
+                        </select>
+                        <br>
+                        <label for="dados">
+                            Alguns dados pessoais <br>
+    
+                        </label>
+                        <input type="checkbox" name="dados">
+                        fumante <br>
+                        <input type="checkbox" name= "dados">
+                        pratica exercícios físicos <br>
+                        <input type="checkbox" name= "dados">
+                        Consome álcool <br>
+                        <label for="experiencia">
+                            Experiências profissionais: <br>
+                        </label>
+                        <textarea name="experiencia" required cols="35" rows="5"></textarea>
+                    </form>
+                </fieldset>
+                
+            </form>
+            <input type="submit" name="envio" value="Enviar">
+            <input type="reset" name="limpo" value="Limpar">
+        </form>
+    </body>
+</html>
