@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exercícios aula 01-HTML - Manual de Programação </title>
+</head>
+
+
+<body style="height:100%; width:70%;">
+    
+    <header>
+        <div>
+            <h1> Manual de Programação </h1>
+        </div>
+    </header>
+    <div>
+        <h2 style="background: #98FF98"> Introdução a Linguagem C: </h2>
+    </div>
+    <div>
+        <p>
+            Considerada uma linguagem de alto nível genérica, a C pode ser 
+            usada em diversos tipos de projeto, como a criação de aplicativos, 
+            sistemas operacionais, drivers, entre outros. Trata-se de uma 
+            linguagem estruturada que se tornou muito popular nos anos 
+            80 — tanto que é difícil encontrar arquiteturas para as quais não 
+            existam compiladores para a C, o que garante o seu elevado nível 
+            de portabilidade.
+        </p>
+    </div>
+    <div>
+        <p>
+            Uma das grandes vantagens dessa linguagem é a capacidade de gerar 
+            códigos rápidos, ou seja, com um tempo de execução baixo. Além disso, 
+            a programação em C é bastante simplificada, pois sua estrutura é 
+            simples e flexível. Tendo isso em mente, podemos dizer que as 
+            principais características da linguagem C são:
+        </p>
+    </div>
+    <div>
+        <p>
+            <li> portabilidade; </li>
+            <li> geração de código eficiente; </li>
+            <li> simplicidade; </li>
+            <li> confiabilidade; </li>
+            <li> facilidade de uso; </li>
+            <li> regularidade. </li>
+        </p>
+    </div>
+    <div>
+        <p>
+            Por fim, a popularidade da linguagem C é foi grande que ela ainda 
+            influenciou diretamente a estrutura e sintaxe de outras, como C++, 
+            Objective C e C#.
+        </p>
+    </div>
+    <div>
+        <h2 style="background: #98FF98"> Variáveis e expressões matemáticas: </h2>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> Variáveis: </h4>
+        <p>
+            Variáveis são, basicamente, uma posição na memória da máquina que 
+            identificamos por um nome (identificador). Na linguagem C, todas 
+            as variáveis precisam ser declaradas no início do programa, antes 
+            de serem usadas. </br>
+
+            Elas também devem receber um tipo, que vai determinar quais espécies 
+            de valores cada variável pode armazenar. Por fim, uma variável pode 
+            ter seu conteúdo alterado a qualquer momento.</br>
+
+            Em C, os tipos de variáveis são:
+        </p>
+        <div>
+            <p>
+                <li> char: armazena letras e símbolos; </li>
+                <li> int: armazena números inteiros de -32767 a 32767; </li>
+                <li> float: armazena números entre -3.4 x1038 e 3.4 x 1038 com até 6 dígitos; </li>
+                <li> double: armazena números entre -1.7 x 10308 até +1.7 x 10308 com até 10 dígitos. </li>
+            </p>
+        </div>
+        <p> A declaração de uma variável deve ser assim: </p>
+        <div>
+            <li> int idade; </li>
+            <li> char nomeDoAluno; </li>
+            <p> PS: perceba o uso de ';' no final de cada linha, em C, tudo sempre termina com ';'.</p>
+        </div>
+        <p> No mais, junto com a declaração, a variável também pode ser inicializada dessa forma: </p>
+        <div>
+            <li> int idade = 23; </li>
+        </div>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> Expressões matemáticas: </h4>
+        <fieldset>
+            <legend> Soma: </legend>
+            Exemplo 1: </br>
+            soma = 12 + 12; </br> </br>
+
+            Exemplo 2: </br>
+            var1 = 12; </br>
+            var2 = 12; </br>
+            soma = var1 + var2; 
+        </fieldset> </br>
+        <fieldset>
+            <legend> Subtração: </legend>
+            Exemplo 1: </br>
+            subtracao = 12 - 12; </br> </br>
+
+            Exemplo 2: </br>
+            var1 = 12; </br>
+            var2 = 12; </br>
+            subtracao = var1 - var2; 
+        </fieldset> </br>
+        <fieldset>
+            <legend> Divisão: </legend>
+            Exemplo 1: </br>
+            divisao = 12 / 12; </br> </br>
+
+            Exemplo 2: </br>
+            var1 = 12; </br>
+            var2 = 12; </br>
+            divisao = var1 / var2; 
+        </fieldset> </br>
+        <fieldset>
+            <legend> Multipliacação: </legend>
+            Exemplo 1: </br>
+            multiplicacao = 12 * 12; </br> </br>
+
+            Exemplo 2: </br>
+            var1 = 12; </br>
+            var2 = 12; </br>
+            multiplicacao = var1 * var2;
+        </fieldset>
+
+        <p> Todos esses exemplos dão o mesmo resultado, mas um código melhor elaborado optaria por fazer estilo os exemplos 2.</p>
+    </div>
+    <div>
+        <h2 style="background: #98FF98"> Estruturas condicionais: </h2>
+        <p>
+            Chamamos de <em>estruturas condicionais</em> as instruções para testar se uma 
+            condição é verdadeira ou não. Elas podem ser associadas às estruturas 
+            que se repetem, após o cumprimento da condição, chamamos a elas de 
+            <b>estruturas de loop</b>. </br>
+            Uma expressão seguida de um ponto e virgula é chamado de instrução. 
+            <fieldset>
+                <legend> Veja um exemplo de instrução: </legend>
+                a++; &ensp;&ensp;// a++ => a = a + 1;
+            </fieldset>
+            </br>
+            Quando você quiser reunir várias instruções, você poderá criar o que chamamos 
+            de bloco, ou seja, um conjunto de instruções (seguidas, respectivamente, por 
+            pontos e vírgulas) entre chaves {e}. As instruções if, while e for podem, por 
+            exemplo, ser seguidas de um bloco de instruções a serem executadas.
+        </p>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> <b> A instrução IF </b> </h4>
+        <p>
+            A instrução IF é a estrutura de teste mais básica e é encontrada em todas as 
+            linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções 
+            caso uma condição se realize. A sintaxe desta expressão é a seguinte:
+            <fieldset>
+                if (condição realizada) { </br>
+                &ensp;&ensp;    lista de instruções; </br>
+                <!-- &ensp; é igual a 2 spaces no texto.-->
+                <!-- &emsp; pra 1 espaço.-->
+                }
+            </fieldset> </br>
+            <p> <b> Observações </b>
+            A condição deve ficar entre parênteses. É possível definir várias condições a 
+            serem cumpridas com os conectores AND e OR (&& e ||). </br>
+
+            Por exemplo, a seguinte instrução testa se as duas condições são verdadeiras: </br>
+            <fieldset>
+                <legend> Neste caso, se ambas condições se completam, o código se executará. </legend>
+                if ((condição1)&&(condição2)) {}
+            </fieldset> </br>
+            <fieldset>
+                <legend> Aqui, contanto que uma das condições seja verdadeira, o código se executará. </legend>
+                if ((condição1)||(condição2)) {}
+            </fieldset> </br>
+        </p>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> <b> A instrução IF... ELSE </b></h4>
+        <p>
+            A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos 
+            de poder escolher as instruções a serem executadas em caso do não cumprimento da condição. </br>
+
+            A expressão IF... ELSE permite executar outra série de instruções em caso do não cumprimento 
+            da condição. A sintaxe desta expressão é a seguinte:</br>
+            <fieldset>
+                if (condição realizada) {</br>
+                &ensp;&ensp;    lista de instruções</br>
+                }</br>
+                else {</br>
+                &ensp;&ensp; outra série de instruções</br>
+                }
+            </fieldset> </br>
+        </p>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> <b> A instrução SWITCH </b></h4>
+        <p>
+            A Instrução switch efetua vários testes de valores sobre o conteúdo de uma 
+            mesma variável. Esta conexão condicional simplifica muito o teste de vários 
+            valores de uma variável, pois esta operação teria sido complicada (mas possível) 
+            com varios if imbricados. Sua sintaxe é a seguinte: </br>
+            <fieldset>
+                switch (variável) { </br>
+                    &ensp;&ensp; case Valor1:</br>
+                    &ensp;&ensp; &ensp;&ensp; Lista de instruções;</br>
+                    &ensp;&ensp; break;</br>
+                    &ensp;&ensp; case Valor2 :</br>
+                    &ensp;&ensp; &ensp;&ensp;  Lista de instruções;</br>
+                    &ensp;&ensp;   break;</bold></br>
+                    &ensp;&ensp; case Valores... :</br>
+                    &ensp;&ensp; &ensp;&ensp;  Lista de instruções;</br>
+                    &ensp;&ensp;   Break;</br>
+                    &ensp;&ensp; default:</br>
+                    &ensp;&ensp; &ensp;&ensp;  Lista de instruções;</br>
+                    }</br>
+            </fieldset> </br>
+            Os parênteses após a palavra-chave switch indicam uma expressão cujo valor é 
+            testado, sucessivamente, para cada uma das case. Quando a expressão testada é 
+            igual a um dos seguintes valores seguindo um case, a lista de instrução que 
+            vem depois, é executada. A palavra-chave break indica a saída da estrutura condicional. 
+            A palavra-chave default precede a lista de instruções, que será executada se a 
+            expressão nunca for igual a um dos valores.</br>
+            Não se esqueça de inserir instruções break entre cada teste; esse tipo de esquecimento 
+            é difícil de ser detectado pois nenhum erro é assinalado. Na verdade, ao omitir o break, 
+            a execução continuará nos blocos seguintes.</br>
+        </p>
+    </div>
+    <div>
+        <h2 style="background: #98FF98"> Estruturas de repetição: </h2>
+        <h4 style="background: #DCDCDC"> <b> O loop FOR </b></h4>
+        <p>
+            A instrução for executa várias vezes a mesma série de instruções: é um loop.</br>
+            Em sua sintaxe, basta especificar o nome da variável que serve de contador 
+            (e, eventualmente, o seu valor inicial, a condição sobre a variável para a qual 
+            o loop para (basicamente uma condição que testa se o valor do contador excede um 
+            limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador.</br>
+            A sintaxe desta expressão é a seguinte:</br>
+            <fieldset>
+                for (contador; condição; modificação do contador) {</br>
+                &ensp;&ensp;    lista de instruções;</br>
+                }
+            </fieldset> </br>
+        </p>
+    </div>
+    <div>
+        <h4 style="background: #DCDCDC"> <b> A instrução WHILE </b></h4>
+        <p>
+            A instrução while representa outro meio de executar várias vezes a mesma série de instruções. 
+            A sintaxe desta expressão é a seguinte:</br>
+            <fieldset>
+                while (condição realizada) {</br>
+                &ensp;&ensp; lista de instruções;</br>
+                } 
+            </fieldset> </br>
+            Esta instrução executa a lista de instruções enquanto (significado da palavra While) a condição se realiza.</br>
+            Como a condição de saída pode ser qualquer estrutura condicional, o risco de loop infinito 
+            (loop cuja condição é sempre verdadeira) é grande, ou seja, pode causar uma falha do programa 
+            em curso de execução.</br>
+        </p>
+    </div>
+    <div>
+        <h2 style="background: #98FF98"> Como executar um programa em C: </h2>
+        <p>
+            Este <a href="https://velhobit.com.br/programacao/rodando-sua-primeira-aplicacao-c-no-windows-ou-linux.html#:~:text=Para%20isso%2C%20basta%20digitar%20o,o%20nome%20final%20do%20programa.&text=Onde%20gcc%20%C3%A9%20o%20processo,nome%20final%20do%20programa%20compilado."
+            target="_blank"> site</a> é bastante instrutivo, aqui mostra o que fazer para sua primeira aplicação em C, além de dá umas
+            informações bem interessantes a mais. Super recomendo!</br>
+            Faça bom uso!</br>
+            Ps: Acessado dia 27/05/2021.</br>
+        </p>
+    </div>
+
+    <footer>
+        <p style="text-align:center;"> Página desenvolvida por Laiza Ferreira para fins de aprendizagem. </p>
+    </footer>
+
+</body>
+
+
+</html>

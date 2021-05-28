@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exercícios aula 01-HTML - Formulário de cadastro </title>
+</head>
+
+
+<body style="height:100%; width:40%;">
+    
+    <header>
+        <div>
+            <h1> Formulário de Cadastro </h1>
+        </div>
+    </header>
+
+    <form>
+        <fieldset> <!-- É tipo um conjunto de informações, como se fosse um quadradro e pudesse estruturar um form nele. -->
+            <legend> Dados Pessoais </legend> <!-- <legend> é pra imprimir uma legenda dentro do <fieldset>, que seria um conjunto. -->
+            <div>
+                Código: <input type="number" style="background: #DCDCDC"> </br>
+                Nome:   <input type="text"> </br>
+                Senha:  <input type="password">  
+            </div>
+            <div>
+                    <!-- type="radio" deixa a caxinha em questão como uma bolinha ao invés de quadrado. -->
+                    <input type="radio" /> <label> Feminino </label> 
+                    <input type="radio" /> <label> Masculino </label> 
+                    <!-- Não dá pra usar <li> aqui porque fica aparecendo uma bolinha antes. -->
+            </div>
+            <div>
+                Idade: <input type="number" /> 
+            </div>
+            <div>
+                Cartão de Crédito: </br>
+                <select multiple>
+                    <option value="mastercard"> MasterCard </option>
+                    <option value="American Express"> American Express </option>
+                    <option value="visa"> Visa </option> 
+                </select> 
+                <!-- Não consegui achar no google falando sobre aquela caixa de texto que dá pra mexer, 
+                    então fiz assim que é como sei fazer -->
+            </div>
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend> Dados Profissionais </legend>
+            <div>
+                Cargo: 
+                <select>
+                    <option value="junior"> Analista Júnior </option>
+                    <option value="pleno"> Analista Pleno </option>
+                    <option value="senior"> Analista Sênior </option>
+                </select>
+            </div>
+            <div>
+                Dados Pessoais: </br>
+                <input type="checkbox"> <label > Fumante </label> </br>
+                <input type="checkbox"> <label > Pratica Exercícios Físicos </label> </br>
+                <input type="checkbox"> <label > Consome Bebida Alcoólica </label> </br>
+            </div>
+            <div>
+                Experiências Profissionais: </br>
+                <textarea placeholder=" Data Início / Data Fim / Empresa / Cargo" style="width:70%;"></textarea> </br>
+
+            </div>
+        </fieldset>
+        </br>
+        <div>
+            <input type="submit" value="Limpar" style="background: #DCDCDC">
+            <input type="submit" value="Inserir" style="background: #DCDCDC"> </br>
+        </div>
+      </form>
+    <footer>
+        <p style="text-align:center;"> Pagina desenvolvida por Laiza Ferreira para fins de aprendizagem. </p>
+    </footer>
+
+</body>
+</html>
