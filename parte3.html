@@ -1,0 +1,139 @@
+
+<html>
+
+    <head>
+
+            <meta charset="utf-8">
+            <meta name="author" content="GuilhermeRSM">
+    </head>
+    <body bgcolor="E6E6FA	"> <body>
+                <h1>
+                 Manual de programação em C
+                </h1>
+            <fieldset>
+                        <div class="introdução">
+                          <h2>Introdução à Linguagem C</h2>
+                           <code>                             
+                                Exemplo de um Programa: <p>
+                                // Exemplo de programa em C <br>
+                                // Isto é uma linha de comentário <br>
+                                void main() <br>
+                                { <br>
+                                    int a;            // declara a variável "a" <br>
+                                    a = 3 + 2;        // soma 3 com 2 <br>
+                                } <br>
+                                <li>Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.</li>  
+                                <li>Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</li>
+                                <li>Um programa em C deve ser Identado para que possa ser lido com mais facilidade.</li>                             
+                            </code>    
+                        </div>
+            </fieldset>
+                        <fieldset>
+                        <div class="Variáveis e expressões matemáticas">
+                          <h2>Variáveis e expressões matemáticas</h2>
+                            Operadores Aritméticos <p>
+                            (-) sinal de menos (unário) <br>
+                            (*,/) multiplicação e divisão <br>
+                            (%) módulo (reto da divisão) <br>
+                            (+,-) soma e subtração <br>
+                            Pode-se usar parênteses para alterar a precedência. <br>
+                            <li>Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.</li>  
+                            <li>Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</li>
+                            <li>Um programa em C deve ser Identado para que possa ser lido com mais facilidade.</li>
+                            <p>
+                              Variáveis são, basicamente, uma posição na memória da máquina que identificamos 
+                              por um nome (identificador). Na linguagem C, todas as variáveis precisam ser declaradas
+                              no início do programa, antes de serem usadas.
+                            </p>
+              
+                            <p>
+                              Elas também devem receber um tipo, que vai determinar quais espécies de valores 
+                              cada variável pode armazenar. Por fim, uma variável pode ter seu conteúdo alterado 
+                              a qualquer momento.
+              
+                            </p>
+              
+                            <p> Em C, os tipos de variáveis são: </p>
+              
+                              <li> char: armazena letras e símbolos; </li>
+                              <li> int: armazena números inteiros; </li>
+                              <li> float: armazena números reais; </li>
+                              <li> double: representam números de ponto flutuante de precisão dupla,
+                              onde precisam duas vezes a quantidade de memória das variáveis float
+                              fornecendo 15 dígitos, sendo o dobro da precisão de variáveis float. </li>
+                        </div>
+            </fieldset>
+            <div class="Estruturas condicionais">
+            <fieldset>
+              <h2>Estruturas condicionais</h2>
+              <p>Usamos as estruturas condicionais para executar determinado código caso o parâmetro seja verdadeiro</p>
+              <code>
+                  int main(){<p></p>
+                      int numero;<p></p>
+                      printf("Digite um numero: ")<p></p>
+                      scanf("%i", &numero);<p></p>
+                      if(numero == 0){<p></p>
+                          printf("O numero digitado eh 0");<p></p>
+                      }<p></p>
+  
+                      else if(numero == 2){<p></p>
+                          printf("O numero digitado eh 2");<p></p>
+                      }<p></p>
+  
+                      else{<p></p>
+                          printf("O numero digitado nao eh 0 nem 2");<p></p>
+                      }<p></p>
+                      return 0;<p></p>
+                  }
+              </code>
+              <li>O código só imprime "O numero digitado eh 0" Se a variável numero tiver valor 0.</li>
+              <li>Usamos o else if quando queremos adicionar outra condição a ser verificada.</li>
+              <li>O código só entra no else caso nenhuma das condicionais anteriores for verdadeira.</li>
+            </fieldset>  
+            </div>
+            <div class="Estruturas de repetição">
+              <fieldset> 
+                <h2>Estruturas de repetição</h2>
+                <li>Uma estrutura de repetição permite que uma
+                sequência de comandos seja executada
+                repetidamente, enquanto determinadas condições
+                são satisfeitas.</li>
+                <li> Essas condições são representadas por
+                expressões lógica (como, por exemplo, A>B; C==3;
+                Letra == ‘a’)</li> 
+                <li>Repetição com Teste no Início</li> 
+                <li>Repetição com Teste no Final</li> 
+                <li>Repetição Contada</li> 
+                <li>O real poder dos computadores está na sua
+                habilidade para repetir uma operação ou uma serie
+                de operações muitas vezes.</li> 
+                <li> Este repetição chamada laços (loop) é um dos
+                conceitos básicos da programação estruturada</li> 
+<pre>
+  <code>
+ int i;
+// for(contador; condição; modificação do contador){}
+for(i=0;i<10;i++){
+  printf("%d", i);
+}
+Saida 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+</code>
+</pre>       
+</fieldset>  
+</div>
+<div class="Como rodar um programa em C">
+<fieldset> 
+  <h2>Como rodar um programa em C</h2>
+  Para rodar o seu programa em C vc precisa escrever a seguinte linha de execução do arquivo:</br>
+  cmd: gcc Hello.c </br>
+</p>
+
+</fieldset>
+            </div>
+            <h2>FONTES</h2>
+            <a href="http://linguagemc.com.br/">site1</a>
+            <a href="https://www.inf.pucrs.br/">site2</a>
+            <a href="https://www.inf.ufpr.br/">site3</a>
+            <a href="https://www.devmedia.com.br/">site4</a>
+    </body>
+</html> 
