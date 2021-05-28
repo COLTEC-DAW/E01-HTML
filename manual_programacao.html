@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manual de programação - Linguagem C</title>
+    </head>
+
+    <body>
+        <h1>Manual de programação - Linguagem C</h1>
+        <h3>Ei, calouro! Quer saber um pouco mais sobre a linguagem de programação C? Se liga nesse guia!</h3>
+        
+        <div>
+            <h2><li>Introdução</li></h2>
+            <p>
+                Considerada uma linguagem de alto nível genérica, a C pode ser usada em diversos tipos de projeto, como a criação de aplicativos, sistemas operacionais, drivers, entre outros. Trata-se de uma linguagem estruturada que se tornou muito popular nos anos 80 — tanto que é difícil encontrar arquiteturas para as quais não existam compiladores para a C, o que garante o seu elevado nível de portabilidade.
+            </p>
+            <p>
+                Uma das grandes vantagens dessa linguagem é a capacidade de gerar códigos rápidos, ou seja, com um tempo de execução baixo. Além disso, a programação em C é bastante simplificada, pois sua estrutura é simples e flexível.
+            </p>
+        </div>
+
+        <div>
+            <h2><li>Variáveis e expressões matemáticas</li></h2>
+            <p>
+                Variáveis são, basicamente, uma posição na memória da máquina que identificamos por um nome (identificador). Na linguagem C, todas as variáveis precisam ser declaradas no início do programa, antes de serem usadas.
+            </p>
+            <p>
+                Elas também devem receber um tipo, que vai determinar quais espécies de valores cada variável pode armazenar. Por fim, uma variável pode ter seu conteúdo alterado a qualquer momento.
+            </p>
+            <p>
+                Em C, os tipos de variáveis são:
+                <ul>
+                    <li>char: armazena letras e símbolos;</li>
+                    <li>int: armazena números inteiros de -32767 a 32767;</li>
+                    <li>float: armazena números entre -3.4 x1038 e 3.4 x 1038 com até 6 dígitos;</li>
+                    <li>double: armazena números entre -1.7 x 10308 até +1.7 x 10308 com até 10 dígitos.</li>
+                </ul>
+            </p>
+            <p>
+                Podemos utilizar essas variáveis para realizar operações matemáticas. Algumas das mais comuns são:
+                <ul>
+                    <li>(+) adição</li>
+                    <li>(-) subtração</li>
+                    <li>(*) multiplicação</li>
+                    <li>(/) divisão</li>
+                    <li>(%) resto (módulo)</li>
+                </ul>
+            </p>
+            <p>    
+                Estas operações podem ser usadas como mostram os exemplos abaixo, assumindo que as variáveis necessárias já estão declaradas: <br>
+                <code>celsius = (fahrenheit - 32) * 5.0 / 9.0;</code> <br>
+                <code>forca =  massa * aceleracao;</code> <br>
+                <code>i = i + 1;</code> <br>
+            </p>
+        </div>
+
+        <div>
+            <h2><li>Estruturas condicionais</li></h2>
+            <p>
+                A linguagem C oferece estruturas de tomada de decisão que nos permite, entre outras coisas, verificar condições.
+            </p>
+            <p>Essas são:</p>
+
+            <ul>
+                <li>
+                    <b>if:</b> Executa uma série de instruções caso uma condição seja verdadeira
+                </li>
+                <li>
+                    <b>else:</b> Executa um série de instruções caso a condição colocada no <i>if</i> que o antecede não seja verdadeira. Acompanha o <i>if</i> (mas não é obrigatório)
+                </li>
+                <li>
+                    <b>else if:</b> Extensão do <i>if-else</i>, executa uma nova série de instruções caso uma condição seja verdadeira e o <i>if</i> que o antecede seja falso.
+                </li>
+                <li>
+                    <b>switch:</b> Testa várias condições e executa uma série de instruções correspondente à condição verdadeira. Funciona como uma sequência de <i>if-else's</i>, porém de maneira simplificada.
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h2><li>Estruturas de repetição</li></h2>
+            <p>
+                Algumas vezes, é necessário executar uma sequência de instruções mais de uma vez.
+                Para isso, usamos <b>estruturas de repetição</b> (também conhecidas como <b>loops</b>).
+            </p>
+            <ul>
+                <li>
+                    <b>For: </b> Repete uma série de instruções por um determinado número de vezes enquanto uma condição for verdadeira
+                </li>
+                <li>
+                    <b>While: </b> Repete uma série de instruções enquanto uma condição for verdadeira
+                </li>
+                <li>
+                    <b>Do-while: </b> Variação do <i>while</i> - repete uma série de instruções enquanto uma condição, <b>verificada no final do bloco de código</b>, for verdadeira.
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2><li>Como executar um programa em C</li></h2>
+            <p>
+                Para poder compilar em C, no Windows, usaremos uma ferramenta de código
+                aberto chamada MinGW (caso deseje testar, pode usar a versão 64 bits do MinGW,
+                porém a versão 32 é compatível com ambos os sistemas). Ao instalar você pode escolher
+                algumas especificações e se quer ou não que ela opere em modo visual (em janela), além da
+                integração com o Explorer.
+            </p>
+
+            <p>
+                Uma vez instalado o MinGW, você precisará selecionar o mingw32-base e mingw32-gcc-g++, pois ele é o 
+                compilador C / C++ para podermos trabalhar. Depois disso, basta ir no menu Installation e clicar em Apply Changes e, 
+                em seguida, no botão Apply. Ele irá instalar todos os arquivos do compilador que serão necessários para nosso teste.
+            </p>
+
+            <p>Após concluída a instalação, já podemos usar o compilador.</p>
+
+            <p>
+                Para poder compilar o seu arquivo, simplesmente abra o prompt de comando (cmd.exe), do Windows e vá na pasta do MinGW, localizada geralmente em C:\ (ou onde você preferiu instalar). Na dúvida, basta digitar o código abaixo: <br>
+                <code>cd C:\MinGW\bin</code>
+            </p>
+            <p>
+                Em seguida, vamos chamar o compilador e o arquivo que queremos que ele compile. Para isso, basta digitar o nome do compilador, o arquivo a ser compilado, o parâmetro do comando, e o nome final do programa. <br>
+                No caso, teremos: <br>
+                <code>gcc meucodigo.c -o meuprograma.exe</code> <br>
+                Onde gcc é o processo (o compilador), meucodigo.c é o código fonte, o parâmetro -o significa que eu estou indicando qual é a saída e o meuprograma.exe indica o nome final do programa compilado.
+            </p>
+
+            <p>
+                Com isso, basta dar <i>enter</i> e seu programa será compilado. Para testar o resultado do programa e da compilação, digite o nome do executável no prompt.
+            </p>
+        </div>
+        <div>
+            <p>
+                Fontes/referências: <br>
+                <a href="https://blog.betrybe.com/linguagem-de-programacao/linguagem-c/">Trybe</a> <br>
+                <a href="https://velhobit.com.br/programacao/rodando-sua-primeira-aplicacao-c-no-windows-ou-linux.html#:~:text=Para%20poder%20compilar%20em%20C,compat%C3%ADvel%20com%20ambos%20os%20sistemas).">VelhoBit</a> <br>
+                <a href="https://www.inf.ufpr.br/cursos/ci067/Docs/NotasAula/notas-2_Opera_c_coes_Aritmeticas_.html">Documentos - UFPR</a> <br>
+                <a href="https://br.ccm.net/faq/10200-linguagem-c-estruturas-condicionais">CCM</a> <br>
+                <a href="https://www.treinaweb.com.br/blog/estruturas-condicionais-e-de-repeticao">TreinaWeb</a>    
+            </p>
+        </div>
+    </body>
+</html>
