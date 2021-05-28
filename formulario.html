@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de cadastro</title>
+    </head>
+
+    <body>
+        <h1>Formulário de cadastro</h1>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                    Codigo:
+                    <input type = "text" value = "001" disabled name = "codigo"><br>
+
+                    Nome:
+                    <input type = "text" name = "name"><br>
+
+                    Senha:
+                    <input type = "password" name = "pwd" size = "10px"><br>
+
+                    Sexo:
+                    <input type = "radio" name = "sex" value = "male">Masculino</input>
+                    <input type = "radio" name = "sex" value = "female">Feminino</input><br>
+
+                    Idade:
+                    <input type = "text" name = "idade" size = "1px"><br>
+
+                    Cartão de credito: <br>
+                    <select name = "cartao">
+                        <option value = "master">Mastercard</option>
+                        <option value = "visa">Visa</option>
+                        <option value = "amex">American Express</option>
+                    </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                Cargo:
+                <select name = "cargo">
+                    <option value = "junior">Analista Júnior</option>
+                    <option value = "pleno">Analista Pleno</option>
+                    <option value = "senior">Analista Sênior</option>
+                </select> <br>
+
+                Dados Pessoais: <br>
+                <input type = "checkbox" name = "health_status" value = "smoker">Fumante</input> <br>
+                <input type = "checkbox" name = "health_status" value = "healthy">Pratica Exercicíos Fisicos</input> <br>
+                <input type = "checkbox" name = "health_status" value = "drunk">Consome bebida alcoólica</input> <br>
+                
+                Experiencias Profissionais:<br>
+                <textarea name = "professionalxps" rows = "4" cols = "40">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+            </fieldset>
+            
+            <br>
+            <button type = "reset">Limpar</button>
+            <button type = "submit">Inserir</button>
+        </form>
+    </body>
+</html> 
