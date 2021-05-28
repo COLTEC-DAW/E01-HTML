@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manual de Programação</title>
+</head>
+
+<body>
+    <header>
+        <h1>Manual de Programação em C</h1>
+    </header>
+
+    <div>
+        <h2>Introdução</h2>
+        <p>
+            C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural,
+            padronizada pela Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie na
+            empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix (originalmente escrito em
+            Assembly).
+        </p>
+        <p>
+            C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não
+            existem compiladores para C. C tem influenciado muitas outras linguagens de programação (por exemplo, a
+            linguagem Java), mais notavelmente C++, que originalmente começou como uma extensão para C.
+        </p>
+        <p>
+            Fonte: <a href="https://pt.wikipedia.org/wiki/C_(linguagem_de_programação)">Wikipedia - C (linguagem de
+                programação)</a>
+        </p>
+        <p>
+        <table border="1">
+            <td>
+                <code>
+                    #include &#60stdio.h&#62<br>
+                    int main()<br>
+                    {<br>
+                    <pre>    printf("Hello World!")<br>    return 0;<br></pre>
+                    }<br>
+                </code>
+            </td>
+        </table>
+        </p>
+    </div>
+
+    <div>
+        <h2>Variáveis e expressões matemáticas</h2>
+        <p>
+        <table border="1" style="text-align: center">
+            <tr>
+                <td>Tipo de Dado</td>
+                <td>Dado armazenado</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>Valores numéricos inteiros.<br>Ex.: 1, 16, 580</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>Números de ponto flutuante, com casas decimais.<br>Ex.: 3.14, 40.025, 1539.87</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Números de ponto flutuante de dupla precisão,<br>com o dobro da capacidade de um float.</td>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>Inteiros interpretados como<br>caracteres da tabela ASCII 128.<br>Ex.: 'a', 'z', '2', '!'.</td>
+            </tr>
+        </table>
+        </p>
+
+        <p>
+        <table border="1" style="text-align: center">
+            <tr>
+                <td>Operador Aritmético</td>
+                <td>Operação Matemática</td>
+            </tr>
+            <tr>
+                <td><code>=</code></td>
+                <td>Atribuição</td>
+            </tr>
+            <tr>
+                <td><code>+</code></td>
+                <td>Soma</td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtração</td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplicação</td>
+            </tr>
+            <tr>
+                <td><code>/</code></td>
+                <td>Divisão</td>
+            </tr>
+            <tr>
+                <td><code>%</code></td>
+                <td>Módulo (resto)</td>
+            </tr>
+        </table>
+        </p>
+
+        <p>
+        <table border="1">
+            <tr style="text-align: center">
+                <td>Exemplo:</td>
+            </tr>
+            <td>
+                <code>
+                        int main()<br>
+                        {<br>
+                        <pre>    int inteiro;<br>    inteiro = 5 + 2;<br><br>    return 0;<br></pre>
+                        }<br>
+                    </code>
+            </td>
+        </table>
+        </p>
+
+    </div>
+
+    <div>
+        <h2>Estruturas Condicionais</h2>
+        <p>
+        <table border="1" style="text-align: center">
+            <tr>
+                <td>Operador Comparativo</td>
+                <td>Retorna verdadeiro se...</td>
+            </tr>
+            <tr>
+                <td><code>A == B</code></td>
+                <td>A é igual a B</td>
+            </tr>
+            <tr>
+                <td><code>A != B</code></td>
+                <td>A é diferente de B</td>
+            </tr>
+            <tr>
+                <td><code>A &#62 B</code></td>
+                <td>A é maior que B</td>
+            </tr>
+            <tr>
+                <td><code>A &#60 B</code></td>
+                <td>A é menor que B</td>
+            </tr>
+            <tr>
+                <td><code>A &#62= B</code></td>
+                <td>A é maior ou igual a B</td>
+            </tr>
+            <tr>
+                <td><code>A &#60= B</code></td>
+                <td>A é menor ou igual a B</td>
+            </tr>
+            <tr>
+                <td><code>!A</code></td>
+                <td>A é falso</td>
+            </tr>
+            <tr>
+                <td><code>A && B</code></td>
+                <td>A e B são ambos verdadeiros</td>
+            </tr>
+            <tr>
+                <td><code>A || B</code></td>
+                <td>A ou B ou ambos são verdadeiros</td>
+            </tr>
+        </table>
+        </p>
+
+        <p>
+        <table border="1">
+            <tr style="text-align: center">
+                <td>Função</td>
+                <td>Comportamento</td>
+            </tr>
+            <tr>
+                <td><code><pre>if (condição)<br>{<br>...<br>} </pre></code></td>
+                <td style="text-align: center">Realiza "..." se a condição for verdadeira.</td>
+            </tr>
+            <tr>
+                <td><code><pre>else if (condição)<br>{<br>...<br>}</pre></code></td>
+                <td style="text-align: center">Realiza "..." se a condição do "if" o qual segue for falsa<br> e a
+                    própria condição for verdadeira.</td>
+            </tr>
+            <tr>
+                <td><code><pre>else<br>{<br>...<br>}</pre></code></td>
+                <td style="text-align: center">Realiza "..." se a condição do "if" o qual segue for falsa.</td>
+            </tr>
+            <tr>
+                <td><code><pre>switch (X)<br>{<br>  case A:<br>    ...<br>    break;<br><br>  case B:<br>    ...<br>    break;<br><br>  default:<br>    ...<br>}</pre></code>
+                </td>
+                <td style="text-align: center">Compara "X" com cada caso (nesse exemplo, "A" e "B")<br>e realiza todas
+                    as operações abaixo do que se igualar a "X".<br>Se não houver nenhum caso com valor
+                    igual,<br>realiza todas as operações abaixo do default.</td>
+            </tr>
+        </table>
+        </p>
+
+        <p>
+        <table border="1">
+            <tr style="text-align: center">
+                <td>Exemplo:</td>
+            </tr>
+            <td>
+                <code>
+                    int main()<br>
+                    {<br>
+                    <pre>    int inteiro = 5;<br><br>    if (inteiro != 8)<br>    {<br>        inteiro = 8;<br>    } <br><br>    return 0;<br></pre>
+                    }<br>
+                </code>
+            </td>
+        </table>
+        </p>
+
+    </div>
+    <div>
+        <h2>Estruturas de Repetição</h2>
+
+        <p>
+        <table border="1">
+            <tr style="text-align: center">
+                <td>Função</td>
+                <td>Comportamento</td>
+            </tr>
+            <tr>
+                <td><code><pre>while (condição)<br>{<br>...<br>} </pre></code></td>
+                <td style="text-align: center">Testa a condição e, se for verdadeira, <br> realiza "..." e repete o
+                    procedimento.</td>
+            </tr>
+            <tr>
+                <td><code><pre>do<br>{<br>...<br>} while (condição);</pre></code></td>
+                <td style="text-align: center">Realiza "...", testa a condição e,<br>se for verdadeira, repete o
+                    procedimento</td>
+            </tr>
+            <tr>
+                <td><code><pre>for (X; condição; Y) <br>{<br> ... <br>}</pre></code></td>
+                <td style="text-align: center">Executa "X" uma única vez, testa a condição e,<br>se for verdadeira,
+                    realiza "...", realiza "Y"<br>e repete o procedimento a partir do<br>teste da condição.</td>
+            </tr>
+        </table>
+        </p>
+
+        <p>
+        <table border="1">
+            <tr style="text-align: center">
+                <td>Exemplo:</td>
+            </tr>
+            <td>
+                <code>
+                        #include &#60stdio.h&#62<br>
+                        int main()<br>
+                        {<br>
+                        <pre>    int inteiro;<br>    for (inteiro = 0; inteiro &#60= 10; inteiro++)<br>    {<br>        printf("%d", inteiro);<br>    } <br><br>    return 0;<br></pre>
+                        }<br>
+                    </code>
+            </td>
+        </table>
+        </p>
+
+    </div>
+    <div>
+        <h2>Como executar um programa em C</h2>
+        <p>
+        <ol>
+            <li>
+                Localize ou salve o arquivo .c no seu computador, de preferência em um diretório de fácil acesso.
+            </li>
+            <br>
+            <li>
+                Abra o terminal (Linux) ou o command prompt (Windows).
+                <ul>
+                    <li>
+                        Para executar um programa pelo terminal ou pelo command prompt, é necessário ter um compilador
+                        gcc instalado. Para checar a existência de um em sua máquina, execute o comando
+                        <code>gcc -v</code>. Se o comando não for executado, certifique-se de instalar o compilador gcc.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Navegue até o diretório onde o arquivo .c está localizado utilizando o comando <code>cd</code>. Caso
+                seja necessário, faça uso do comando <code>dir</code> para listar os diretórios e arquivos da pasta
+                atual.
+            </li>
+            <br>
+            <li>
+                Já no diretório do arquivo .c, execute o comando
+                <code>gcc nomeDoArquivo.c -o nomeParaOExecutavel</code>. Isso irá compilar o arquivo e prepará-lo para
+                execução, criando um executável com o nome dado como argumento para o comando.
+            </li>
+            <br>
+            <li>
+                Agora basta executar o arquivo "nomeParaOExecutavel" com <code>./nomeParaOExecutavel</code> (em Linux)
+                ou simplesmente <code>nomeParaOExecutavel</code> (em Windows).
+            </li>
+        </ol>
+        </p>
+    </div>
+</body>
+
+</html>
