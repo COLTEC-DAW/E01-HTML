@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício HTML 5</title>
+    </head>
+    <body>
+
+        <fieldset>
+
+            <legend>Dados pessoais</legend>
+
+            <form>
+                <label for="código">Codigo:</label>
+                <input type="number" name="código" maxlength="50" size="5"/><br>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" value="" maxlength="100" size="20"/><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" value="" maxlength="100" size="7"/><br>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="M">Masculino
+                <input type="radio" name="sexo" value="F">Feminino<br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" value=""><br>
+
+                <label for="cartao">Cartao de Credito:</label><br>
+                <select name="cartao" multiple>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="american express">American Express</option>
+                </select>
+            </form>
+
+        </fieldset>
+
+        <fieldset>            
+
+            <legend>Dados profissionais</legend>
+
+            <form>
+
+                <label for="analista">Cargo:</label>
+                <select name="analista">
+                    <option value="junior">Analista junior</option>
+                    <option value="pleno">Analista pleno</option>
+                    <option value="senior">Analista senior</option>
+
+                </select><br>
+
+            
+                <input type="checkbox" name="fumante">
+                <label for="fumante"></label>Fumante<br>
+
+                <input type="checkbox" name="exercicios">
+                <label for="exercicios"></label>Pratica Exercicios Fisicos<br>
+
+                <input type="checkbox" name="bebe">
+                <label for="bebe"></label>Consome Bebida Alcoolica<br>
+
+                <label for="experiencia">Experiencias Profissionais</label><br>
+                <textarea id="experiencia"  placeholder="Data inicio/Data fim/Empresa/Cargo"></textarea>
+            </form>
+
+        </fieldset>
+
+        <input type="button" value="Limpar">
+        <input type="button" value="Inserir">
+
+
+    </body>
+</html>
