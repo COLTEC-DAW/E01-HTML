@@ -1,0 +1,94 @@
+
+<html>
+
+    <head>
+
+            <meta charset="utf-8">
+            <meta name="author" content="GuilhermeRSM">
+            <script type="text/javascript">
+                    function insereTexto()
+                        {document.getElementById('divTeste').innerHTML = [
+                            
+                                '<table>',
+                                '<thead>',
+                                '<tr>',
+                                '</tr>',
+                                '</thead>',
+                                '<tbody>',
+                                '<tr>',
+                                '<td>Questão</td>',
+                                '<td>Resposta</td>',
+                                '</tr>',
+                                '<tr>',
+                                '<td>1)</td>',
+                                '<td>Letra(A)</td>',
+                                '</tr>',
+                                '<tr>',
+                                '<td>2)</td>',
+                                '<td>Letra(B)</td>',
+                                '</tr>',
+                                '<tr>',
+                                '<td>3)</td>',
+                                '<td>Letra(D)</td>',
+                                '</tr>',
+                                '<tr>',
+                                '<td>4)</td>',
+                                '<td>Letra(C)</td>',
+                                '</tr>',
+                                '<tr>',
+                                '<td>5)</td>',
+                                '<td>Letra(A)</td>',
+                                '</tr>',
+                                '</tbody>',
+                                '</table>'
+                           
+                        ].join("\n");}
+            </script>
+     </head>
+    <body bgcolor="E6E6FA	"> <body>
+        <div class="p">
+            <h2>
+                Avaliação de conhecimentos sobre programação
+            </h2>
+            <fieldset>
+                <form>
+                        <ol>
+                         
+                                    <li>Como devemos printar um inteiro em C?<br> </li>
+                                    <INPUT TYPE="RADIO" NAME="quest1" VALUE="op1"> %d<br>
+                                    <INPUT TYPE="RADIO" NAME="quest1" VALUE="op2"> %inteiro<br>
+                                    <INPUT TYPE="RADIO" NAME="quest1" VALUE="op3"> &d<br>
+                                    <INPUT TYPE="RADIO" NAME="quest1" VALUE="op4"> %x<br>
+
+                                    <li>Qual dessas é uma linguagem de programaçao?<br> </li>
+                                    <INPUT TYPE="RADIO" NAME="quest2" VALUE="op1"> coltec<br>
+                                    <INPUT TYPE="RADIO" NAME="quest2" VALUE="op2"> C<br>
+                                    <INPUT TYPE="RADIO" NAME="quest2" VALUE="op3"> kdfjif<br>
+                                    <INPUT TYPE="RADIO" NAME="quest2" VALUE="op4"> pscript<br>
+
+                                    <li>Qual a função principal de um programa em C?<br> </li>
+                                    <INPUT TYPE="RADIO" NAME="quest3" VALUE="op1"> mmc<br>
+                                    <INPUT TYPE="RADIO" NAME="quest3" VALUE="op2"> subtrai<br>
+                                    <INPUT TYPE="RADIO" NAME="quest3" VALUE="op3"> soma<br>
+                                    <INPUT TYPE="RADIO" NAME="quest3" VALUE="op4"> Main<br>
+
+                                    <li>Como chamamos um valor do tipo caracter em C?<br> </li>
+                                    <INPUT TYPE="RADIO" NAME="quest4" VALUE="op1"> float<br>
+                                    <INPUT TYPE="RADIO" NAME="quest4" VALUE="op2"> int<br>
+                                    <INPUT TYPE="RADIO" NAME="quest4" VALUE="op3"> char<br>
+                                    <INPUT TYPE="RADIO" NAME="quest4" VALUE="op4"> double<br>
+
+                                    <li>Como finalizar uma linha de comando em c?<br> </li>
+                                    <INPUT TYPE="RADIO" NAME="quest5" VALUE="op1"> ;<br>
+                                    <INPUT TYPE="RADIO" NAME="quest5" VALUE="op2"> .<br>
+                                    <INPUT TYPE="RADIO" NAME="quest5" VALUE="op3"> "<br>
+                                    <INPUT TYPE="RADIO" NAME="quest5" VALUE="op4"> ´´<br>
+                      
+                        </OL>           
+                        <input type='button' onclick='insereTexto()' value='Gabarito'/><br/>
+                        <div id="divTeste"> </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html> 
