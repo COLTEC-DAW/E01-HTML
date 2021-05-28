@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <title>Cadastro - Empresa X</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cadastro na empresa X">
+        <meta name="keywords" content="Empresa X">
+        <meta name="author" content="Empresa X">
+    </head>
+
+    <body>
+        <form>
+            <fieldset style="width:40%">
+                <legend>Perfil Pessoal</legend>
+                
+                <div id="dados-pessoais">
+                    Codigo: <br>
+                    Nome: <input type="text" name="nome" size="30"> <br>
+                    Senha: <input type="password" name="password" size="30"> <br>
+                    Sexo: <input type="radio" name="sexo" value="male"> Male </input> <input type="radio" name="sex" value="female"> Female </input> <br>
+                    Idade: <input type="text" name="idade" size="10"> <br>
+                    Cartão de crédito:
+                    <select name="credit_card">
+                        <option value="mastercard">Mastercard</option>
+                        <option value="visa">Visa</option>
+                        <option value="american_express">American Express</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset style="width:40%">
+                <legend>Perfil Profissional</legend>
+
+                <div id="dados-profissionais" >
+                    Cargo:
+                    <select name="cargo">
+                        <option value="analista_junior">Analista Junior</option>
+                        <option value="analista_pleno">Analista Pleno</option>
+                        <option value="analista_senior">Analista Senior</option>
+                    </select> <br>
+                    Dados pessoais: <br>
+                    <input type="checkbox" name="dados_pessoais" value="fumante">Fumante</input> <br>
+                    <input type="checkbox" name="dados_pessoais" value="exercicios_fisicos">Pratica exercicios fisicos</input> <br>
+                    <input type="checkbox" name="dados_pessoais" value="alcool">Ingere bebida alcóolica</input> <br>
+                    Experiencias Profissionais: <br>
+                    <textarea rows="1">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+                </div>
+            </fieldset>
+            <input type="submit" value="Limpar">
+            <input type="submit" value="Inserir">
+        </form>
+    </body>
+</html>
