@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulário de Cadastro </title>
+    </head>
+
+    <body>
+        
+        <form>
+            <fieldset style="width: 25%;">
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="codigo"> Código: </label>
+                    <input type="text" id="codigo" size="7"/>
+                </div>
+
+                <div>
+                    <label for="nome"> Nome: </label>
+                    <input type="text" id="nome" size="30"/>
+                </div>
+
+                <div>
+                    <label for="senha"> Senha: </label>
+                    <input type="password" id="senha" size="5"/>
+                </div>
+
+                <div>
+                    <label for="sexo"> Sexo: </label>
+                    <input type="radio" name="sexo" value="M">Masculino
+                    <input type="radio" name="sexo" value="F">Feminino
+                </div>
+
+                <div>
+                    <label for="idade"> Idade: </label>
+                    <input type="text" id="idade" size="2">
+                </div>
+
+                <div>
+                    <label for="cartao"> Cartão de Crédito: </label>
+                    <select name="select">
+                        <option value="mastecard"> Mastercard </option>
+                        <option value="visa"> Visa </option>
+                        <option value="americanExpress"> American Express </option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 25%;">
+                <legend> Dados profissionais </legend>
+
+                <div>
+                    <label for="cargo"> Cargo: </label>
+                    <select name="select">
+                        <option value="junior"> Analista Júnior </option>
+                        <option value="pleno"> Analista Pleno </option>
+                        <option value="senior"> Analista Sênior </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="dados"> Dados Pessoais: </label>
+                    <br>
+                    <input type="checkbox" id="fumante"> Fumante
+                    <br>
+                    <input type="checkbox" id="exercita"> Pratica Exercícios Físicos
+                    <br>
+                    <input type="checkbox" id="bebe"> Consome Bebida Alcólica
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="xpPessoal">Experiências Pessoais: </label>
+                    <br /><textarea name="xpPessoal" id="xpPessoal" cols="35" rows="3"></textarea>
+                </div>
+            </fieldset>
+            <input type="reset"> <input type="submit">
+        </form>
+
+    </body>
+</html>
+
+
+                    
