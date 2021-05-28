@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Formulário de cadastro</title>
+        <meta charset="utf-8">
+        <meta name="author" content="GuilhermeRSM">
+    </head>
+    <body bgcolor="E6E6FA"><body>
+        <div>
+            <form>
+                <fieldset style="width: 13%;">
+                    <legend>Dados pessoais:</legend>
+                    Código:<input type="text" size="5" value="001"></br>
+                    Nome:<input type="text" size="30" placeholder="Digite o seu nome"></br>
+                    Senha:<input type="password" size="20" placeholder="Digite a sua senha"></br>
+                    Sexo:<input type="radio" name="Sexo" value="Masculino">Masculino</input>
+                         <input type="radio" name="Sexo" value="Feminino">Feminino</input></br>
+                    Idade:<input type="number" size="10"placeholder="digite a sua idade"></br>
+                    Cartão Crédito: </br>
+                    <select name="Cartão">
+                        <option value="value1">Mastercard</option>
+                        <option value="value2">Visa</option>
+                        <option value="value3">American Express</option>
+                    </select>
+                </fieldset> 
+                <fieldset style="width: 13%;">
+                    <legend>Dados profissionais:</legend>
+                    Cargo:<select name="Cargo">
+                                <option value="value1">Analista Júnior</option>
+                                <option value="value2">Analista Pleno</option>
+                                <option value="value3">Analista Sênior</option>
+                            </select></br>
+                    Dados Pessoais:</br>
+                    <input type=checkbox value="Fumante">Fumante</br>
+                    <input type=checkbox value="Pratica Exercicios Fisicos">Pratica Exercicios Fisicos</br>
+                    <input type=checkbox value="Consome bebida alcoólica">Consome bebida alcoólica</br>
+                    Experiências Profissionais:</br>
+                    <textarea rows="3" cols="40">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+                </fieldset>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Inserir">
+            </form>
+        </div>
+    </body>
+</html> 
