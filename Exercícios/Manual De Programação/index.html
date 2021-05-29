@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual De Programação</title>
+</head>
+<body>
+    <header>
+        <h1>Bem Vindo! Hoje Teremos Uma Aula Introdutória Sobre Programação em C :)</h1>
+    </header>
+    <div>
+        <h2>Introcução</h2>
+        <p>A linguagem C nos permite fazer diferentes aplicações, escritas em diferentes linguagens, interoperarem entre si. A grande maioria das linguagens de programação proveem suporte a programação de interfaces em C. A linguagem C é a “língua franca” de programação de computadores</p>
+        <p>Um exemplo de um programa em C:</p>
+<pre>
+    int main(){
+        printf("Hello World");
+        return 0;
+    }
+</pre>
+    </div>
+    <div>
+        <h2>Variáveis e Expressões Matemáticas:</h2>
+        <h3>Variáveis:</h3>
+        <p>
+            Uma variável é uma possição de memória que pode ser identificada através de um nome. <br>
+            Podem ter seu conteúdo alterado por um comando de atribuição. <br>
+            Após a atribuição mudam de valor. <br>
+        </p>
+        <h3>Tipos de Variáveis</h3>
+        <p>
+            Todas as variáveis em C tem um tipo;<br>
+            Cada tipo define os valores que a variável pode armazenar;<br>
+            Cada tipo ocupa uma certa quantidade de nemória.
+        </p>
+        <table style="width:25%" border="2px">
+            <tr>
+                <th>Tipo</th>
+                <th>Valor Válido</th>
+            </tr>
+            <tr>
+                <td>Char</td>
+                <td>Letras e Símbolos</td>
+            </tr>
+            <tr>
+                <td>Int</td>
+                <td>Números Inteiros</td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>Números Reais</td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>Numeros Reais</td>
+            </tr>
+        </table>
+        <h3>Expressões Matemáticas:</h3>
+        <table style="width:25%" border="2px">
+            <tr>
+                <th>Sinal</th>
+                <th>Utilidade</th>
+            </tr>
+            <tr>
+                <td>*,/</td>
+                <td>Multiplacação e Divisão</td>
+            </tr>
+            <tr>    
+                <td>%</td>
+                <td>Módulo (Resto da Divisão)</td>
+            </tr>
+            <tr>
+                <td>+,-</td>
+                <td>Adição e Subtração</td>
+            </tr>
+        </table>
+        <p>Exemplo de Código:</p>
+<pre>
+    #include <stdio.h>
+        #include <conio.h>
+        void main()
+        {
+           float NotaDaP1, NotaDaP2;
+           float Media;
+         
+           clrscr();     // Limpa a tela
+           NotaDaP1 = 6.6;  // Atribuição do Valores das médias
+           NotaDaP2 = 8.2;
+        
+           Media = (NotaDaP1 + NotaDaP2) / 2.0;
+        
+           printf("Média Final : %6.3f", Media); 
+            // No momento da execução sinal %6.3f vai ser substituído 
+            // pelo valor da variável Media
+                // Média Final :  7.400
+           getch();      // espera que o usuário pressione uma tecla
+           
+        }
+</pre>
+    </div>
+    <div>
+        <h3>Estruturas Condicionais:</h3>
+        <p>Chamamos de estruturas condicionais as instruções para testar se uma condição é verdadeira ou não. Elas podem ser associadas às estruturas que se repetem, após o cumprimento da condição, chamamos a elas de estruturas de loop.</p>
+        <p>Exemplo de Código</p>
+<pre>
+    x=1;
+    while (x<=10) {
+     if (x == 7) {
+     printf("Divisão por zero !");
+  
+    continue;
+    }
+   a = 1/(x-7);
+  
+    printf("%f", a);
+    x++;
+
+}
+</pre>
+    </div>
+    <div>
+        <h3>Estruturas de Repetição</h3>
+        <p>Estrutura de repetição nada mais é que laços de repetições. Laços de repetições permitem que um conjunto de instruções seja repetido até que se faça a condição desejada.</p>
+        <p>Exemplo de Codigo:</p>
+<pre>
+    #include<conio.h>
+        #include<stdio.h>
+        
+        int main()
+        {
+            int i;
+            for (i=0; i<10; i++)
+            {
+               printf("%d\n", i);
+            }
+        getch();
+        }
+</pre>
+    </div>
+    <div>
+        <h2>Como Executar um Programa em C:</h2>
+        <p>Para poder compilar o seu arquivo, simplesmente abra o prompt de comando (cmd.exe), do Windows e vá na pasta do MinGW, localizada geralmente em C:\ (ou onde você preferiu instalar)</p>
+        <p>
+            Em seguida, vamos chamar o compilador e o arquivo que queremos que ele compile. Para isso, basta digitar o nome do compilador, o arquivo a ser compilado, o parâmetro do comando, e o nome final do programa.
+            No caso, teremos:
+            gcc meucodigo.c -o meuprograma.exe
+            Onde gcc é o processo (o compilador), meucodigo.c é o código fonte, o parâmetro -o significa que eu estou indicando qual é a saída e o meuprograma.exe indica o nome final do programa compilado.
+        </p>
+    </div>
+</body>
+</html>
