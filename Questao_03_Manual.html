@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <Title>Questão 03 - Manual </Title>
+        </head>
+        <body style = "font-size: 150%">
+            <div id = "Introdução">
+                <h3>Introdução</h3>
+                <p>C é uma linguagem de baixo nivel que existe há mais de 50 anos. Ela é utilizada para escrever de tudo, desde programas simples até sistemas operacionais completos.</p>
+            </div>
+            <div id = "Varieveis e expressões matemáticas">
+                <h3>Variaveis e expressões matemáticas</h3>
+                <p>C suporta as seguintes variaveis primitivas básicas: </p>
+                
+                <table border = "2px">
+                    <tr>
+                        <td>int</td>
+                        <td>numero inteiro</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>numero com parte fracionaria</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>float com o dobro de prescisão</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>um unico caractere</td>
+                    </tr>
+                </table>
+                <p>E os seguintes operadores: </p>
+                
+                <table border = "2px">
+                    <tr>
+                        <td>- e +</td>
+                        <td>subtração e adição</td>
+                    </tr>
+                    <tr>
+                        <td>* e /</td>
+                        <td>multiplicação e divisão</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>modulo da divisão (resto)</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>decremento (valor - 1)</td>
+                    </tr>
+                    <tr>
+                        <td>++</td>
+                        <td>incremento (valor + 1)</td>
+                    </tr>
+                </table>
+
+                <p>As operações realizadas em C seguem as ordens de precedência padrões da matemática (*, / e % realizados antes de + e -) <br/>
+                   Também é possivel utilizar de parêntesis para organizar a expressão da forma que desejar</p>
+                <ul><p><b>Exemplos:</b></p> 
+
+                    <li><code>int i = 5;<br/>
+                        int j = 7;<br/>
+                        int y = j + i;<br/>
+                        <b>Valor final de y = 12</b>
+                    </code></li>
+                    <br/>
+                    <li><code>float i = 5;<br/>
+                        float j = 2;<br/>
+                        int y = i % j;<br/>
+                        y--;<br/>
+                        <b>Valor final de y = 0</b><br/>
+                    </code></li>
+                    <br/>
+                    <li><code>float i = 10;<br/>
+                        float j = 5;<br/>
+                        int y = (i + j) * 3;<br/>
+                        <b>Valor final de y = 45</b><br/>
+                    </code></li>
+                </ul>
+
+            </div>
+            <div id = "Estruturas condicionais">
+                <h3>Estruturas condicionais</h3>
+                <p>Condicionais são estruturas usadas para realizar ações dependendo se determinada condição for verdadeira ou falsa</p>
+
+                <ul>
+                    <li><code>if (expressão) {<br/>
+                        &emsp;(realiza algo se a expressão for verdadeira)<br/>
+                        }else{<br/>
+                        &emsp;(realiza algo se a expressão não foi verdadeira)<br/>
+                        }<br/>
+                    </code></li>
+                </ul>
+
+                <p>Para determinar tais expressões são usados alguns operadores expecificos</p>
+                
+                <table border = "2px">
+                    <tr>
+                        <td>==</td>
+                        <td>se os valores de ambas as variaveis forem iguais, a expressão é verdadeira</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>se os valores de ambas as variaveis forem diferentes, a expressão é verdadeira</td>
+                    </tr>
+                    <tr>
+                        <td>> e >=</td>
+                        <td>se o valor da variavel a esquerda for maior/ maior ou igual, a expressão é verdadeira</td>
+                    </tr>
+                    <tr>
+                        <td>< e <=</td>
+                        <td>se o valor da variavel a esquerda for menor/ menor ou igual, a expressão é verdadeira</td>
+                    </tr>
+                </table>
+                
+                <ul><p><b>Exemplos:</b></p> 
+
+                    <li><code>if (i >= 60){<br/>
+                        &emsp;printf("eh maior");<br/>
+                        }<br/>
+                    </code></li>
+                    <br/>
+                    <li><code>if (i != j){<br/>
+                        &emsp;printf("eh diferente");<br/>
+                        }else{<br/>
+                        &emsp;printf("eh igual");<br/>
+                        }
+                    </code></li>
+                    <br/>
+                </ul>
+
+            </div>
+            <div id = "Estruturas de repetição">
+                <h3>Estruturas de repetição</h3>
+                <p>Estruturas de repetição são realizadas repetidamente enquanto a expressão for verdadeira</p>
+                <ul>
+                    <li><code>while (expressão) {<br/>
+                        &emsp;(realiza algo enquanto a expressão for verdadeira)<br/>
+                        }
+                    </code></li>
+                </ul>
+                <ul>
+                    <li><code>for (valorInicial; condição; incrementoDoValor) {<br/>
+                        &emsp;(realiza algo enquanto a expressão for verdadeira)<br/>
+                        }
+                    </code></li>
+                </ul>
+
+                <ul><p><b>Exemplos:</b></p> 
+
+                    <li><code>while (i < 5){<br/>
+                        &emsp;printf("%d", i);<br/>
+                        &emsp;i++;<br/>
+                        }<br/>
+                    </code></li>
+                    <br/>
+                    <li><code>for (i = 0; i < 7; i++){<br/>
+                        &emsp;printf("%d",i);<br/>
+                        }
+                    </code></li>
+                    <br/>
+                </ul>
+            
+            </div>
+            <div id = "Como executar um programa em C">
+                <h3>Como executar um programa em C</h3>
+                <p>Existem diversas formas de executar um programa em C, mas a forma mais facil é definitamente baixando uma IDE ou utilizando uma na internet</p>
+                <p>No Visual Studio, por exemplo, na caixa de ferramentas no topo da tela existe o botão Play e, caso o seu programa não apresente nenhum erro, seu programa ira ser executado em um terminal que sera aberto para seu programa</p>
+            </div>
+        </body>
+    </html>
