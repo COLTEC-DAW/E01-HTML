@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Cadastro</title>
+        <style>
+            fieldset 
+            {
+              background-color: #eeeeee;
+            }
+            
+            legend 
+            {
+              background-color: black;
+              color: white;
+              padding: 5px 10px;
+            }
+            
+            input 
+            {
+              margin: 5px;
+            }
+            </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                
+                <legend>Dados Pessoais</legend>
+                <label for="code">Código:</label>
+                <input type="text" id= "code" > <br><br>
+                <label for="name">Nome:</label>
+                <input type="text" id= "name" > <br><br>
+                <label for="password">Senha:</label>
+                <input type="text" id="password"> <br><br>
+                <label for="male">Sexo:</label>
+                <input type="checkbox"  id="male" value ="Masculino">Masculino
+                <input type="checkbox"  id="female" value = "Feminino">Feminino <br><br>
+                <label for="age">Idade:</label>
+                <input type="text" id="age"><br><br>
+                <label for="card">Cartão de crédito:</label><br>
+                <select id="card">
+                    <option value="master">Mastecard</option>
+                    <option value="visa">Visa</option>
+                    <option value="american">American Express</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Dados Profissionais</legend>
+                <label for="job">Cargo:</label>
+                <input type="text" id="job"><br><br>
+                <label for="smoker">Dados Pessoais:</label><br>
+                <input type="checkbox" id="smoker" value="Fumante">Fumante <br>
+                <input type="checkbox" id= "physics activies" value= "Pratica Exercícios Físicos">Pratica Exercícios Físicos <br>
+                <input type="checkbox" id= "drinker" value="Consome Bebida Álcoolica">Consome Bebida Álcoolica <br><br>
+                <label for="professional">Exeperiências Profissionais:</label><br>
+                <textarea rows="5" cols="50">Data início/ Data Fim/ Empresa/ Cargo</textarea>
+                
+            </fieldset>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+        <br><br><br>
+        <footer>
+            Página desenvolvida por Alexandre Hobbes.
+            Todos os direitos reservados.
+        </footer>
+    </body>
+</html>
