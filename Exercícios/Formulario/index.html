@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro:</h1>
+    </div>
+    <div>
+        <form>
+            <fieldset style="width: 20%;">
+                <legendn:><p>Dados Pessoais</p></legend>
+                <label for="codigo">Código:</label><br>
+                <input type="number" id="codigo" size="3"><br>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome"><br>
+                <label for="senha">Senha:</label><br>
+                <input type="number" id="senha"><br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio"id="sexo"> Masculino
+                <input type="radio" id="sexo"> Feminino <br>
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" size="3"><br>
+                <label for="cartao">Cartão Crédito:</label><br>
+                <select name="cartao" id="cartao" size="5">
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="american">American Express</option>
+                </select>
+            </fieldset> 
+            <fieldset style="width: 20%;">
+                <legendn:><p>Dados Profissionais</p></legend>
+                <label for="cargo">Cargo:</label>
+                <select name="cargo" id="cargo">
+                    <option value="junior">Analista Júnior</option>
+                    <option value="pleno">Analista Pleno</option>
+                    <option value="senior">Analista Sênior</option>
+                </select><br>
+                <input type="checkbox" id="fuma">
+                <label for="fuma">Fumante</label><br>
+                <input type="checkbox" id="exercita">
+                <label for="exercita">Pratica Exercícios Físicos</label><br>
+                <input type="checkbox" id="bebe">
+                <label for="bebe">Consome Bebidas Alcóolicas</label><br>
+                <label for="experiencia">Experiências Profissionais:</label>
+                <textarea name="experiencia" id="experiencia" cols="35" rows="5"></textarea>
+            </fieldset>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
