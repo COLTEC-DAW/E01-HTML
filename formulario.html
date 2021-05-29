@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <form>
+            <header>
+                <h1 style="text-align: center;">Formulário de Cadastro</h1>
+            </header>
+
+            <div>
+                <fieldset>
+                    <legend>
+                        Dados Pessoais
+                    </legend>
+
+                    Codigo:<input type = "text"/><br>
+                    Nome:<input type = "text"/><br>
+                    Senha:<input type = "password"/><br>
+                    Sexo:<input type = "radio" name = "sexo" value = "masculino">Masculino</input>
+                        <input type = "radio" name = "sexo" value = "feminino">Feminino</input><br>
+                    Idade:<input type = "text"><br>
+                    Cartão de Crédito: 
+                    <select name = "cartão">
+                        <option value = "master">Mastercard</option>
+                        <option value = "visa">Visa</option>
+                        <option value = "american">American Exress</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>
+                        Dados Profissionais
+                    </legend>
+
+                    Cargo:
+                    <select name="cargo">
+                        <option value = "junior">Analista Júnior</option>
+                        <option value = "pleno">Analista Pleno</option>
+                        <option value = "senior">Analista Sênior</option>
+                    </select><br>
+                    Dados Pessoas:<br>
+                    <input type = "checkbox" value = "fumante">Fumante<br>
+                    <input type = "checkbox" value = "exercicio">Pratica exercício físico<br>
+                    <input type = "checkbox" value = "bebida">Consome bebida alcoólica<br>
+                    Experiências Profissionais: <br>
+                    <textarea>Data Início/Data Fim/Empresa/Cargo</textarea><br>
+                </fieldset>
+            </div>
+            <div>
+                <input type = "reset" value = "Limpar">
+                <input type = "submit" value = "Enviar">
+            </div>
+        </form>
+
+        <footer>
+            <h5>Desenvolvido por João Victor Rodrigues Oliveira</h5>
+        </footer>
+    </body>
+</html>
