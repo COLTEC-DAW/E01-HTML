@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <Title>Questão 04 - Formulario </Title>
+        </head>
+        <body>
+            <div id = "Dados pessoais" style = "font-size: 125%; float: left; margin-left:auto;">
+                <form>
+                    <fieldset>
+                        <legend>Dados Pessoais: </legend>
+                        <label for="codigo">Codigo:</label>
+                        <input id = "codigo" type="number">&emsp;</br></br>
+                        <label for="nome">Nome:</label>
+                        <input id = "nome" type = "text">&emsp;</br></br>
+                        <label for="senha">Senha:</label>
+                        <input id = "senha" type = "password">&emsp;</br></br>
+                        <label for="sexo">Sexo:</label>
+                        <select id = "sexo">
+                            <option value = "m">Masculino</option>
+                            <option value = "f">Feminino</option>
+                            <option value = "nb">Não Binário</option>
+                            <option value = "o">Outro</option>
+                        </select>&emsp;</br></br>
+                        <label for="idade">Idade: </label>
+                        <input id = "idade" type="number">&emsp;</br></br>
+                        <label for = "cartaoCredito">Cartão de Crédito: </br></label>
+                        <select id = "cartaoCredito">
+                            <option value = "master">Mastercard</option>
+                            <option value = "visa">Visa</option>
+                            <option value = "americanEx">American Express</option>
+                        </select>&emsp;</br></br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados Profissionais: </legend>
+                        <label for="Cargo">Cargo: </label>
+                        <select id = "cargo">
+                            <option value = "aJunior">Analista Júnior</option>
+                            <option value = "aPleno">Analista Pleno</option>
+                            <option value = "aSenior">Analista Sênior</option>
+                        </select>&emsp;</br></br>
+                        <label for="dadosPessoais_1">Dados Pessoais</br></label>
+                        <Input id = dadosPessoais_1 type="checkbox">Fumante</Input>&emsp;</br>
+                        <Input id = dadosPessoais_2 type="checkbox">Pratica exercicios fisicos</Input>&emsp;</br>
+                        <Input id = dadosPessoais_3 type="checkbox">Consome bebida alcoólica</Input>&emsp;</br></br>
+                        <label for = "experiencias">Experiências Profissionais</br></label>
+                        <textarea id = "experiencias" rows = "5" cols = "55">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+                    </fieldset>
+                    <input id = "limpar" type = "reset" value= "Limpar">
+                    <input id = "inserir" type = "submit" value= "Inserir"
+                </form>
+            </div>
+        </body>
+    </html>
