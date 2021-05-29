@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manual de Programação</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 style="text-align: center;">Manual de Programação</h1>
+        </header>
+
+        <div>
+            <h2>Introdução</h2>
+            <p>
+                C é uma <b>linguagem de programação</b> compilada de propósito geral, estruturada, 
+                imperativa, procedural, criada em 1972 por <i>Dennis Ritchie</i> na empresa <i>AT&T Bell
+                Labs</i> para desenvolvimento do sistema operacional Unix (originalmente escrito em 
+                Assembly). C é uma das linguagens de programação mais populares e existem poucas 
+                arquiteturas para as quais não existem compiladores para C.
+            </p>
+        </div>
+        <div>
+            <h2>Variáveis e expressões matemáticas</h2>
+            <h3>Variáveis</h3>
+            <p>
+                <b>Variável</b> é um local reservado na memória para armazenar um tipo de dado. Toda 
+                variável deve ter um <b>identificador</b>, ou seja um nome. Além de ter um nome, a 
+                variável também precisa ter um <b>tipo</b>. O tipo de dado de uma variável determina
+                o que ela é capaz de armazenar.
+            </p>
+            <h4>Tipos de Variáveis</h4>
+            <table border = "1">
+                <tr>
+                    <th>Tipos</th>
+                    <th>Armazena</th>
+                </tr>
+                
+                <tr>
+                    <td>Int</td>
+                    <td>Valores Inteiros</td>
+                </tr>
+                <tr>
+                    <td>Double/Float</td>
+                    <td>Pontos flutuantes, ou seja, valores com casas decimais</td>
+                </tr>
+                <tr>
+                    <td>Char</td>
+                    <td>Caracter</td>
+                </tr>
+            </table>
+            <p>
+                Existem outros diversos tipos que podem ser utilizados em C!
+            </p>
+            <h3>Expressões Matemáticas</h3>
+            <h4>Operadores Aritméticos</h4>
+            <table border = "1">
+                <tr>
+                    <th>Sinais</th>
+                    <th>Operação</th>
+                </tr>
+                
+                <tr>
+                    <td>+</td>
+                    <td>Adição</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtração</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicação</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Divisão</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Resto de uma divisão</td>
+                </tr>
+            </table>
+            <h4>Exemplo</h4>
+            <code> 
+                <pre>
+                    #include <stdio.h>
+
+                    int main(){
+                        int a, b, c;
+                        a = 5;
+                        b = 15;
+                        c = a + b;
+                           printf("O valor de c eh %d", c);
+                           return 0;
+                    }
+                </pre>
+            </code>
+        </div>
+        <div>
+            <h2>Estruturas Condicionais</h2>
+            <h3>If-Else</h3>
+            <p>
+                Uma instrução <b>if-else controla a ramificação condicional.</b> As instruções do 
+                corpo da estrutura serão executadas <b>somente</b> se a condição for avaliado como um
+                valor diferente de zero (ou true ). <b>Caso contrário,</b> a instrução a seguir será 
+                ignorada e, <b>se houver else,</b> a instrução após a else execução será executada.
+               <b>Exemplo:</b>
+            </p>
+            <code>
+                <pre>
+                    if(condição){
+                        bloco de instruções
+                     }
+                    else{
+                        bloco de instruções
+                     }
+                </pre>
+            </code>
+            <h3>Switch</h3>
+            <p> 
+                Uma instrução <b>switch</b> efetua diversos <b>testes de valores com o conteúdo de uma 
+                mesma variável.</b> Assim, simplifica o teste de vários valores de uma variável. O switch
+                é muito utulizado em <b>menus.</b>
+                <b>Exemplo:</b>
+            </p>
+            <code>
+                <pre>
+                    switch(variável) { 
+                        case "valor1":
+                            bloco de instruções
+                        break;
+                        case "valor2":
+                            bloco de instruções
+                        break;
+                        case "valor3":
+                            bloco de instruções
+                        break;
+                        default:
+                            bloco de instruções
+                    }                        
+                </pre>
+            </code>
+        </div>
+        <div>
+            <h2>Estruturas de Repetição</h2>
+            <h3>For</h3>
+            <p>
+                Uma instrução <b>for repete várias vezes determinado bloco de instruções,</b> 
+                formando assim um <b>loop,</b> seguindo determinada condição para sua repetição.
+                <b>Exemplo:</b>
+            </p>
+            <code>
+                <pre>
+                    for (declaração do contador; condição; incremento do contador) {
+                        bloco de instruções
+                    }
+                </pre>
+            </code>
+            <h3>While</h3>
+            <p>
+                Uma instrução <b>while também forma um loop,</b> enquanto alguma condição ainda é
+                válida.
+                <b>Exemplo:</b>
+            </p>
+            <code> 
+                <pre>
+                    while (condição){
+                        bloco de instruções
+                    }
+                </pre>
+            </code>
+        </div>
+        <div>
+            <h2>Como executar um programa em C</h2>
+            <p> 
+                <b>O gcc</b> - compilador utilizado na linguagem C, é uma ferramenta que <b>já vem
+                instalada</b> na maioria dos sistemas. Caso o programa desejado seja executado <b>apenas 
+                com um arquivo</b>, você pode utilizar o comando abaixo, no terminal: 
+            </p>
+            <code> $ gcc (nome_do_arquivo).c -o (nome_do_executavel) </code>
+            <p> 
+                É comumente utilizado o nome do arquivo executavel o mesmo do nome original do arquivo,
+                por facilidade, mas fica ao seu critério. No caso do <b>Windows</b>, é necessário
+                a <b>extensão.exe</b> para reconhecer um arquivo executável.
+            </p>
+            <p> Agora <b>com o arquivo executável</b>, por fim, para executar o programa, a maneira 
+                mais conhecida é utilizar o comando abaixo no terminal:  
+            </p>
+            <code> $ ./prog </code>
+        </div>
+    </body>
+
+
+
+
+
+
+</html>
