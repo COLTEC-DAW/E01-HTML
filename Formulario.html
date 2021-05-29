@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="codigo">Codigo:</label>
+                <input id ="codigo" type="text"> <br>
+
+                <label for="nome">Nome:</label>
+                <input id = "nome" type="text"> <br>
+
+                <label for="senha">Senha:</label>
+                <input id = "senha" type="password"> <br>
+
+                <label for="genero">Genero:</label>
+                <input type="radio" name="genero" >Masculino</input>
+                <input type="radio" name="genero">Feminino</input>
+                <input type="radio" name="genero">Nao Binario</input>
+                <input type="radio" name="genero">Outro</input>
+                <input type="text"> <br>
+
+                <label for="idade">Idade:</label>
+                <input id = "idade"type="text"> <br>
+                
+                <label for="cartao">Cartao De Credito:</label>
+                <select name="" id="cartao">
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visa">Visa</option>
+                    <option value="america express">American Express</option>
+                </select> <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="cargo">Cargo</label>
+                <select  id="cargo">
+                    <option value="AnalJ">Analista Junior</option>
+                    <option value="AnalP">Analista Pleno</option>
+                    <option value="AnalS">Analista Senior</option>
+                </select> <br>
+
+                <label for="dadosPes">Dados Pessoais</label> <br>
+                <input type="checkbox"> Fumante <br>
+                <input type="checkbox"> Pratica Exercicios Fisicos <br>
+                <input type="checkbox"> Consome Bebidas Alcoolicas <br>
+
+                <label for="DadosPro">Dados Profissionais</label> <br>
+                <textarea rows="5" cols="35">Data Inicio/Data Fim/Empresa/Cargo</textarea> <br>
+
+                <input type="reset" name="" id="" value="Limpar">
+                <input type="submit" value="Enviar Formulário">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
