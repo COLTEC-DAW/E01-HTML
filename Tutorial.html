@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tutorial Programação em C</title>
+</head>
+<body>
+    <h1>Manual De Programação em C</h1>
+    <div id="Introdução">
+        <header>
+            <h2>Introdução à linguagem C</h2>
+        </header>
+        <h3>O que é?</h3>
+        <p>Considerada uma linguagem de alto nível genérica, a C pode ser usada em diversos tipos de projeto, como a criação de aplicativos, sistemas operacionais, drivers, entre outros.
+            Trata-se de uma linguagem estruturada que se tornou muito popular nos anos 80 — tanto que é difícil encontrar arquiteturas para as quais não existam compiladores para a C,
+            o que garante o seu elevado nível de portabilidade.</p>
+
+        <p>Uma das grandes vantagens dessa linguagem é a capacidade de gerar códigos rápidos, ou seja, com um tempo de execução baixo.
+            Além disso, a programação em C é bastante simplificada, pois sua estrutura é simples e flexível.
+            Tendo isso em mente, podemos dizer que as principais características da linguagem C são:</p>
+
+        <ul>
+            <li>portabilidade;</li>
+            <li>geração de código eficiente;</li>
+            <li>simplicidade;</li>
+            <li>confiabilidade;</li>
+            <li>facilidade de uso;</li>
+            <li>regularidade. </li>
+        </ul>
+
+        <p>Por fim, a popularidade da linguagem C é foi grande que ela ainda influenciou diretamente a estrutura e sintaxe de outras, como C++, Objective C e C#.</p>
+
+    </div> <br>
+
+    <div id="Variaveis">
+        <header>
+            <h2>Variáveis</h2>
+        </header>
+
+        <div>
+            <h3>O que são variáveis?</h3>
+            <p>Usar o exemplo da caixinha de sapato e fósforo. Um variável inteira é uma caixinha de fósforo. O
+                número que ela representa é um valor que fica guardado dentro da caixinha, como, por exemplo,
+                número de fósforos nela. Existe um limite para o número que ela representa. Uma variável float é
+                uma caixa de sapato e o valor que ela representa é, por exemplo, o comprimento do sapato. Não se
+                pode misturar o conteúdo entre tipos diferentes.</p>
+            
+            <h3>Motivação?</h3>
+            <p>Variáveis são importantes apra facilitar a programação. Comandos repetitivos ficam mais sucintos
+                com variáveis. Atribuição é uma ferramenta fundamental da programação.
+            </p>
+        </div>
+
+        <div>
+            <h3>Como usar?</h3>
+            <p>Segue um exemplo de uso:</p>
+
+            <legend>
+                <code >
+                    <p>int a,b, SomaGeral;</p>
+                    <p>a = 3; // a recebe o valor 3</p>
+                    <p>b = a * 2; // b recebe o dobro do valor de a </p>
+                    <p>SomaGeral = a + b + 2; // SomaGeral recebe 11</p>
+                </code>
+            </legend>
+            <p>Evite sempre usar nomes muito vagos, e use sempre nomes que descrevem para que sera usado a variável</p>
+        </div>
+
+        <div>
+            <h3>Tipos Existentes</h3>
+            <p>Em C tems os seguintes tipos básicos de variáveis</p>
+            <ul>
+                <li>char: Guarda um caracter</li>
+                <li>int: Guarda um número inteiro</li>
+                <li>float: Guarda um número real com certa precisão</li>
+                <li>double: Guarda um número real com precisão maior que float</li>
+                <li>void: Tipo Vazio</li>
+            </ul>
+        </div>
+    </div> <br>
+
+    <div id="Estruturas Condicionais">
+        <header>
+            <h2>Estruturas Condicionais</h2>
+        </header>
+        <div>
+            <h3>O que são Estruturas Condicionais?</h3>
+            <p>Estruturas Condicionais permitem estabelecer
+                condições que controlam se um determinado trecho de código é executado ou não. O
+                programa poderia, por exemplo, analisar o valor de uma variável ou o resultado de uma
+                expressão para determinar quais comandos executar em seguida. Por exemplo, se o valor do
+                raio que for lido é negativo, o programa deveria parar com uma mensagem de erro, caso
+                contrário deveria calcular a área e o perímetro do círculo. </p>
+                
+            <p>Antes de iniciar o estudo das estruturas condicionais, vamos entender como C descreve
+                condições e como elas são avaliadas durante a execução do programa.
+                Em C, uma condição é nada mais que qualquer expressão, cujo valor resultante precisa ser
+                necessariamente um número inteiro. Se esse valor for 0 (zero), então a expressão é
+                interpretada como sendo falsa. Caso contrário, se a expressão resultar em qualquer outro
+                valor não nulo, então a condição será tratada como verdadeira. </p>
+        </div>
+
+        <div>
+            <h3>Operadores de Comparação</h3>
+            <p>A maioria das decisões de um programa é baseada na comparação entre dois valores. Para
+                escrever tais condições, existem os operadores de comparação (também chamados de
+                operadores relacionais).</p>
+
+            <p>Os operadores de comparação são tratados da mesma forma que os demais operadores
+                aritméticos, tais como +, -, / e * (respectivamente, soma, subtração, divisão e
+                multiplicação). Para escrever comparações, valem as mesmas regras usadas para expressões
+                aritméticas.</p>
+
+            <p>O resultado de um operador de comparação será 1 se a comparação for verdadeira, ou 0
+                caso ela seja falsa.</p>
+            
+            <h4>Observações Importantes</h4>
+            <p>Note que estes operadores têm o mesmo significado que na notação matemática. No
+                entanto, C adota uma representação um pouco diferente para eles.
+                Os operadores “menor/maior que ou igual a” (≤ e ≥) são escritos, respectivamente, usandose os símbolos “(SETA ESQUERDA)” e “(SETA DIREITA)”,
+                seguidos do símbolo “=”. O operador “diferente de” (≠), é escrito
+                usando-se o símbolo de exclamação (“!”), seguido pelo símbolo igual (“=”). Note que os
+                símbolos ≤ , ≥ e ≠ não estão disponíveis em teclados comuns.
+                A igualdade merece atenção especial. Observe que o operador é formado por dois símbolos
+                de igualdade consecutivos (“==”).</p>
+        </div>
+
+        <div>
+            <h3>Quais Estruturas existem?</h3>
+            <p>Existem as seguintes estruturas:</p>
+            <ul>
+                <li>if e else</li>
+                <li>elseif</li>
+                <li>switch</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Quando usá-las?</h3>
+            <b>If</b>
+            <ul>
+                <li>Quando um bloco deve ser executando apenas se uma condição for verdadeira.</li>
+                <li>Combinando com outros comandos que aprenderemos mais tarde (como return e
+                    break), pode finalizar o programa sob determinadas condições (por exemplo,
+                    detecção de um erro).</li>
+            </ul>
+            <b>If...Else</b>
+            <ul>
+                <li>Quando uma condição implica a execução de um ou outro bloco. </li>
+                <li>Sempre quando houver duas condições mutuamente exclusivas. </li>
+                <li>Exemplo: Verificar um dado digitado pelo usuário e aceitá-lo ou imprimir uma
+                    mensagem de erro</li>
+            </ul>
+            <b>If.. .Else If... Else If</b>
+            <ul>
+                <li>Testar intervalos de valores, ou valores que são contínuos ou podem variar num
+                    intervalo não finito</li>
+                <li>Verificar várias condições, entre as quais existe uma prioridade para atender
+                    somente a primeira condição que for verdadeira.</li>
+                <li>Tratar diversas condições (não necessariamente mutuamente exclusivas).</li>
+            </ul>
+            <b>Exemplo:</b>
+            
+            <legend>
+                <code>
+                    <p>if (condição realizada) {</p>
+                    <p>    lista de instruções</p>
+                    <p> }</p>
+                    <p> else {</p>
+                    <p>   outra série de instruções</p>
+                    <p> }</p>
+                </code>
+            </legend>
+
+            <b>Switch</b>
+            <ul>
+                <li>Para testar uma expressão que gere valores discretos. </li>
+                <li>Em situações nas quais deve ser realizado um mesmo processamento para várias
+                    condições.</li>
+                <li>Quando o número de possibilidade for razoavelmente grande e finito.</li>
+            </ul>
+
+            <b>Exemplo:</b>
+            <legend>
+                <code>switch (variável) { 
+
+                    <p>casa Valor1:</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;</p>
+                    <p>casa Valor2 :</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;</bold></p>
+                    <p>casa Valores... :</p>
+                    <p>Lista de instruções;</p>
+                    <p>break;  </p>
+                    <p>default:</p>
+                    <p>Lista de instruções;</p>
+                    <p>}</p>
+
+                </code>
+            </legend>
+        </div>
+
+    </div> <br>
+
+    <div id="Estruturas De Repetição">
+        <h2>Estruturas De Repetição</h2>
+        <div>
+            <h3>O que são?</h3>
+            <p>São estruturas que ficam repetindo as linhas de código dentro delas</p>
+        </div>
+
+        <div>
+            <h3>Quais são e como usar</h3>
+            <ul>
+                <li>For</li>
+                <li>While</li>
+                <li>Do While</li>
+            </ul>
+            <b>For</b>
+            <legend>
+                <code>
+                    <p> for (contador; condição; modificação do contador) {</p>
+                    <p>    lista de instruções;</p>
+                    <p>   }</p>
+                </code>
+            </legend>
+
+            <b>While</b>
+            <legend>
+                <code>
+                    <p>while (condição realizada) {</p>
+                        <p>lista de instruções;</p>
+                        <p>}</p>
+                </code>
+            </legend>
+
+            <b>Do While</b>
+            <legend>
+                <code>
+                    <p>Do {</p>
+                    <p>Lista de Instruções;</p>
+                    <p>}While(Condição realizada);</p>
+                </code>
+            </legend>
+
+            <p>Cuidado para não realizar loops infinitos, tem sempre que haver uma maneira de sair das estruturas de repetição.</p>
+        </div>
+
+    </div> <br>
+
+    <div id="Como Executar">
+        <h2>Como executar seu programa</h2>
+        <p> A forma mais simples de se fazer é usando o prompt de comando:</p>
+        <P>Primeiro temos que  ir até a pasta onde o arquivo.c se encontra e compilá-lo</P>
+        <p>Para isso, basta digitar o nome do compilador, o arquivo a ser compilado,
+            o parâmetro do comando, e o nome final do programa. Onde gcc é o processo
+            (o compilador), meucodigo.c é o código fonte, o parâmetro -o significa que
+            eu estou indicando qual é a saída e o meuprograma.exe indica o nome final 
+            do programa compilado</p> 
+        
+        <legend>
+            <code>
+                <p>gcc C:\Users\rodri\Documents\meucodigo.c -o </p>
+                    <p>C:\Users\rodri\Documents\meuprograma.exe</p>
+            </code>
+        </legend>
+    </div> <br>
+
+</body>
+</html>
