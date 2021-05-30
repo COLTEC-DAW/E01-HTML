@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>:)</title>
+    </head>
+
+    <body>
+        <div> <!--Titulo-->
+            <h1>Manual de programação para iniciantes</h1>
+            <h4 style="color:#909090">Bem vindo calouros! :)</h4>
+        </div>
+        <div> <!--Conteudo-->
+            <ul>
+                <div> <!--Intro-->
+                    <li>
+                        <h2>Introdução</h2>
+                        <p>Então você é um novo calouro no curso de desenvolvimento de sistemas. O que você não sabe é que você acabou de comprar uma passagem só de ida para o inferno. Mas não se preocupe! A companhia é boa e não há lugar melhor! </p>
+                        <p>Uma das coisas que você deve se preparar para ver é programação, tudo involve um pouco de programação, e por demais será abordado dentro destes 3 anos que você terá pela frente, o computador com o que você está vendo esse manual? Este manual? Seu animal de estimação? O próprio tecido da realidade? Tudo vai ter seu tempo para ser aprendido, até chegar o momento em que as tarefas mais triviais da sua vida vão te lembrar dessa <i>relaxante</i> atividade que é programar. </p>
+                        <p>Mas vamos começar simples, Roma não foi construída em um dia, e nem sem nenhum plano, pois como você fará a próxima Google sem antes aprender o básico?</p>
+                        <table style="width:100%", border="1px">
+                            <tr><td style="padding:15px"><pre>#include &ltstdio.h&gt<br>void main()<br>    {printf("hello World!");}</pre>
+                            </td></tr>
+                        </table>
+                        <p>Este é o C, é uma das linguagens básicas da programação, sendo base para muitas outras linguagens.</p>
+                        <p>Ela é uma linguagem estruturada, é um paradigma que fundamenta que:</p>
+                        <ol>
+                            <li>As tarefas são executadas em sequência;</li>
+                            <li>Testes lógicos podem decidir a execução ou não de uma tarefa;</li>
+                            <li>Por meio destes testes, um trecho pode ser repetivél, mas não infinitamente.</li>
+                        </ol>
+                        <p>E assim, basicamente, o código C é executado.</p>
+                    </li>
+                </div>
+                <div> <!--Variáveis e expressões matemáticas-->
+                    <li>
+                        <h2>Variáveis e expressões matemáticas</h2>
+                        <p>Primeiro é bom saber as coisas que dão pra fazer no C, enquanto imprimir no terminal com printf pode ser divertido, as tarefas executadas em qualquer programa devem todas serem controladas de certa forma, e assim temos as variáveis.</p>
+                        <p>As variáveis são palavras decididas por você, que carregam alguma informação que será usada na execução da tarefa.</p>
+                        <table style="width:100%", border="1px">
+                            <tr><td style="padding:15px"><pre>#include &ltstdio.h&gt<br>void main()<br>{<br>    int numeroLegal, numeroDaora;<br>    int numeroLegal = 24;<br>    numeroDaora = numeroLegal + 1;<br>    printf(numeroDaora);<br>}</pre>
+                            </td></tr>
+                        </table>
+                        <p>No exemplo duas variáveis de números inteiros são criadas, uma é definida como 24, enquanto a outra usa da informação guardada na primeira para ser definida como o inteiro 25.</p>
+                        <p>Muitas coisas são definidas por essas variáveis, neste exemplo nós sabiamos que número seria impresso, e podiámos ter só pedido para imprimir "25", mas na maioria das vezes, essa informação pode precisar mudar, às vezes diferentes partes do programa sejam executadas dependendo do que uma variável guarda ou não guarda, às vezes essa informação pode ser alterada por uma fonte externa, e essas mudanças só podem ser guardadas por meio destas váriaveis.</p>
+                        <p>Como você pode ter visto no exemplo anterior, outras ferramentas disponíveis para a manipulação de informação são as expressões matemáticas. O computador trabalha com 0s e 1s para funcionar, e para ele TODA informação é secretamente um número (sim, até uma linha de texto), então será bastante comum você encontrar no meio do seu código, e dentro de suas funções coisas como +, -, /, *, assim como outros elementos matemáticos mais complexos, como floor() que arredonda para baixo um número real, ou exp() que caucula o valor exponencial de um número. Outra expressão matemática comum de ser vista na programação é o =, ele empenha várias funções muito importantes dentro de um código, como no caso do exemplo, em que o = é responsável por guardar uma informação dentro de uma váriavel.</p>
+                    </li>
+                </div>
+                <div> <!--Estruturas Condicionais-->
+                    <li>
+                        <h2>Estruturas Condicionais</h2>
+                        <p>Estruturas condicionais são as estruturas responsáveis pela segunda parte do paradgma do C, elas definem que trechos do código são ou não são executados, garantindo mais controle sob a tarefa e permitindo interações mais especiais.</p>
+                        <p>A condição mais simples é chamada <i>if()</i>, essa estrutura executa as linhas de comando seguintes SE a condição inserida nela for verdadeira, é uma ação bem direta e simples, mas é extremamente importante para a criação de códigos em C. Por exemplo, se eu quiser saber se uma variável de número inteiro é positiva, eu posso escrever algo como:</p>
+                        <table style="width:100%", border="1px">
+                            <tr><td style="padding:15px"><pre>if(variávelBacanassa &gt 0)<br>    {printf("A vida é boa :)");}</pre>
+                            </td></tr>
+                        </table>
+                        <p>no corpo do meu código, assim ele imprimirá a mensagem positiva, apenas SE a variável for maior que 0. Mas e no caso de uma váriavel negativa? o que aconteceria se eu quisesse que a mensagem fosse diferente dependendo do estado da minha variável?</p>
+                        <table style="width:100%", border="1px">
+                            <tr><td style="padding:15px"><pre>if(variávelBacanassa &gt 0)<br>    {printf("A vida é boa :)");}<br>else if(variávelBacanassa &lt 0)<br>    {printf(">:(((");}</pre>
+                            </td></tr>
+                        </table>
+                        <p>Com essas duas estruturas condicionais, nossa variável tem humor, e você pode começar a definir mais o que seu código pode fazer!</p>
+
+                        <h4>Outras estruturas condicionais relevantes:</h4>
+                        <ul>
+                            <li>Switch - quando o código se divide em múltiplas condições diferentes da mesma váriavel;</li>
+                            <li>Condicionais de curto-circuito ( && e || ) - também chamados <i>and</i> e <i>or</i> esses símbolos são usados entre condições dentro de uma mesma instância do <i>if-then-else</i>;</li>
+                            <li>Ternário ( x ? y : z ) - forma mais curta de escrever um <i>if-then-else</i>, nele, o valor de y é retornado se a condição x for verdadeira, mas se não for, é retornado o valor de z.  </li>
+                        </ul>
+                    </li>
+                </div>
+                <div> <!--Estruturas de Repetição-->
+                    <li>
+                        <h2>Estruturas de Repetição</h2>
+                        <p>Por último, temos uma estrutura igualmente importante para a linguagem C, muitas vezes é útil reutilizar partes do se código múltiplas vezes, mas escrever a mesma linha de texto toda hora é chato, cansativo e imprático. Essas estruturas servem para isso, repetir partes de um código, quantas vezes precisar.</p>
+                        <table style="width:100%", border="1px">
+                            <tr><td style="padding:15px"><pre>while(cansaco == false)<br>    {printf("oi :) /n");}</pre>
+                            </td></tr>
+                        </table>
+                        <p>É bom sempre lembrar que as condições para a repetição de código tem que ser capazes de parar a repetição eventualmente, um loop infinito é sempre perigoso e causará problemas na execução do seu código.</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+    </body>
+</html>
