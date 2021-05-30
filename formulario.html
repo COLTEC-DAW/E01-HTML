@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                Código: <input type="text" name="code" disabled="true" size="8" required = "false"> <br>
+                Nome: <input type="text" name="name" required = "true"> <br>
+                Senha: <input type="password" name="pwd" required = "true"> <br>
+                Sexo: <input type="radio" name="sex" value="male">Masculino</input>
+                <input type="radio" name="sex" value="female">Feminino</input>
+                <input type="radio" name="sex" value="female">Outro</input>
+                <br>
+                Idade: <input type="number" name="name" required = "true"> <br>
+                Cartão de crédito: <br>
+                <select size = "3" name="cc" required = "true"> 
+                    <option value="mastercard">Mastercard </option>
+                    <option value="visa">Visa </option>
+                    <option value="americanExpress">American Express </option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                Cargo: <select name="cargo">
+                    <option value="junior">Analista Júnior</option>
+                    <option value="pleno">Analista Pleno</option>
+                    <option value="senior">Analista Sênior</option>
+                </select> <br>
+                Dados pessoais: <br>
+                <input type="checkbox" name="fumante">Fumante <br>
+                <input type="checkbox" name="exercita">Pratica exercícios físicos<br>
+                <input type="checkbox" name="alcool">Consome bebidas acoólicas <br>
+                Experiências profissionais: <br>
+                <textarea rows="3" cols = "50" placeholder="Data início/Data fim/Empresa/Cargo" name="exp"></textarea>
+            </fieldset>
+            <input type="reset" value="Limpar"> <input type="submit" value="Inserir">
+        </form>
+    </body>
+</html>
