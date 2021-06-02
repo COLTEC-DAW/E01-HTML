@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Manual de C!</title>
+</head>
+
+<body>
+    <header>
+        <h1> Manual de C!</h1>
+    </header>
+
+    <div>
+        <h2> Introdução</h2>
+        A linguagem C foi desenvolvida em 1972, nos Laboratórios Bell, por Dennis Ritchie e implementada pela primeira vez num computador DEC PDP-11 que usava o sistema operacional UNIX. Ela se originou da linguagem de programação BCPL. A linguagem C tornou-se
+        rapidamente uma ferramenta de programação bastante difundida entre os profissionais da área, sendo uma das primeiras ensinadas à programadores iniciantes.<br><br> A popularidade de C deve-se, principalmente, ao fato dela ser uma linguagem
+        flexível, portátil e eficiente. Sua flexibilidade lhe permite ser utilizada no desenvolvimento de diversos tipos de aplicação, desde simples jogos eletrônicos até poderosos controladores de satélites. Graças à sua portabilidade, os programas codificados
+        em C podem ser executados em diversas plataformas, praticamente, sem nenhuma alteração. E, finalmente, sua eficiência proporciona alta velocidade de execução e economia de memória.
+    </div>
+
+    <div>
+        <h2> Variáveis e expressões mamemáticas</h2>
+        Em C ,pode-se executar operações aritméticas usando variáveis e constantes. As operações mais comuns são:<br><br> + | adição <br> - | subtração <br> * | multiplicação <br> / | divisão <br> % | resto (módulo) <br> <br>
+
+    </div>
+
+    <div>
+        <h2> Estruturas Condicionais: </h2>
+        <div>
+            <h3> If </h3>
+            A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sua sintaxe é: <br><br>
+
+            <h4>if (condição realizada) { <br> lista de instruções; <br> }
+
+            </h4> <br> A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição. A expressão If... Else permite executar outra
+            série de instruções em caso do não cumprimento da condição. A sua sintaxe é a seguinte: <br><br>
+
+            <h4>if (condição realizada) { <br> lista de instruções; <br> }else{ <br> outras instruções <br> }
+
+            </h4>
+        </div>
+
+        <div>
+            <h3> Switch</h3>
+            A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com varios if imbricados.
+            Sua sintaxe é: <br> <br>
+            <h4>
+                switch (variável) { <br> case Valor1:<br> Lista de instruções;<br> break;
+
+                <br> case Valor2:<br> Lista de instruções;<br> break;
+
+                <br> case Valores:<br> Lista de instruções;<br> break;
+
+                <br> default:
+                <br> Lista de instruções;<br> }
+
+                <br>
+            </h4>
+            Os parênteses após a palavra-chave switch indicam uma expressão cujo valor é testado, sucessivamente, para cada uma das case. Quando a expressão testada é igual a um dos seguintes valores seguindo um case, a lista de instrução que vem depois, é executada.
+            A palavra-chave break indica a saída da estrutura condicional. A palavra-chave default precede a lista de instruções, que será executada se a expressão nunca for igual a um dos valores.
+        </div>
+
+    </div>
+
+    <div>
+        <h2> Estruturas de Repetição: </h2>
+        <h3> For</h3>
+        A Sintaxe da estrutura For é:
+        <h4>
+            for (contador; condição; modificação do contador) { <br> lista de instruções; <br> }
+
+            <br>
+        </h4>
+
+    </div>
+
+    <div>
+        <h3> While</h3>
+        Esta instrução executa a lista de instruções enquanto (significado da palavra While) a condição se realiza. Como a condição de saída pode ser qualquer estrutura condicional, o risco de loop infinito (loop cuja condição é sempre verdadeira) é grande, ou
+        seja, pode causar uma falha do programa em curso de execução. Sua estrutura é:
+        <h4>
+            while (condição realizada) { <br> lista de instruções;<br> }
+
+            <br>
+        </h4>
+    </div>
+
+    <div>
+        <h2>Como executar um programa em C</h2>
+        Uma das mais utilizadas plataformas de programação é o Visual Studio, uma IDE onde você pode escrever seus códigos e apertar a tecla atalho para compilar já que IDES possuem compiladores prontos.<br><br> Baixe as extensões no VSCode e instale
+        o C/C++ da Microsoft, para que os coódigos se compilem sozinhos, além do Code Runner, para executar o código. Baixe o compilador <a href "https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/"> Mingw </a>, configure-o e ao voltar
+        para o VSCode estará pronto para uso!
+    </div>
+</body>
+
+</html>
