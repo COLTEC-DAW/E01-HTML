@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Formulario</title>
+
+</head>
+
+<body>
+
+    <h1>Formulario de cadastro</h1>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <form>
+
+                <label for="codigo">Codigo:</label>
+                <input type="text" value="001" disabled name="Codigo"><br>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="Nome"><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="Senha"><br>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="Masculino">Masculino</input>
+                <input type="radio" name="sexo" value="Feminino">Feminino</input><br>
+
+                <label for="idade">Idade:</label>
+                <input type="text" name="Idade" size="1"><br>
+
+                <label for="cartao">Cartao de credito:</label>
+                <select name="cartao">
+
+                        <option value="mastercard">MasterCard</option>
+                        <option value="visa">Visa</option>
+                        <option value="americanexpress">American Express</option>
+
+                    </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Dados Profissionais</legend>
+            <label for="Cargo">Cargo</label><br>
+
+            <select name="Cargo">
+
+                    <option value="Estagiario">Estagiario</option>
+                    <option value="AnJunior">Analista Junior</option>
+                    <option value="AnPleno">Analista Pleno</option>
+                    <option value="AnSenior">Analista Senior</option>
+
+                </select>
+
+            <br>
+
+            <label for="pessoais">Dados Pessoais:</label><br>
+            <input type="checkbox" name="fumante">Fumante</input><br>
+            <input type="checkbox" name="atleta">Pratica Exercicios Fisicos</input><br>
+            <input type="checkbox" name="bebida">Consome Bebida Alcoolica</input><br>
+            <label for="experiencia">Experiencias Profissionais:</label><br>
+
+            <br>
+
+            <textarea name="Experiencia" cols="50" rows="3">Data Inicio/Data Fim/Empresa/Cargo</textarea>
+
+        </fieldset>
+
+        <br>
+        <button type="submit">Limpar</button>
+        <button type="submit">Inserir</button>
+
+        </form>
+</body>
+
+</html>
