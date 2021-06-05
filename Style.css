@@ -18,3 +18,19 @@ body{
     padding: 50px;
 }
 
+#Noticia{
+    text-align: right;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.subtitulo2{
+    text-align: left;
+    font-style: italic;
+    font-size: 1rem;
+    padding-top: 30px
+}
+
+
+
+
