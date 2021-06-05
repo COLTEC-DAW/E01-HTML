@@ -38,7 +38,6 @@ p{
 
 a:link{
     font-weight:bold;
-    color: gold;
 }
 
 a:active{
@@ -48,6 +47,8 @@ a:active{
 a:hover{
     color:aqua ;
 }
-
+a:visited{
+    color: gold;
+}
 
 
