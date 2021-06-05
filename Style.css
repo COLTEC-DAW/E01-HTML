@@ -6,7 +6,7 @@
 
 body{
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%;;
 }
 
 #Titulo{
@@ -34,6 +34,19 @@ body{
 p{
     text-align: justify;
     line-height: 25px;
+}
+
+a:link{
+    font-weight:bold;
+    color: gold;
+}
+
+a:active{
+    color: orangered;
+}
+
+a:hover{
+    color:aqua ;
 }
 
 
