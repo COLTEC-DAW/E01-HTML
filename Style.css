@@ -8,3 +8,11 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+#Titulo{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: darkblue;
+    padding: 50px;
+}
